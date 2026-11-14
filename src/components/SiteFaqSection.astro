@@ -1,0 +1,67 @@
+---
+import type { SiteFaqItem, FaqTopic } from '../data/faq';
+import FaqSection from './FaqSection.astro';
+import {
+  LANDING_FAQ_FILTER_TOPICS,
+  SITE_FAQ_SECTION_COPY,
+  CONTEXTUAL_FAQ_SECTION_COPY,
+  faqFilterTopicsForItems,
+} from '../data/faq';
+
+interface Props {
+  items: SiteFaqItem[];
+  id?: string;
+  titleId?: string;
+  class?: string;
+  /** Full /faq/ experience — all topics chip bar */
+  variant?: 'full' | 'contextual';
+  filterTopics?: FaqTopic[];
+  /** Override section chrome (e.g. localized home FAQ) */
+  eyebrow?: string;
+  title?: string;
+  subtitle?: string;
+  showSectionHeader?: boolean;
+  collapsedCount?: number;
+  groupByTopic?: boolean;
+}
+
+const {
+  items,
+  id,
+  titleId = 'faq-heading',
+  class: className,
+  variant = 'contextual',
+  filterTopics: filterTopicsProp,
+  eyebrow: eyebrowProp,
+  title: titleProp,
+  subtitle: subtitleProp,
+  showSectionHeader = true,
+  collapsedCount,
+  groupByTopic,
+} = Astro.props;
+
+const defaults = variant === 'full' ? SITE_FAQ_SECTION_COPY : CONTEXTUAL_FAQ_SECTION_COPY;
+const copy = {
+  eyebrow: eyebrowProp ?? defaults.eyebrow,
+  title: titleProp ?? defaults.title,
+  subtitle: subtitleProp ?? defaults.subtitle,
+};
+const filterTopics =
+  filterTopicsProp ?? (variant === 'full' ? LANDING_FAQ_FILTER_TOPICS : faqFilterTopicsForItems(items));
+const showFilters = filterTopics.length > 1;
+---
+
+<FaqSection
+  id={id}
+  items={items}
+  eyebrow={copy.eyebrow}
+  title={copy.title}
+  subtitle={copy.subtitle}
+  titleId={titleId}
+  showFilters={showFilters}
+  filterTopics={filterTopics}
+  showSectionHeader={showSectionHeader}
+  collapsedCount={collapsedCount}
+  groupByTopic={groupByTopic ?? variant === 'full'}
+  class={className}
+/>

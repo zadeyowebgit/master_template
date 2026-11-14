@@ -1,0 +1,29 @@
+---
+import ChevronDown from '@tabler/icons/outline/chevron-down.svg';
+import type { HTMLAttributes } from 'astro/types';
+import { accordionTrigger } from './variants';
+
+type Props = HTMLAttributes<'button'> & {
+  hideChevron?: boolean;
+};
+
+const { class: className, hideChevron = false, ...rest } = Astro.props;
+---
+
+<button
+  type="button"
+  class={accordionTrigger({ class: className })}
+  data-sw-accordion-trigger
+  data-state="closed"
+  data-slot="accordion-trigger"
+  {...rest}
+>
+  <slot />
+  {
+    !hideChevron && (
+      <slot name="icon">
+        <ChevronDown class="size-5 shrink-0 transition-transform duration-200" />
+      </slot>
+    )
+  }
+</button>

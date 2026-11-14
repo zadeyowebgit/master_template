@@ -1,0 +1,111 @@
+import type { Translations } from '../../../i18n/types';
+import { game } from '../../index';
+
+/** Neutral, human-readable homepage and chrome copy (no raw [[tokens]] in output). */
+export function applyTemplateMarketingOverlay(t: Translations): Translations {
+  const g = game.site.gameNameDisplay;
+  const brand = game.site.brandName;
+
+  t.site.name = brand;
+  t.site.domain = game.site.canonicalDomain;
+  t.site.title = `${g} guides and product information`;
+  t.site.description = `Product information, requirements, and buyer guides for ${g}. Confirm features with the seller before purchase.`;
+
+  t.hero.status = 'Verified product listing';
+  t.hero.eyebrow = `${g} on supported platforms`;
+  t.hero.titleLine1 = `${g} catalog for`;
+  t.hero.titleLine2 = 'Windows PC';
+  t.hero.modesLabel = 'Compare';
+  t.hero.modes = [
+    'Seller-listed features',
+    'Access and checkout terms',
+    'Setup and compatibility notes',
+  ];
+  t.hero.subtitle =
+    'Compare the current package, documented requirements, and buyer guides before you open checkout. This site publishes information; it does not run independent detection tests.';
+  t.hero.metrics = [
+    { strong: 'Guides', label: '16 long-form articles' },
+    { strong: 'Products', label: 'Reusable catalog layout' },
+    { strong: 'Forum', label: '7 discussion templates' },
+    { strong: 'FAQ', label: 'Purchase and setup answers' },
+  ];
+
+  t.whyUs.eyebrow = 'Why our cheats';
+  t.whyUs.title = 'Why our cheats';
+  t.whyUs.subtitle =
+    'Straightforward product pages, linked guides, and support paths—without invented performance claims.';
+  t.whyUs.usLabel = brand;
+  t.whyUs.otherLabel = 'Typical shop';
+  t.whyUs.metrics = [
+    {
+      value: 'Listed',
+      title: 'Documented features',
+      desc: 'Feature names come from the owner-supplied listing, not invented marketing tiers.',
+    },
+    {
+      value: 'Guided',
+      title: 'Linked buyer guides',
+      desc: 'Sixteen articles explain terminology, setup, and purchase discipline for your game.',
+    },
+    {
+      value: 'Supported',
+      title: 'Clear support paths',
+      desc: 'Checkout, loader, and account questions route to seller support with structured FAQs.',
+    },
+  ];
+
+  t.workflow.eyebrow = 'How it works';
+  t.workflow.badge = '4 steps';
+  t.workflow.titleBefore = 'From buy to';
+  t.workflow.titleHighlight = 'in-game cheats.';
+  t.workflow.titleAfter = '';
+  t.workflow.subtitle =
+    'Follow the same four-step flow for every game migration: review, checkout, setup, and saved configuration.';
+  t.workflow.ctaLabel = 'Buy cheats';
+  t.workflow.ctaHref = game.routes.productBase;
+  t.workflow.ctaSecondary = 'See FAQ';
+  t.workflow.ctaSecondaryHref = '/faq/';
+  t.workflow.items = [
+    {
+      num: '01',
+      phase: 'Review',
+      title: 'Review the listing',
+      desc: 'Read product scope, requirements, and FAQs on this site before you pay.',
+    },
+    {
+      num: '02',
+      phase: 'Checkout',
+      title: 'Complete checkout',
+      desc: 'Use the owner-supplied checkout link and keep your order confirmation.',
+    },
+    {
+      num: '03',
+      phase: 'Setup',
+      title: 'Prepare your PC',
+      desc: 'Confirm Windows, security settings, and any extra services named in the listing.',
+    },
+    {
+      num: '04',
+      phase: 'Configure',
+      title: 'Save your setup notes',
+      desc: 'Store seller documentation and support replies beside your configuration notes.',
+    },
+  ];
+
+  t.features.title = `${g} information modules`;
+  t.features.subtitle =
+    'Reusable feature cards—replace labels and bullets when migrating to a new title.';
+  t.footer.tagline = `${g} guides and product information.`;
+  t.compatibility.items = [
+    'Seller-listed compatibility',
+    'Documented OS requirements',
+    'Separate checkout terms',
+    'Support via listed channels',
+    'Guides updated per migration',
+    'Forum templates included',
+    'Product hub layout',
+    'Neutral master template',
+  ];
+
+  return t;
+}

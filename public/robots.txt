@@ -1,0 +1,28 @@
+# Indexable origin: https://your-domain.example (replace during migration)
+
+User-agent: *
+Allow: /
+Allow: /robots.txt
+Allow: /llms.txt
+Allow: /sitemap.xml
+Allow: /sitemap-index.xml
+Allow: /sitemap-pages.xml
+Allow: /sitemap-products.xml
+Allow: /sitemap-blog.xml
+Allow: /sitemap-forum.xml
+Disallow: /go/
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+Sitemap: https://your-domain.example/sitemap.xml
+Sitemap: https://your-domain.example/sitemap-pages.xml
+Sitemap: https://your-domain.example/sitemap-products.xml
+Sitemap: https://your-domain.example/sitemap-blog.xml
+Sitemap: https://your-domain.example/sitemap-forum.xml

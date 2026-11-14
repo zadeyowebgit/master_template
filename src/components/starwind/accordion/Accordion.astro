@@ -1,0 +1,143 @@
+---
+/**
+ * Accordion root with deferred init (IntersectionObserver + double rAF)
+ * so Starwind height measurement does not force reflow during LCP/TBT.
+ */
+import type { HTMLAttributes } from 'astro/types';
+import { accordion } from './variants';
+
+type Props = HTMLAttributes<'div'> & {
+  type?: 'single' | 'multiple';
+  defaultValue?: string | string[];
+  collapsible?: boolean;
+};
+
+const {
+  type = 'single',
+  defaultValue,
+  collapsible = true,
+  class: className,
+  ...rest
+} = Astro.props;
+
+const defaultValueAttribute = Array.isArray(defaultValue)
+  ? JSON.stringify(defaultValue)
+  : defaultValue;
+---
+
+<div
+  class={accordion({ class: className })}
+  data-sw-accordion
+  data-sw-accordion-deferred
+  data-type={type}
+  data-default-value={defaultValueAttribute}
+  data-collapsible={String(collapsible)}
+  data-state="closed"
+  data-slot="accordion"
+  {...rest}
+>
+  <slot />
+</div>
+
+<script>
+  // client:visible — the accordion chunk loads only once the block is near the viewport.
+  const READY = 'data-acc-ready';
+  const initialized = new WeakMap<HTMLElement, Promise<void>>();
+
+  function afterLayout(fn: () => void) {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(fn);
+    });
+  }
+
+  function whenIdle(fn: () => void) {
+    if (typeof window.requestIdleCallback === 'function') {
+      window.requestIdleCallback(() => afterLayout(fn), { timeout: 2500 });
+    } else {
+      window.setTimeout(() => afterLayout(fn), 1);
+    }
+  }
+
+  function rememberPanelHeights(root: HTMLElement) {
+    const panels = Array.from(
+      root.querySelectorAll<HTMLElement>('[data-sw-accordion-content]'),
+    );
+    if (!panels.length) return;
+
+    // Read phase — batch all layout queries before any writes.
+    const heights = panels.map((panel) => panel.scrollHeight);
+    let anyMeasured = false;
+    panels.forEach((panel, index) => {
+      const height = heights[index] ?? 0;
+      if (height <= 0) return;
+      anyMeasured = true;
+      (panel as HTMLElement & { __swPanelH?: number }).__swPanelH = height;
+    });
+    return anyMeasured;
+  }
+
+  function initRoot(root: HTMLElement): Promise<void> {
+    const existing = initialized.get(root);
+    if (existing) return existing;
+    root.setAttribute(READY, '');
+    const pending = (async () => {
+      await new Promise<void>((resolve) => {
+      afterLayout(() => {
+        rememberPanelHeights(root);
+        resolve();
+      });
+      });
+
+      const { createAccordion } = await import('@starwind-ui/runtime/accordion');
+      await new Promise<void>(resolve => afterLayout(() => {
+        createAccordion(root);
+        root.setAttribute('data-acc-initialized', '');
+        resolve();
+      }));
+    })();
+    initialized.set(root, pending);
+    return pending;
+  }
+
+  function setupAccordions() {
+    const roots = document.querySelectorAll<HTMLElement>(
+      '[data-sw-accordion-deferred]:not([data-acc-ready])',
+    );
+    if (!roots.length) return;
+    roots.forEach(root => {
+      root.addEventListener('focusin', () => { void initRoot(root); });
+      // A native button's first keyboard click can arrive before the lazy
+      // import. Replay it after initialization instead of dropping the action.
+      root.addEventListener('click', event => {
+        const trigger = (event.target as Element).closest<HTMLButtonElement>('[data-sw-accordion-trigger]');
+        if (!trigger || root.hasAttribute('data-acc-initialized')) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        void initRoot(root).then(() => trigger.click());
+      }, true);
+    });
+
+    if (!('IntersectionObserver' in window)) {
+      roots.forEach((root) => whenIdle(() => initRoot(root)));
+      return;
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          const root = entry.target as HTMLElement;
+          io.unobserve(root);
+          whenIdle(() => initRoot(root));
+        }
+      },
+      { rootMargin: '160px 0px' },
+    );
+
+    roots.forEach((root) => io.observe(root));
+  }
+
+  setupAccordions();
+  document.addEventListener('astro:after-swap', setupAccordions);
+  document.addEventListener('starwind:init', setupAccordions as EventListener);
+</script>

@@ -1,0 +1,37 @@
+---
+import { DEFAULT_LOCALE, getLocaleFromPathname, localizeHref, useTranslations } from '../i18n';
+import { cheatPages } from '../data/products';
+import { cheatTierIcons } from '../data/sectionIcons';
+import SectionHeader from './SectionHeader.astro';
+import CatalogCard from './CatalogCard.astro';
+import { cheatPath } from '../utils/path';
+import { formatTranslation } from '../i18n/utils';
+
+const locale = Astro.locals.locale ?? getLocaleFromPathname(Astro.url.pathname) ?? DEFAULT_LOCALE;
+const t = useTranslations(locale);
+const s = t.cheats;
+---
+
+<section id="cheats" class="border-y border-border bg-muted/20 py-16 md:py-24" aria-labelledby="cheats-title">
+  <div class="mx-auto max-w-6xl px-5">
+    <SectionHeader eyebrow={s.eyebrow} title={s.title} desc={s.subtitle} titleId="cheats-title" />
+
+    <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {cheatPages.map((cheat, i) => (
+        <CatalogCard
+          label={cheat.tier ?? cheat.name}
+          title={cheat.title}
+          href={localizeHref(cheatPath(cheat.slug), locale)}
+          buyUrl={cheat.buyUrl}
+          features={cheat.features}
+          more={cheat.more}
+          icon={cheatTierIcons[cheat.name] ?? 'crosshair'}
+          badge={cheat.badge}
+          variant={cheat.variant}
+          buyLabel={formatTranslation(t.ui.buyProduct, { title: cheat.title })}
+          viewLabel={formatTranslation(t.ui.viewProductDetails, { title: cheat.title })}
+        />
+      ))}
+    </div>
+  </div>
+</section>

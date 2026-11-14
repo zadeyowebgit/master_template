@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import HeroLcpPreload from '../components/HeroLcpPreload.astro';
+import FeaturesSection from '../components/FeaturesSection.astro';
+import WhySetupSection from '../components/WhySetupSection.astro';
+import ProductsSection from '../components/ProductsSection.astro';
+import ContentSections from '../components/ContentSections.astro';
+import { resolvePageSeo } from '../config/seo';
+import { organizationSchema, websiteSchema } from '../utils/schema';
+const seo = resolvePageSeo('/');
+---
+
+<BaseLayout
+  title={seo.title}
+  description={seo.description}
+  jsonLd={[websiteSchema(), organizationSchema()]}
+>
+  <HeroLcpPreload slot="preload" />
+  <HeroSection />
+  <FeaturesSection />
+  <ProductsSection />
+  <WhySetupSection showSetup={false} />
+  <ContentSections />
+</BaseLayout>
+
+<style is:global>
+  /* Keep the full crawlable HTML while avoiding layout/paint of distant sections. */
+  main > section:not(#hero) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 1000px;
+  }
+</style>

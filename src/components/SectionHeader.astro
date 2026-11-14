@@ -1,0 +1,46 @@
+---
+import { DEFAULT_LOCALE, getLocaleFromPathname } from '../i18n';
+import { ensureEnH1 } from '../config/target-keyword';
+import { auditSeo } from '../config/auditSeo';
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  desc?: string;
+  titleId?: string;
+  centered?: boolean;
+  wide?: boolean;
+  /** Page H1 only when this is the main content heading. Default h2 for sections. */
+  level?: 1 | 2;
+}
+
+const {
+  eyebrow,
+  title,
+  desc,
+  titleId,
+  centered = false,
+  wide = false,
+  level = 2,
+} = Astro.props;
+
+const Tag = level === 1 ? 'h1' : 'h2';
+const locale = Astro.locals.locale ?? getLocaleFromPathname(Astro.url.pathname) ?? DEFAULT_LOCALE;
+const heading = level === 1
+  ? (locale === 'en' ? ensureEnH1(title) : title)
+  : titleId === 'features-title'
+    ? auditSeo(Astro.url.pathname)?.h2 ?? title
+    : title;
+---
+
+<header
+  class:list={[
+    'section-header space-y-0',
+    wide && 'section-header--wide',
+    centered && 'mx-auto text-center',
+  ]}
+>
+  <p class="section-header__eyebrow">{eyebrow}</p>
+  <Tag id={titleId} class="section-header__title">{heading}</Tag>
+  {desc ? <p class="section-header__subtitle">{desc}</p> : null}
+</header>

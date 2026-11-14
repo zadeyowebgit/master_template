@@ -1,0 +1,71 @@
+---
+import { gameCatalog } from '../data/gameCatalog';
+
+const addons = [
+  {
+    number: '01',
+    title: '[[HUB_DETAIL_GROUP_1_TITLE]]',
+    description: '[[HUB_DETAIL_GROUP_1_DESC]]',
+    highlights: gameCatalog.featureGroups.combatAwareness,
+  },
+  {
+    number: '02',
+    title: '[[HUB_DETAIL_GROUP_2_TITLE]]',
+    description: '[[HUB_DETAIL_GROUP_2_DESC]]',
+    highlights: gameCatalog.featureGroups.worldInformation,
+  },
+  {
+    number: '03',
+    title: '[[HUB_DETAIL_GROUP_3_TITLE]]',
+    description: '[[HUB_DETAIL_GROUP_3_DESC]]',
+    highlights: [
+      ...gameCatalog.featureGroups.objectiveInformation,
+      ...gameCatalog.featureGroups.assistanceAndGuidance,
+      ...gameCatalog.featureGroups.serviceOptions,
+    ],
+  },
+];
+---
+
+<section class="mt-14 space-y-12" aria-labelledby="product-hub-addons-title">
+  <div>
+    <p class="text-xs font-semibold uppercase tracking-widest text-primary" style="color: var(--primary-text)">
+      [[HUB_DETAIL_SECTION_LABEL]]
+    </p>
+    <h2 id="product-hub-addons-title" class="mt-2 text-2xl font-bold md:text-3xl">[[HUB_DETAIL_HEADING]]</h2>
+    <p class="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+      [[HUB_DETAIL_INTRO]]
+    </p>
+  </div>
+
+  <div class="grid border-y border-border/80 lg:grid-cols-3 lg:divide-x lg:divide-border/80">
+    {
+      addons.map((card) => (
+        <article class="min-w-0 border-b border-border/80 py-7 last:border-b-0 lg:border-b-0 lg:px-7 lg:first:pl-0 lg:last:pr-0">
+          <div class="flex items-start gap-4">
+            <span class="text-xs font-bold tracking-widest text-primary" style="color: var(--primary-text)">
+              {card.number}
+            </span>
+            <div>
+              <h3 class="text-lg font-bold leading-tight">{card.title}</h3>
+              <p class="mt-2 text-sm leading-6 text-muted-foreground">{card.description}</p>
+            </div>
+          </div>
+          <ul class="mt-5 space-y-3 pl-8 text-sm text-foreground/90">
+            {card.highlights.map((item) => (
+              <li class="flex gap-3 leading-5">
+                <span
+                  class="mt-[0.4rem] flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-primary/15 text-[0.6rem] font-bold text-primary"
+                  aria-hidden="true"
+                >
+                  ✓
+                </span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </article>
+      ))
+    }
+  </div>
+</section>

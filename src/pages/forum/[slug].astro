@@ -1,0 +1,6 @@
+---
+import ForumPost from '../../components/ForumPost.astro';
+import { forumPosts } from '../../data/forum';
+export function getStaticPaths() { return forumPosts.map(({ slug }) => ({ params: { slug } })); }
+---
+<ForumPost />

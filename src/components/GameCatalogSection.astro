@@ -1,0 +1,8 @@
+---
+import ProductHubCards from './ProductHubCards.astro';
+interface Props {
+  id?: string;
+}
+const { id = 'product-catalog-cards' } = Astro.props;
+---
+<ProductHubCards id={id} />

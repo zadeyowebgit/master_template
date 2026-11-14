@@ -1,0 +1,45 @@
+---
+import { DEFAULT_LOCALE, getLocaleFromPathname, useTranslations } from '../i18n';
+import { auditSeo } from '../config/auditSeo';
+import { heroLcpImage } from '../data/media';
+import { buildHeroLcpImageSet } from '../data/heroLcpImages';
+
+interface Props {
+  variant: 'poster' | 'background';
+}
+
+const { variant } = Astro.props;
+const locale = Astro.locals.locale ?? getLocaleFromPathname(Astro.url.pathname) ?? DEFAULT_LOCALE;
+const t = useTranslations(locale);
+const keyword = auditSeo(Astro.url.pathname)?.keyword;
+const posterAlt = keyword ? `${keyword} – ${t.media.heroPosterAlt}` : t.media.heroPosterAlt;
+
+await buildHeroLcpImageSet();
+---
+
+{
+  variant === 'poster' ? (
+    <img
+      src={heroLcpImage}
+      width={1280}
+      height={720}
+      alt={posterAlt}
+      loading="eager"
+      fetchpriority="high"
+      decoding="sync"
+      class="h-full w-full object-cover object-center"
+    />
+  ) : (
+    <img
+      src={heroLcpImage}
+      width={1280}
+      height={720}
+      alt={posterAlt}
+      aria-hidden="true"
+      loading="eager"
+      fetchpriority="high"
+      decoding="async"
+      class="hero-lcp-bg object-cover object-center brightness-[0.85] dark:brightness-[0.4]"
+    />
+  )
+}

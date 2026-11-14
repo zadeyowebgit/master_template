@@ -1,0 +1,57 @@
+---
+interface Props {
+  class?: string;
+  ariaLabel?: string;
+  size?: 'default' | 'sm' | 'md';
+}
+
+const { class: className, ariaLabel = 'Toggle light and dark mode', size = 'default' } = Astro.props;
+---
+
+<label
+  class:list={[
+    'theme-mode-switch',
+    size === 'sm' && 'theme-mode-switch--sm',
+    size === 'md' && 'theme-mode-switch--md',
+    className,
+  ]}
+>
+  <input
+    type="checkbox"
+    aria-label={ariaLabel}
+    data-sw-theme-control
+    data-theme-on="dark"
+    data-theme-off="light"
+  />
+  <span class="theme-mode-switch__slider" aria-hidden="true"></span>
+</label>
+
+<script>
+  function syncThemeInputs() {
+    const isDark = document.documentElement.classList.contains('dark');
+    document.querySelectorAll<HTMLInputElement>('input[data-sw-theme-control]').forEach((input) => {
+      input.checked = isDark;
+      if (input.dataset.bound === '1') return;
+      input.dataset.bound = '1';
+      input.addEventListener('change', () => {
+        const checked = input.checked;
+        document.documentElement.classList.toggle('dark', checked);
+        try {
+          const mode = checked ? 'dark' : 'light';
+          localStorage.setItem('colorTheme', mode);
+          localStorage.setItem('starwind-theme', mode);
+        } catch (e) {}
+        document.querySelectorAll<HTMLInputElement>('input[data-sw-theme-control]').forEach((other) => {
+          if (other !== input) other.checked = checked;
+        });
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', syncThemeInputs, { once: true });
+  } else {
+    syncThemeInputs();
+  }
+  document.addEventListener('astro:after-swap', syncThemeInputs);
+</script>

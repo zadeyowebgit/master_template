@@ -1,0 +1,5 @@
+# Static Astro site — Cloudflare Pages (build output: dist/)
+# Host policy: functions/_middleware.js noindexes every host except TEMPLATE_CANONICAL_DOMAIN.
+name = "game-template"
+compatibility_date = "2025-10-11"
+pages_build_output_dir = "./dist"

@@ -1,0 +1,150 @@
+import type { IconName } from '../components/icons/types';
+
+export const featureIcons: Record<string, IconName> = {
+  Scripts: 'stepCrosshair',
+  'ESP Wallhack / ESP': 'featureEsp',
+  'Radar & Loot': 'featureRadar',
+  'Aimbot': 'featureAimbot',
+  'Utility Suite': 'featureUtilitySuite',
+  'Loot Assist': 'compareLootAssist',
+  'Stream Proof': 'streamProof',
+  'Radar': 'compareRadar',
+  'Cloud Config & Updates': 'compareCloudBackup',
+};
+
+export const whyUsIcons: IconName[] = ['whyShield', 'whyUsers', 'whyMonitor', 'whyHeadphones'];
+
+export const setupStepIcons: IconName[] = ['acqPackage', 'acqSettings', 'acqCheck'];
+
+export const toolkitIcons: Record<string, IconName> = {
+  Combat: 'toolkitCombat',
+  Vision: 'toolkitVision',
+  Radar: 'toolkitRadar',
+  Weapons: 'toolkitWeapons',
+  Movement: 'toolkitMovement',
+  Profiles: 'toolkitProfiles',
+};
+
+export const workflowIcons: IconName[] = [
+  'workflowAlert',
+  'workflowPackage',
+  'workflowSettings',
+  'workflowCheck',
+];
+
+export const fieldNoteIcons: IconName[] = ['fieldCalendar', 'fieldShield', 'fieldHeadphones'];
+
+export const blogTagIcons: Record<string, IconName> = {
+  Guides: 'navBlog',
+  Guias: 'navBlog',
+  Guías: 'navBlog',
+  Гайды: 'navBlog',
+  Rehberler: 'navBlog',
+  Poradniki: 'navBlog',
+  Setup: 'settings',
+  Configuración: 'settings',
+  Configuration: 'settings',
+  Настройка: 'settings',
+  Kurulum: 'settings',
+  Konfiguracja: 'settings',
+  Features: 'layers',
+  Recursos: 'layers',
+  Функции: 'layers',
+  Özellikler: 'layers',
+  Funkcje: 'layers',
+  Updates: 'refresh',
+  Atualizações: 'refresh',
+  Обновления: 'refresh',
+  Güncellemeler: 'refresh',
+  Aktualizacje: 'refresh',
+  Actualisations: 'refresh',
+  Actualizaciones: 'refresh',
+  Troubleshooting: 'alert',
+  Products: 'navProducts',
+  Produtos: 'navProducts',
+  Produkte: 'navProducts',
+  Продукты: 'navProducts',
+  Ürünler: 'navProducts',
+  Produkty: 'navProducts',
+  Produits: 'navProducts',
+  Productos: 'navProducts',
+};
+
+/** Feature bento icons by item index (locale-safe; titles change per language). */
+export const featureIconsByIndex: IconName[] = [
+  'featureAimbot', // Advanced Aimbot
+  'featureEsp', // Player ESP
+  'compareLootAssist', // Weapon & Loot ESP
+  'streamProof', // Stream Proof
+  'compareCloudBackup', // EAC Bypass
+  'featureUtilitySuite', // Cloud-DMA & AWS
+  'whyHeadphones', // 24/7 Support
+];
+
+export const heroStatusPills: { icon: IconName; label: string }[] = [
+  { icon: 'espActive', label: 'Listed features' },
+  { icon: 'seasonBuild', label: 'Confirm current build' },
+  { icon: 'streamProof', label: 'Capture requirements' },
+  { icon: 'support247', label: 'Seller documentation' },
+];
+
+export const heroStatIcons: IconName[] = [
+  'heroStatStream',
+  'heroStatClock',
+  'heroStatUsers',
+  'heroStatHeadphones',
+];
+
+export const cheatTierIcons: Record<string, IconName> = {
+  Lite: 'tierLite',
+  Pro: 'tierPro',
+  Elite: 'tierElite',
+};
+
+export const productCategoryIcons: Record<string, IconName> = {
+  'Core product': 'coreProduct',
+  'External suite': 'externalSuite',
+  'DMA hardware': 'dmaHardware',
+  'System utility': 'systemUtility',
+  'Account recovery': 'accountRecovery',
+  Cosmetic: 'cosmetic',
+};
+
+export const acquisitionStepIcons: IconName[] = ['acqPackage', 'acqSettings', 'acqZap', 'acqCheck'];
+
+/** After-purchase timeline on product detail — one distinct icon per step */
+export const productAcquisitionStepIcons: IconName[] = [
+  'liveStatus',
+  'acqPackage',
+  'headphones',
+  'acqCheck',
+];
+
+/** Product detail requirement tiles — prefer compat-style icons where mapped */
+export const productRequirementIcons: Partial<Record<IconName, IconName>> = {
+  reqWindows: 'compatWindows',
+  reqEa: 'compatEa',
+  reqSettings: 'compatPackage',
+  reqWifi: 'compatWifi',
+  reqCpu: 'compatMonitor',
+  reqRestorePoint: 'compatRefresh',
+  reqShieldGuide: 'compatShield',
+  reqMailOrder: 'mail',
+  reqShieldAccount: 'compatShield',
+  reqWifiPortal: 'compatWifi',
+};
+
+export function requirementDisplayIcon(icon: IconName): IconName {
+  return productRequirementIcons[icon] ?? icon;
+}
+
+export const compatibilityIcons: IconName[] = [
+  'compatWindows',
+  'compatPackage',
+  'compatEa',
+  'compatMonitor',
+  'compatRefresh',
+  'compatWifi',
+  'compatDiscord',
+  'compatShield',
+];

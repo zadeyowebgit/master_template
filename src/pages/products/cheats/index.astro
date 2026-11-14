@@ -1,0 +1,52 @@
+---
+import '../../../styles/product-cheat-page.css';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { productHub } from '../../../data/products';
+import { gameCatalog } from '../../../data/gameCatalog';
+import { resolvePageSeo } from '../../../config/seo';
+import { breadcrumbSchema, collectionPageSchema, itemListSchema } from '../../../utils/schema';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import ProductHubCards from '../../../components/ProductHubCards.astro';
+import ProductHubDetails from '../../../components/ProductHubDetails.astro';
+import HomeCatalogExplainer from '../../../components/HomeCatalogExplainer.astro';
+
+const seo = resolvePageSeo(productHub.path);
+const breadcrumbs = [
+  { name: '[[BREADCRUMB_HOME]]', path: '/' },
+  { name: '[[BREADCRUMB_PRODUCTS]]', path: productHub.path },
+];
+---
+
+<BaseLayout
+  title={seo.title}
+  description={seo.description}
+  jsonLd={[
+    collectionPageSchema({
+      name: productHub.title,
+      description: seo.description,
+      url: productHub.path,
+    }),
+    breadcrumbSchema(breadcrumbs),
+    itemListSchema([{ name: '[[PRODUCT_LIST_NAME]]', url: gameCatalog.detailsUrl }]),
+  ]}
+>
+  <section class="py-8 md:py-12">
+    <div class="mx-auto max-w-6xl px-5">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <header class="mx-auto mt-8 max-w-3xl text-center">
+        <p class="text-sm font-medium uppercase tracking-wider text-primary" style="color: var(--primary-text);">
+          [[PRODUCTS_PAGE_EYEBROW]]
+        </p>
+        <h1 class="mt-2 text-3xl font-bold uppercase leading-tight md:text-4xl">[[PRODUCTS_PAGE_H1]]</h1>
+        <p class="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+          [[PRODUCTS_PAGE_INTRO]]
+        </p>
+      </header>
+
+      <ProductHubCards showHeading={false} />
+      <ProductHubDetails />
+      <HomeCatalogExplainer />
+    </div>
+  </section>
+</BaseLayout>

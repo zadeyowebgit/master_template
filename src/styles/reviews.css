@@ -1,0 +1,20 @@
+.reviews-heading { max-width: 44rem; }
+.reviews-layout { display: grid; align-items: start; gap: 2rem; }
+.reviews-distribution { display: grid; grid-template-columns: 2rem minmax(0, 1fr) 1.5rem; align-items: center; gap: .75rem; }
+.reviews-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+.review-card { overflow-wrap: anywhere; }
+.review-avatar { display: inline-flex; width: 2rem; height: 2rem; align-items: center; justify-content: center; border-radius: 50%; background: color-mix(in srgb, var(--primary) 12%, transparent); color: var(--primary-text); font-size: .625rem; font-weight: 700; letter-spacing: .04em; }
+.review-demo-badge { display: inline-flex; border: 1px solid var(--border); border-radius: 999px; padding: .2rem .5rem; color: var(--muted-foreground); font-size: .625rem; line-height: 1.4; }
+.reviews-filters button { display: inline-flex; align-items: center; gap: .5rem; padding: .5rem .75rem; border: 1px solid var(--border); border-radius: .625rem; color: var(--muted-foreground); font-size: .8125rem; }
+.reviews-filters button span { font-size: .6875rem; opacity: .75; }
+.reviews-filters button:hover, .reviews-filters button.is-active { border-color: var(--primary); color: var(--primary-text); background: color-mix(in srgb, var(--primary) 8%, transparent); }
+.reviews-filters button:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.reviews-page [hidden] { display: none !important; }
+.reviews-pagination { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1rem; }
+.reviews-page-btn { display: inline-flex; align-items: center; padding: .5rem .875rem; border: 1px solid var(--border); border-radius: .625rem; color: var(--muted-foreground); font-size: .8125rem; background: var(--card); }
+.reviews-page-btn:hover:not(:disabled) { border-color: var(--primary); color: var(--primary-text); background: color-mix(in srgb, var(--primary) 8%, transparent); }
+.reviews-page-btn:disabled { opacity: .45; cursor: not-allowed; }
+.reviews-page-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.reviews-page-status { min-width: 8rem; text-align: center; }
+@media (min-width: 768px) { .reviews-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .reviews-layout { grid-template-columns: 15rem minmax(0, 1fr); } .reviews-summary { position: sticky; top: 6rem; } }

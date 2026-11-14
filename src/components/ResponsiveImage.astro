@@ -1,0 +1,77 @@
+---
+/** Responsive picture for gallery/brand masters; plain raster/SVG elsewhere. */
+import { resolvePublicImageSrc } from '../config/mediaPlaceholders';
+import {
+  responsiveAvifSrcSet,
+  responsiveSrcSet,
+  defaultWebpSrc,
+  galleryWebpSrcSet,
+  defaultGalleryWebpSrc,
+} from '../utils/responsiveImage';
+
+interface Props {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  loading?: 'lazy' | 'eager';
+  fetchPriority?: 'high' | 'low' | 'auto';
+  sizes?: string;
+  class?: string;
+  pictureClass?: string;
+  desktopOnly?: boolean;
+  widths?: readonly number[];
+}
+
+const {
+  src,
+  alt,
+  width,
+  height,
+  loading = 'lazy',
+  fetchPriority,
+  sizes,
+  class: className,
+  pictureClass,
+  widths,
+} = Astro.props;
+
+const displaySrc = resolvePublicImageSrc(src, 'card');
+const modern = displaySrc.startsWith('/images/gallery/') || displaySrc.startsWith('/images/brand/');
+const tieredGallery = (displaySrc.startsWith('/images/game/') || displaySrc.startsWith('/images/placeholders/')) && Boolean(widths?.length);
+const stem = displaySrc.replace(/\.(png|jpe?g|webp|avif)$/i, '');
+const encodedDisplaySrc = encodeURI(displaySrc);
+const encodedStem = encodeURI(stem);
+const encodeSrcSet = (srcset: string) => srcset.split(', ').map((candidate) => {
+  const match = candidate.match(/^(.*)\s+(\d+w)$/);
+  if (!match) return encodeURI(candidate);
+  return `${encodeURI(match[1])} ${match[2]}`;
+}).join(', ');
+const responsive = Boolean(modern && widths?.length);
+const tieredSrcSet = tieredGallery ? encodeSrcSet(galleryWebpSrcSet(displaySrc, widths!)) : undefined;
+const avifSrcset = responsive ? encodeSrcSet(responsiveAvifSrcSet(displaySrc, widths)) : `${encodedStem}.avif`;
+const webpSrcset = responsive ? encodeSrcSet(responsiveSrcSet(displaySrc, widths)) : `${encodedStem}.webp`;
+const fallbackSrc = responsive
+  ? encodeURI(defaultWebpSrc(displaySrc, widths!))
+  : tieredGallery
+    ? encodeURI(defaultGalleryWebpSrc(displaySrc, widths!))
+    : encodedDisplaySrc;
+const imgDecoding = loading === 'eager' && fetchPriority === 'high' ? 'sync' : 'async';
+---
+
+<picture class={pictureClass}>
+{modern && <source srcset={avifSrcset} sizes={sizes} type="image/avif" />}
+{modern && <source srcset={webpSrcset} sizes={sizes} type="image/webp" />}
+<img
+  src={fallbackSrc}
+  srcset={tieredSrcSet}
+  sizes={tieredGallery ? sizes : undefined}
+  alt={alt}
+  width={width}
+  height={height}
+  loading={loading}
+  decoding={imgDecoding}
+  fetchpriority={fetchPriority}
+  class={className}
+/>
+</picture>

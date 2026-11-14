@@ -1,0 +1,40 @@
+---
+import { gameCatalog } from '../../data/gameCatalog';
+import { cloudDmaNote } from '../../data/productManifest';
+
+interface Props {
+  slug: string;
+}
+const { slug: _slug } = Astro.props;
+
+const title = '[[LISTING_INCLUDES_TITLE]]';
+const description = gameCatalog.description;
+const groups = [
+  { title: '[[FEATURE_GROUP_COMBAT_TITLE]]', items: gameCatalog.featureGroups.combatAwareness },
+  { title: '[[FEATURE_GROUP_WORLD_TITLE]]', items: gameCatalog.featureGroups.worldInformation },
+  { title: '[[FEATURE_GROUP_OBJECTIVE_TITLE]]', items: gameCatalog.featureGroups.objectiveInformation },
+  { title: '[[FEATURE_GROUP_ASSISTANCE_TITLE]]', items: gameCatalog.featureGroups.assistanceAndGuidance },
+  { title: '[[FEATURE_GROUP_SERVICE_TITLE]]', items: gameCatalog.featureGroups.serviceOptions },
+];
+---
+<section class="border-t border-border py-14 md:py-16" aria-labelledby="listing-includes-title">
+  <div class="mx-auto max-w-6xl px-5">
+    <p class="text-xs font-semibold uppercase tracking-widest text-primary">Feature list</p>
+    <h2 id="listing-includes-title" class="mt-2 text-2xl font-bold md:text-3xl">What this listing includes</h2>
+    <h3 class="mt-6 text-xl font-semibold">{title}</h3>
+    <p class="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">{description}</p>
+    <p class="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+      [[LISTING_REQUIREMENTS_SUMMARY]] {cloudDmaNote}
+    </p>
+    <div class="mt-6 grid gap-5 sm:grid-cols-2">
+      {groups.map((group) => (
+        <div class="rounded-xl border border-border bg-card p-5">
+          <h4 class="font-semibold">{group.title}</h4>
+          <ul class="mt-3 space-y-2 text-sm text-muted-foreground">
+            {group.items.map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,81 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+type Props = HTMLAttributes<"div"> & {
+  defaultOpen?: boolean;
+  closeOnEscape?: boolean;
+  closeOnOutsideInteract?: boolean;
+  modal?: boolean;
+};
+
+const {
+  defaultOpen = false,
+  closeOnEscape = true,
+  closeOnOutsideInteract = true,
+  modal = true,
+  class: className,
+  ...rest
+} = Astro.props;
+
+const rootClassName = className;
+---
+
+<div
+  data-sw-drawer
+  data-default-open={defaultOpen ? 'true' : undefined}
+  data-close-on-escape={closeOnEscape ? 'true' : 'false'}
+  data-close-on-outside-interact={closeOnOutsideInteract ? 'true' : 'false'}
+  data-modal={modal ? 'true' : 'false'}
+  data-state={defaultOpen ? 'open' : 'closed'}
+  class={rootClassName}
+  {...rest}
+  data-slot="sheet"
+>
+  <slot />
+</div>
+
+<script>
+  // client:idle — DrawerRoot is not on the initial module chain.
+  const READY = 'data-drawer-idle-ready';
+
+  function isMobileDrawerViewport() {
+    return window.matchMedia('(max-width: 1023px)').matches;
+  }
+
+  async function mount() {
+    const { createDrawer } = await import('@starwind-ui/runtime/drawer');
+    document.querySelectorAll<HTMLElement>(`[data-sw-drawer]:not([${READY}])`).forEach((root) => {
+      root.setAttribute(READY, '');
+      requestAnimationFrame(() => {
+        createDrawer(root);
+      });
+    });
+  }
+
+  function schedule() {
+    const run = () => {
+      if (!isMobileDrawerViewport()) return;
+      void mount();
+    };
+    const afterLoad = () => {
+      if (typeof window.requestIdleCallback === 'function') {
+        window.requestIdleCallback(run, { timeout: 5000 });
+      } else {
+        window.setTimeout(run, 50);
+      }
+    };
+    if (document.readyState === 'complete') afterLoad();
+    else window.addEventListener('load', afterLoad, { once: true });
+  }
+
+  function onViewportChange() {
+    if (!isMobileDrawerViewport()) return;
+    void mount();
+  }
+
+  schedule();
+  window.matchMedia('(max-width: 1023px)').addEventListener('change', onViewportChange);
+  document.addEventListener('astro:after-swap', schedule);
+  document.addEventListener('astro:page-load', schedule);
+  document.addEventListener('starwind:init', schedule);
+</script>

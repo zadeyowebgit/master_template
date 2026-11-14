@@ -1,0 +1,210 @@
+---
+import { auditSeo } from '../config/auditSeo';
+import type { SiteFaqItem, FaqTopic } from '../data/faq';
+import { groupFaqsByTopic } from '../data/faq';
+import SectionHeader from './SectionHeader.astro';
+import Icon from './icons/Icon.astro';
+import { DEFAULT_LOCALE, getLocaleFromPathname, useTranslations, withLocalePrefix } from '../i18n';
+import { Button } from '@/components/starwind/button';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/starwind/accordion';
+
+interface Props {
+  items: SiteFaqItem[];
+  eyebrow?: string;
+  title?: string;
+  subtitle?: string;
+  titleId?: string;
+  showFilters?: boolean;
+  filterTopics?: FaqTopic[];
+  centered?: boolean;
+  /** FAQ column alignment (product pages use left) */
+  contentAlign?: 'left' | 'center';
+  id?: string;
+  class?: string;
+  showSectionHeader?: boolean;
+  /** When set, only the first N items show until "See more" is clicked */
+  collapsedCount?: number;
+  /** /faq/ — render topic groups with visible H2 section headings */
+  groupByTopic?: boolean;
+}
+
+const locale = Astro.locals.locale ?? getLocaleFromPathname(Astro.url.pathname) ?? DEFAULT_LOCALE;
+const t = useTranslations(locale);
+
+const {
+  items,
+  eyebrow = t.faq.eyebrow,
+  title = t.faq.title,
+  subtitle = t.faq.subtitle,
+  titleId = 'faq-heading',
+  showFilters = false,
+  filterTopics,
+  centered = false,
+  contentAlign = 'center',
+  id: sectionId,
+  class: className,
+  showSectionHeader = true,
+  collapsedCount = 8,
+  groupByTopic = false,
+} = Astro.props;
+
+const topicLabels = t.faq.filterTopics;
+const filters = filterTopics ?? (['all', 'plans', 'esp', 'safety', 'products', 'setup'] as FaqTopic[]);
+const showSeeMore = collapsedCount > 0 && items.length > collapsedCount;
+const topicGroups = groupByTopic ? groupFaqsByTopic(items) : null;
+
+type FaqRenderRow =
+  | { kind: 'heading'; topic: FaqTopic }
+  | { kind: 'item'; faq: SiteFaqItem; index: number };
+
+const faqRows: FaqRenderRow[] = [];
+if (topicGroups) {
+  let index = 0;
+  for (const group of topicGroups) {
+    faqRows.push({ kind: 'heading', topic: group.topic });
+    for (const faq of group.items) {
+      faqRows.push({ kind: 'item', faq, index });
+      index += 1;
+    }
+  }
+}
+
+function topicSectionHeading(topic: FaqTopic): string {
+  if (topic === 'plans' && Astro.url.pathname === '/faq/') return 'FAQ: Plans & pricing';
+  if (topic === 'plans' && auditSeo(Astro.url.pathname)?.h2) return auditSeo(Astro.url.pathname)!.h2!;
+  if (topic === 'plans') return `${topicLabels.plans} & pricing`;
+  if (topic === 'safety') return `${topicLabels.safety} & anti-cheat`;
+  if (topic === 'setup') return `${topicLabels.setup} & loader`;
+  if (topic === 'esp') return `${topicLabels.esp} & modules`;
+  if (topic === 'products') return `${topicLabels.products} & utilities`;
+  if (topic === 'scripts') return topicLabels.scripts;
+  if (topic === 'blog') return topicLabels.blog;
+  return topicLabels[topic] ?? topic;
+}
+
+function localizeHtml(html: string): string {
+  if (locale === DEFAULT_LOCALE) return html;
+  return html.replace(/href=["'](\/(?:products|blog|faq|support|about|privacy|terms)[^"']*)["']/g, (_m, path) => {
+    return `href="${withLocalePrefix(path, locale)}"`;
+  });
+}
+---
+
+<section
+  id={sectionId}
+  class:list={['py-16 md:py-24', className]}
+  aria-labelledby={showSectionHeader ? titleId : undefined}
+  data-faq-section={showFilters || showSeeMore ? '' : undefined}
+  data-faq-collapsed-count={showSeeMore ? String(collapsedCount) : undefined}
+>
+  <div class="mx-auto max-w-6xl px-5">
+    <div class:list={[contentAlign === 'center' && 'mx-auto max-w-3xl', contentAlign === 'left' && 'product-detail__narrow max-w-3xl']}>
+    {
+      showSectionHeader && (
+        <SectionHeader
+          eyebrow={eyebrow}
+          title={title}
+          desc={subtitle}
+          titleId={titleId}
+          centered={centered}
+        />
+      )
+    }
+
+    {
+      showFilters && (
+        <div
+          class:list={[
+            showSectionHeader ? 'mt-8' : 'mt-0',
+            'flex flex-wrap gap-2',
+            contentAlign === 'center' ? 'justify-center' : 'justify-start',
+          ]}
+          data-faq-filters
+        >
+          {filters.map((topic, i) => (
+            <button
+              type="button"
+              class:list={[
+                'faq-filter-chip rounded-full border border-border px-3 py-1.5 text-xs font-medium text-muted-foreground transition-none hover:border-primary hover:text-foreground',
+                { 'is-active': i === 0 },
+              ]}
+              data-faq-filter={topic}
+            >
+              {topicLabels[topic]}
+            </button>
+          ))}
+        </div>
+      )
+    }
+
+    <Accordion type="single" collapsible class="mt-8 w-full" data-faq-list>
+      {
+        topicGroups
+          ? faqRows.map((row) =>
+              row.kind === 'heading' ? (
+                <h2 class="faq-topic-heading mt-10 scroll-mt-24 text-xl font-semibold first:mt-0 md:text-2xl">
+                  {topicSectionHeading(row.topic)}
+                </h2>
+              ) : (
+                <AccordionItem
+                  value={`faq-${row.index}`}
+                  data-faq-topic={row.faq.topic}
+                  data-faq-collapsed={showSeeMore && row.index >= collapsedCount ? '' : undefined}
+                >
+                  <AccordionTrigger hideChevron class="text-left">
+                    {row.faq.q}
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div
+                      class="prose prose-sm dark:prose-invert max-w-none text-muted-foreground"
+                      set:html={localizeHtml(row.faq.aHtml ?? row.faq.a)}
+                    />
+                  </AccordionContent>
+                </AccordionItem>
+              ),
+            )
+          : items.map((faq, i) => (
+              <AccordionItem
+                value={`faq-${i}`}
+                data-faq-topic={faq.topic}
+                data-faq-collapsed={showSeeMore && i >= collapsedCount ? '' : undefined}
+              >
+                <AccordionTrigger hideChevron class="text-left">
+                  {faq.q}
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div
+                    class="prose prose-sm dark:prose-invert max-w-none text-muted-foreground"
+                    set:html={localizeHtml(faq.aHtml ?? faq.a)}
+                  />
+                </AccordionContent>
+              </AccordionItem>
+            ))
+      }
+    </Accordion>
+
+    {
+      showSeeMore && (
+        <div class="mt-10 flex justify-center" data-faq-see-more-wrap>
+          <Button
+            type="button"
+            variant="outline"
+            class="faq-see-more-btn gap-2 rounded-xl px-6"
+            data-faq-see-more
+            data-label-more={t.faq.seeMore}
+            data-label-less={t.faq.seeLess}
+          >
+            <span data-faq-see-more-label>{t.faq.seeMore}</span>
+            <Icon name="arrowRight" size={17} />
+          </Button>
+        </div>
+      )
+    }
+    </div>
+  </div>
+</section>

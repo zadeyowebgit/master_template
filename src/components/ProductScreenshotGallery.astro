@@ -1,0 +1,202 @@
+---
+import type { ProductSlide } from '../data/products';
+import ResponsiveImage from './ResponsiveImage.astro';
+
+interface Props {
+  images: ProductSlide[];
+  id?: string;
+}
+
+const { images, id = 'product-screenshots' } = Astro.props;
+const hasThumbs = images.length > 1;
+const first = images[0];
+const mainSizes = '(min-width: 1024px) 640px, 100vw';
+---
+
+<div
+  class:list={['product-gallery', !hasThumbs && 'product-gallery--single']}
+  id={id}
+  data-product-gallery
+  data-gallery-autoplay={hasThumbs ? 'true' : undefined}
+  data-gallery-delay="4500"
+>
+  <div class="product-gallery__stage relative min-w-0 overflow-hidden rounded-xl border border-border bg-muted/30">
+    <div class="product-gallery__main cursor-zoom-in overflow-hidden bg-muted/40">
+      {
+        first ? (
+          <ResponsiveImage
+            src={first.src}
+            alt={first.alt}
+            width={960}
+            height={540}
+            loading="eager"
+            fetchPriority="high"
+            sizes={mainSizes}
+            pictureClass="absolute inset-0 block h-full w-full"
+            class="product-gallery__image h-full w-full object-cover"
+          />
+        ) : <p>No verified product screenshot is available for this utility. Confirm its current scope with the seller.</p>
+      }
+    </div>
+  </div>
+
+  {
+    hasThumbs && (
+      <div class="product-gallery__thumbs" role="tablist" aria-label="Product images">
+        {images.map((img, i) => (
+          <button
+            type="button"
+            class:list={['product-gallery__thumb', i === 0 && 'is-active']}
+            role="tab"
+            aria-selected={i === 0 ? 'true' : 'false'}
+            tabindex={i === 0 ? 0 : -1}
+            aria-label={`Image ${i + 1}`}
+            data-product-gallery-thumb
+            data-index={i}
+            data-src={img.src}
+            data-sizes={mainSizes}
+            data-alt={img.alt}
+          >
+            <ResponsiveImage
+              src={img.src}
+              alt={img.alt}
+              width={320}
+              height={180}
+              loading="lazy"
+              sizes="148px"
+              pictureClass="block h-full w-full"
+              class="size-full object-cover"
+            />
+          </button>
+        ))}
+      </div>
+    )
+  }
+</div>
+
+<style>
+  .product-gallery { display:grid; grid-template-columns:minmax(0, 1fr); gap:.75rem; min-width:0; align-self:start; }
+  .product-gallery__main { position:relative; width:100%; aspect-ratio:16/9; }
+  .product-gallery__thumbs { display:flex; gap:.5rem; min-width:0; overflow-x:auto; padding:2px; scroll-snap-type:x proximity; }
+  .product-gallery__thumb { flex:0 0 7rem; height:4rem; overflow:hidden; border:1px solid var(--border); border-radius:.5rem; opacity:.65; scroll-snap-align:start; cursor:pointer; }
+  .product-gallery__thumb.is-active { opacity:1; border-color:var(--primary); }
+</style>
+
+<script>
+  const AUTOPLAY_MS_DEFAULT = 4500;
+
+  function showGallerySlide(
+    root: HTMLElement,
+    main: HTMLImageElement,
+    thumbs: HTMLButtonElement[],
+    index: number,
+  ) {
+    const thumb = thumbs[index];
+    if (!thumb) return;
+
+    const src = thumb.getAttribute('data-src');
+    const sizes = thumb.getAttribute('data-sizes');
+    const alt = thumb.getAttribute('data-alt');
+
+    const picture = main.closest('picture');
+    const sources = picture?.querySelectorAll('source');
+    if (src && sources) {
+      const stem = src.replace(/\.(png|jpe?g|webp|avif)$/i, '');
+      sources.forEach((source) => source.setAttribute('srcset', `${stem}.${source.type === 'image/avif' ? 'avif' : 'webp'}`));
+    }
+    if (sizes) {
+      main.sizes = sizes;
+    }
+    if (src) main.src = src;
+    if (alt) main.alt = alt;
+
+    thumbs.forEach((t, i) => {
+      const active = i === index;
+      t.classList.toggle('is-active', active);
+      t.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+
+    root.dataset.activeIndex = String(index);
+  }
+
+  const initProductGalleries = () => {
+    document.querySelectorAll<HTMLElement>('[data-product-gallery]').forEach((root) => {
+      if (root.dataset.galleryBound === 'true') return;
+      root.dataset.galleryBound = 'true';
+
+      const main = root.querySelector<HTMLImageElement>('.product-gallery__image');
+      const thumbs = Array.from(
+        root.querySelectorAll<HTMLButtonElement>('[data-product-gallery-thumb]'),
+      );
+      if (!main || !thumbs.length) return;
+
+      let activeIndex = 0;
+      root.dataset.activeIndex = '0';
+
+      const goTo = (index: number) => {
+        activeIndex = ((index % thumbs.length) + thumbs.length) % thumbs.length;
+        showGallerySlide(root, main, thumbs, activeIndex);
+        thumbs.forEach((thumb, index) => { thumb.tabIndex = index === activeIndex ? 0 : -1; });
+      };
+
+      thumbs.forEach((thumb, i) => {
+        thumb.addEventListener('click', () => {
+          goTo(i);
+          restartAutoplay();
+        });
+      });
+
+      let timer: number | null = null;
+      const delay = Number(root.dataset.galleryDelay) || AUTOPLAY_MS_DEFAULT;
+      const wantsAutoplay = root.dataset.galleryAutoplay === 'true' && thumbs.length > 1;
+
+      const stopAutoplay = () => {
+        if (timer != null) {
+          window.clearInterval(timer);
+          timer = null;
+        }
+      };
+
+      const startAutoplay = () => {
+        if (!wantsAutoplay) return;
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        stopAutoplay();
+        timer = window.setInterval(() => {
+          if (document.hidden) return;
+          goTo(activeIndex + 1);
+        }, delay);
+      };
+
+      const restartAutoplay = () => {
+        stopAutoplay();
+        startAutoplay();
+      };
+
+      root.addEventListener('mouseenter', stopAutoplay);
+      root.addEventListener('mouseleave', startAutoplay);
+      root.addEventListener('focusin', stopAutoplay);
+      root.addEventListener('focusout', (event) => {
+        if (!root.contains(event.relatedTarget as Node | null)) startAutoplay();
+      });
+      root.addEventListener('keydown', (event) => {
+        if (!(event.target instanceof HTMLButtonElement) || !event.target.hasAttribute('data-product-gallery-thumb')) return;
+        const next = event.key === 'ArrowRight' ? activeIndex + 1 : event.key === 'ArrowLeft' ? activeIndex - 1 : event.key === 'Home' ? 0 : event.key === 'End' ? thumbs.length - 1 : null;
+        if (next === null) return;
+        event.preventDefault();
+        stopAutoplay();
+        goTo(next);
+        thumbs[activeIndex].focus();
+      });
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) stopAutoplay();
+        else startAutoplay();
+      });
+
+      startAutoplay();
+    });
+  };
+
+  initProductGalleries();
+  document.addEventListener('astro:page-load', initProductGalleries);
+  document.addEventListener('astro:after-swap', initProductGalleries);
+</script>

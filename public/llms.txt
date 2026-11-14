@@ -1,0 +1,17 @@
+# [[SITE_BRAND]]
+
+> Game-neutral catalog template. Canonical host: https://your-domain.example
+> Product access is handled through the owner-supplied external checkout. This site does not publish unverified prices.
+
+The only indexable origin is https://your-domain.example. Preview hosts (including *.pages.dev) and www are not canonical.
+
+## Products
+
+- [Products hub](https://your-domain.example/products/cheats/): overview of verified listings
+- [Featured package](https://your-domain.example/products/cheats/featured-package/): seller-listed features and requirements (replace slugs during migration)
+
+## Optional
+
+- [Purchase FAQ](https://your-domain.example/faq/)
+- [Guides](https://your-domain.example/blog/)
+- [About](https://your-domain.example/about/)

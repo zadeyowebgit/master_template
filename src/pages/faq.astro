@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getLocalizedLandingFaqs, groupFaqsByTopic, type FaqTopic, type SiteFaqItem } from '../data/faq';
+import { useTranslations } from '../i18n';
+import { resolvePageSeo } from '../config/seo';
+import { breadcrumbSchema, webPageSchema } from '../utils/schema';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SiteFaqSection from '../components/SiteFaqSection.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+
+const t = useTranslations('en');
+const seo = resolvePageSeo('/faq/');
+const breadcrumbs = [
+ { name: t.ui.home, path: '/' },
+ { name: t.nav.find((n) => n.href.includes('/faq'))?.label ?? 'FAQ', path: '/faq/' },
+];
+
+const faqs = getLocalizedLandingFaqs('en');
+
+---
+
+<BaseLayout
+ title={seo.title}
+ description={seo.description}
+ logoAlt="[[FAQ_LOGO_ALT]]"
+ jsonLd={[
+ webPageSchema({
+ name: '[[FAQ_PAGE_SCHEMA_NAME]]',
+ description: '[[FAQ_PAGE_SCHEMA_DESCRIPTION]]',
+ url: '/faq/',
+ }),
+    breadcrumbSchema(breadcrumbs),
+ ]}
+>
+ <section class="border-b border-border bg-muted/10 py-8 md:py-12">
+ <div class="mx-auto max-w-6xl px-5">
+ <Breadcrumbs items={breadcrumbs} />
+ <div class="mt-6">
+ <SectionHeader
+ eyebrow={t.faq.pageEyebrow}
+ title={t.faq.title}
+ desc={t.faq.pageHeroDesc}
+ titleId="faq-page-title"
+ level={1}
+ />
+ </div>
+ </div>
+ </section>
+
+ <SiteFaqSection
+ items={faqs}
+ variant="full"
+ titleId="faq-page-list"
+ showSectionHeader={false}
+ groupByTopic={false}
+ collapsedCount={8}
+ />
+</BaseLayout>

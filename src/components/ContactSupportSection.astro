@@ -1,0 +1,116 @@
+---
+import { translateText } from '../i18n/content';
+import '../styles/support-section.css';
+import {
+  DEFAULT_LOCALE,
+  getLocaleFromPathname,
+  localizeHref,
+  useTranslations,
+} from '../i18n';
+import { auditSeo } from '../config/auditSeo';
+import Icon from './icons/Icon.astro';
+import type { IconName } from './icons/types';
+import { Button } from '@/components/starwind/button';
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/starwind/card';
+
+interface Props {
+  titleId?: string;
+  showTicketTips?: boolean;
+  class?: string;
+}
+
+const { titleId = 'support-title', showTicketTips = false, class: className } = Astro.props;
+const locale = Astro.locals.locale ?? getLocaleFromPathname(Astro.url.pathname) ?? DEFAULT_LOCALE;
+const t = useTranslations(locale);
+const c = {
+  ...t.support,
+  channels: t.support.channels.map((channel) => ({
+    ...channel,
+    href:
+      channel.href.startsWith('/') && !channel.href.startsWith('/go/')
+        ? localizeHref(channel.href, locale)
+        : channel.href,
+  })),
+};
+const additionalTips = [
+  { title: 'Before you order', desc: 'Confirm the exact product, access duration, supported Windows edition and separate prerequisites with the seller. Save any written clarification with your order.' },
+  { title: 'Delivery and activation', desc: 'Check your checkout email and spam folder first. If delivery or activation is unclear, provide the order reference and the exact step where you need help. Never send a password or license key in a public message.' },
+  { title: 'Following up', desc: 'Keep replies in the same support conversation. Describe what you tried and what changed, including the full error wording. Hide personal and payment information in attached screenshots.' },
+].map(item => ({ title: translateText(item.title, locale), desc: translateText(item.desc, locale) }));
+---
+
+<section
+  id="support"
+  class:list={['support-section border-y border-border bg-muted/20 py-16 md:py-24', className]}
+  aria-labelledby={titleId}
+>
+  <div class="support-section__inner mx-auto max-w-6xl px-5">
+    <header class="section-header section-header--wide support-section__header">
+      <p class="section-header__eyebrow">{c.eyebrow}</p>
+      <h1 id={titleId} class="section-header__title">{c.title}</h1>
+      <p class="section-header__subtitle">{auditSeo(Astro.url.pathname)?.intro ?? c.subtitle}</p>
+      {
+        showTicketTips && c.pageIntro ? (
+          <p class="section-header__subtitle mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
+            {c.pageIntro}
+          </p>
+        ) : null
+      }
+    </header>
+
+    <ul class="support-section__cards">
+      {
+        c.channels.map((channel) => (
+          <li>
+            <Card class="support-section__card group flex h-full flex-col">
+              <CardHeader class="space-y-3 pb-2">
+                <div class="support-section__icon-wrap">
+                  <Icon name={channel.icon as IconName} size={22} class="support-section__icon" />
+                </div>
+                <CardTitle class="text-base font-semibold normal-case leading-snug">{channel.title}</CardTitle>
+              </CardHeader>
+              <CardContent class="flex-1 pt-0">
+                <p class="text-sm leading-relaxed text-muted-foreground">{channel.desc}</p>
+              </CardContent>
+              <CardFooter class="support-section__footer border-t-0 pt-0">
+                <Button
+                  as="a"
+                  href={channel.href}
+                  variant="outline"
+                  size="sm"
+                  class="support-section__cta w-full"
+                >
+                  {channel.linkLabel}
+                  <Icon name="arrowRight" size={17} />
+                </Button>
+              </CardFooter>
+            </Card>
+          </li>
+        ))
+      }
+    </ul>
+
+    {
+      showTicketTips && (
+        <div class="support-section__tips">
+          <h2 class="support-section__tips-title">{auditSeo(Astro.url.pathname)?.h2 ?? c.ticketTitle}</h2>
+          <ul class="support-section__tips-list">
+            {[...c.ticketItems, ...additionalTips].map((item) => (
+              <li class="support-section__tips-item">
+                <p class="support-section__tips-item-title">{item.title}</p>
+                <p class="support-section__tips-item-desc">{item.desc}</p>
+              </li>
+            ))}
+          </ul>
+          {Astro.url.pathname === '/de/support/' && <p class="mt-4 text-sm leading-relaxed text-muted-foreground">Beschreiben Sie zunächst, ob es um eine Bestellung, die Einrichtung oder eine Fehlermeldung geht. Nennen Sie das verwendete Betriebssystem und den betroffenen Produktnamen. Kopieren Sie den genauen Wortlaut einer Meldung und erläutern Sie, bei welchem Schritt sie erscheint. Wenn Sie bereits eine Anleitung befolgt haben, nennen Sie den Abschnitt und beschreiben Sie das Ergebnis. Fügen Sie bei Bedarf einen Screenshot bei und verdecken Sie persönliche Daten. Senden Sie keine Passwörter oder vollständigen Zahlungsdaten. Diese Angaben helfen dabei, Rückfragen zu vermeiden und die Anfrage dem richtigen Vorgang zuzuordnen. Prüfen Sie vor dem Absenden, ob Ihre Beschreibung alle Schritte enthält, mit denen sich das Problem nachvollziehen lässt. Bei Bestellfragen verwenden Sie die vorhandene Bestellreferenz. Bei Fragen zur Einrichtung beschreiben Sie die bereits geprüften Voraussetzungen. Geben Sie auch an, ob das Verhalten nach einem Neustart unverändert bleibt und welche Änderungen Sie zuletzt vorgenommen haben. Bleiben Sie für weitere Rückfragen im selben Gespräch, damit der Zusammenhang erhalten bleibt und bisherige Angaben nicht erneut erfasst werden müssen.</p>}
+        </div>
+      )
+    }
+  </div>
+</section>

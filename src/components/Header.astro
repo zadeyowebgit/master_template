@@ -1,0 +1,146 @@
+---
+import {
+ DEFAULT_LOCALE,
+ getLocaleFromPathname,
+ stripLocalePrefix,
+ useTranslations,
+ withLocalePrefix,
+} from '../i18n';
+import { Button } from '@/components/starwind/button';
+import { ROUTES } from '../utils/path';
+import AnimatedThemeSwitch from './AnimatedThemeSwitch.astro';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import BrandLogo from './BrandLogo.astro';
+import {
+ Sheet,
+ SheetContent,
+ SheetHeader,
+ SheetTitle,
+ SheetTrigger,
+} from '@/components/starwind/sheet';
+import Icon from './icons/Icon.astro';
+import SlideRevealButton from './SlideRevealButton.astro';
+
+import type { IconName } from './icons/types';
+import type { NavLink } from '../i18n/types';
+import { reviewsCopy } from '../i18n/reviews';
+
+const locale = Astro.locals.locale ?? getLocaleFromPathname(Astro.url.pathname) ?? DEFAULT_LOCALE;
+const t = useTranslations(locale);
+const displaySiteName = t.site.name;
+const homeHref = withLocalePrefix('/', locale);
+const navLinks: NavLink[] = t.nav.flatMap((link) => stripLocalePrefix(link.href) === '/forum/'
+ ? [link, { href: withLocalePrefix('/reviews/', locale), label: reviewsCopy(locale).title }]
+ : [link]);
+
+const mobileNavLabels: Record<string, string> = {
+ [ROUTES.products]: '[[NAV_MOBILE_PRODUCTS_LABEL]]',
+ '/blog/': 'Guides & articles',
+ '/forum/': 'Community discussions',
+ '/faq/': 'Pre-purchase answers',
+ '/support/': 'Help center',
+ '/reviews/': 'Customer feedback',
+};
+
+const navIconsByPath: Record<string, IconName> = {
+ [ROUTES.products]: 'navProducts',
+ '/blog/': 'navBlog',
+ '/forum/': 'messageCircle',
+ '/faq/': 'navFaq',
+ '/support/': 'navSupport',
+ '/reviews/': 'messageCircle',
+};
+
+const productsHref = withLocalePrefix(ROUTES.products, locale);
+---
+
+<header class="pointer-events-none fixed inset-x-0 top-0 z-[100] isolate">
+ {/* Opaque top scrim — stops page text from peeking through the gap above the floating pill */}
+ <div
+ class="pointer-events-none absolute inset-x-0 top-0 h-[4.75rem] bg-gradient-to-b from-background from-40% via-background/85 to-transparent dark:from-[#100d18] dark:via-[#100d18]/90"
+ aria-hidden="true"
+ />
+ <div class="relative flex justify-center px-3 pt-3 sm:px-4 sm:pt-4" data-floating-nav>
+ <div
+ class="pointer-events-auto relative z-[100] grid h-14 w-full max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 overflow-visible rounded-2xl border border-border/40 bg-background/35 pl-4 pr-3 text-foreground shadow-md shadow-black/5 backdrop-blur-2xl supports-[backdrop-filter]:bg-background/25 dark:border-white/10 dark:bg-background/20 dark:shadow-black/25 sm:pl-5 sm:pr-3.5 lg:h-[3.75rem] lg:grid-cols-[1fr_auto_1fr]"
+ >
+ <BrandLogo
+ href={homeHref}
+ class="col-start-1 row-start-1 justify-self-start"
+      label={locale === 'en' ? `${displaySiteName} home` : t.ui.homeAria}
+ />
+
+ <nav
+ class="col-start-2 row-start-1 hidden items-center justify-center gap-3 lg:flex xl:gap-4"
+ aria-label={t.ui.primaryNavAria}
+ >
+ {navLinks.map((link) => (
+ <a
+ href={link.href}
+ class="nav-link inline-flex items-center gap-1.5 whitespace-nowrap text-sm font-medium text-muted-foreground transition-none hover:text-primary"
+ data-nav-link
+ {...(link.scrollTarget ? { 'data-scroll-target': link.scrollTarget } : {})}
+ >
+ <Icon name={navIconsByPath[stripLocalePrefix(link.href)] ?? 'navFeatures'} size={16} />
+ {link.label}
+ </a>
+ ))}
+ </nav>
+
+ <div
+ class="col-start-2 row-start-1 flex shrink-0 items-center justify-self-end gap-2 sm:gap-2.5 lg:col-start-3"
+ data-header-actions
+ >
+ <div class="flex shrink-0 items-center gap-1" data-header-purchase-group>
+ <LanguageSwitcher idSuffix="desktop" />
+ <SlideRevealButton href={productsHref} class="hidden lg:inline-flex" ariaLabel={t.ui.browseCheats}>
+ {t.ui.browseCheats}
+ </SlideRevealButton>
+ </div>
+ <AnimatedThemeSwitch
+ size="sm"
+ ariaLabel={t.ui.themeLight}
+ class="hidden sm:inline-flex"
+ />
+
+ <Sheet class="lg:hidden">
+ <SheetTrigger
+ class="inline-flex size-9 items-center justify-center rounded-lg border border-border/80 bg-background/50 text-foreground transition-none hover:bg-muted lg:hidden"
+ aria-label={t.ui.menuOpen}
+ >
+ <Icon name="menu" size={20} />
+ </SheetTrigger>
+ <SheetContent side="right" class="flex w-[min(100vw-2rem,20rem)] flex-col gap-4">
+ <SheetHeader>
+        <SheetTitle>{displaySiteName}</SheetTitle>
+ </SheetHeader>
+ <LanguageSwitcher idSuffix="mobile" />
+ <nav class="flex flex-col gap-1" aria-label="Mobile">
+ {navLinks.map((link) => {
+ const path = stripLocalePrefix(link.href);
+ const mobileLabel = mobileNavLabels[path] ?? link.label;
+ return (
+ <a
+ href={link.href}
+ class="nav-link flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-none hover:bg-muted hover:text-primary"
+ data-nav-link
+ {...(link.scrollTarget ? { 'data-scroll-target': link.scrollTarget } : {})}
+ >
+ <Icon name={navIconsByPath[path] ?? 'navFeatures'} size={16} />
+ {mobileLabel}
+ </a>
+ );
+ })}
+ </nav>
+ <Button as="a" href={productsHref} variant="primary" class="w-full justify-center" aria-label={t.ui.browseCheats}>
+ {t.ui.browseCheatsMobile}
+ </Button>
+ <div class="flex justify-center pt-1">
+ <AnimatedThemeSwitch size="sm" ariaLabel={t.ui.themeLight} />
+ </div>
+ </SheetContent>
+ </Sheet>
+ </div>
+ </div>
+ </div>
+</header>

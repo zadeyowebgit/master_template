@@ -1,0 +1,193 @@
+---
+import { webPageSchema } from '../utils/schema';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { DEFAULT_LOCALE, getLocaleFromPathname } from '../i18n';
+import { reviewsCopy } from '../i18n/reviews';
+import { customerReviews } from '../data/reviews';
+import { SITE_BRAND } from '../config/site';
+import '../styles/reviews.css';
+
+const locale = Astro.locals.locale ?? getLocaleFromPathname(Astro.url.pathname) ?? DEFAULT_LOCALE;
+const c = reviewsCopy(locale);
+const reviewsH1 = c.title;
+const reviews = customerReviews;
+const total = reviews.length;
+const average = (reviews.reduce((sum, review) => sum + review.rating, 0) / total).toFixed(1);
+const ratings = [5, 4, 3, 2, 1].map((rating) => ({ rating, count: reviews.filter((r) => r.rating === rating).length }));
+const perPage = 12;
+---
+
+<BaseLayout title={`${c.title} | ${SITE_BRAND}`} description={c.subtitle} noindex={locale !== "en"} jsonLd={locale === "en" ? webPageSchema({ name: "Reviews", description: c.subtitle, url: "/reviews/" }) : undefined}>
+ <section
+ class="reviews-page mx-auto max-w-6xl px-5 py-12 md:py-16"
+ data-reviews
+ data-reviews-per-page={perPage}
+ data-reviews-page-template={c.pageLabel}
+ data-reviews-prev={c.prev}
+ data-reviews-next={c.next}
+ >
+ <header class="reviews-heading">
+ <p class="text-xs font-semibold uppercase tracking-widest text-primary">{SITE_BRAND} / {c.title}</p>
+ <h1 class="mt-3 text-4xl font-bold tracking-tight md:text-5xl">{reviewsH1}</h1>
+ {locale === 'en' && <p class="mt-3 text-muted-foreground">[[REVIEWS_FILTER_HINT]]</p>}
+ <p class="mt-4 text-muted-foreground">{c.subtitle}</p>
+ </header>
+
+ <div class="reviews-layout mt-10">
+ <aside class="reviews-summary rounded-2xl border border-border bg-card p-6" aria-label={c.rating}>
+ {locale === 'en' ? <h2 class="text-xs font-medium uppercase tracking-wider text-muted-foreground">Reviews by rating</h2> : <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">{c.rating}</p>}
+ <p class="mt-3 flex items-baseline gap-2"><span class="text-5xl font-bold tracking-tight">{average}</span><span class="text-sm text-muted-foreground">/ 5</span></p>
+ <p class="mt-2 text-lg tracking-widest text-primary" aria-hidden="true">★★★★★</p>
+ <p class="mt-2 text-sm text-muted-foreground">{total} {c.count}</p>
+ <div class="mt-6 space-y-3">
+ {ratings.map(({ rating, count }) => (
+ <div class="reviews-distribution text-sm">
+ <span>{rating} <span class="text-primary" aria-hidden="true">★</span></span>
+ <div class="h-1.5 overflow-hidden rounded-full bg-muted"><div class="h-full rounded-full bg-primary" style={`width: ${count / total * 100}%`} /></div>
+ <span class="text-right text-muted-foreground">{count}</span>
+ </div>
+ ))}
+ </div>
+ </aside>
+
+ <div class="min-w-0">
+ <div class="reviews-filters mb-6 flex flex-wrap gap-2" role="group" aria-label={c.filter}>
+ <button type="button" class="is-active" data-rating="all" aria-pressed="true">{c.all} <span>{total}</span></button>
+ {ratings.map(({ rating, count }) => <button type="button" data-rating={rating} data-empty-message={c.emptyRating.replace('{rating}', String(rating))} aria-pressed="false">{rating} ★ <span>{count}</span></button>)}
+ </div>
+ <p class="mb-4 text-sm text-muted-foreground" aria-live="polite" aria-atomic="true" data-review-count>{total} {c.count}</p>
+ <div class="reviews-grid">
+ {reviews.map((review) => (
+ <article class="review-card rounded-2xl border border-border bg-card p-5 sm:p-6" data-review-rating={review.rating}>
+ <div class="flex items-center justify-between gap-3">
+ <span class="text-sm tracking-widest text-primary" aria-label={`${review.rating} / 5`}>{'★'.repeat(review.rating)}<span class="text-muted-foreground/35">{'★'.repeat(5 - review.rating)}</span></span>
+ <span class="review-avatar" aria-hidden="true" translate="no">{review.username.slice(1, 3).toUpperCase()}</span>
+ </div>
+ <div class="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">
+ <span class="text-sm font-semibold" translate="no" data-review-username>{review.username}</span>
+ </div>
+ <p class="mt-2 text-sm leading-relaxed text-muted-foreground" translate="no">{review.body}</p>
+ </article>
+ ))}
+ </div>
+ <nav class="reviews-pagination mt-8" data-reviews-pagination aria-label={c.pageLabel.replace('{page}', '1').replace('{total}', '1')} hidden>
+ <button type="button" class="reviews-page-btn" data-reviews-prev disabled>{c.prev}</button>
+ <p class="reviews-page-status text-sm text-muted-foreground" data-reviews-page-status></p>
+ <button type="button" class="reviews-page-btn" data-reviews-next>{c.next}</button>
+ </nav>
+ <p class="rounded-2xl border border-dashed border-border p-8 text-center text-muted-foreground" data-reviews-empty hidden>{c.empty}</p>
+ </div>
+ </div>
+ </section>
+</BaseLayout>
+
+<script>
+ const PER_PAGE_DEFAULT = 12;
+
+ function initReviews() {
+ document.querySelectorAll<HTMLElement>('[data-reviews]').forEach((root) => {
+ if (root.dataset.bound) return;
+ root.dataset.bound = 'true';
+
+ const perPage = Number(root.dataset.reviewsPerPage) || PER_PAGE_DEFAULT;
+ const pageTemplate = root.dataset.reviewsPageTemplate ?? 'Page {page} of {total}';
+ const prevLabel = root.dataset.reviewsPrev ?? 'Previous';
+ const nextLabel = root.dataset.reviewsNext ?? 'Next';
+
+ const buttons = [...root.querySelectorAll<HTMLButtonElement>('[data-rating]')];
+ const cards = [...root.querySelectorAll<HTMLElement>('[data-review-rating]')];
+ const count = root.querySelector<HTMLElement>('[data-review-count]');
+ const empty = root.querySelector<HTMLElement>('[data-reviews-empty]');
+ const pagination = root.querySelector<HTMLElement>('[data-reviews-pagination]');
+ const prevBtn = root.querySelector<HTMLButtonElement>('[data-reviews-prev]');
+ const nextBtn = root.querySelector<HTMLButtonElement>('[data-reviews-next]');
+ const pageStatus = root.querySelector<HTMLElement>('[data-reviews-page-status]');
+
+ const countLabel = count?.textContent?.trim().replace(/^\d+\s*/, '') ?? '';
+ let selected = 'all';
+ let currentPage = 1;
+
+ const formatPage = (page: number, totalPages: number) =>
+ pageTemplate.replace('{page}', String(page)).replace('{total}', String(totalPages));
+
+ const matchingCards = () =>
+ cards.filter((card) => selected === 'all' || card.dataset.reviewRating === selected);
+
+ const applyView = () => {
+ const matched = matchingCards();
+ const totalMatched = matched.length;
+ const totalPages = Math.max(1, Math.ceil(totalMatched / perPage));
+ if (currentPage > totalPages) currentPage = totalPages;
+ if (currentPage < 1) currentPage = 1;
+
+ const start = (currentPage - 1) * perPage;
+ const end = start + perPage;
+
+ cards.forEach((card) => {
+ card.hidden = true;
+ });
+
+ matched.forEach((card, index) => {
+ card.hidden = index < start || index >= end;
+ });
+
+ buttons.forEach((button) => {
+ button.classList.toggle('is-active', button.dataset.rating === selected);
+ button.setAttribute('aria-pressed', String(button.dataset.rating === selected));
+ });
+
+ if (empty) {
+ empty.hidden = totalMatched > 0;
+ if (!totalMatched) {
+ const active = buttons.find((b) => b.dataset.rating === selected);
+ if (active?.dataset.emptyMessage) empty.textContent = active.dataset.emptyMessage;
+ }
+ }
+
+ if (count) count.textContent = `${totalMatched} ${countLabel}`;
+
+ if (pagination && prevBtn && nextBtn && pageStatus) {
+ const showPagination = totalMatched > perPage;
+ pagination.hidden = !showPagination;
+ prevBtn.textContent = prevLabel;
+ nextBtn.textContent = nextLabel;
+ prevBtn.disabled = currentPage <= 1;
+ nextBtn.disabled = currentPage >= totalPages;
+ pageStatus.textContent = formatPage(currentPage, totalPages);
+ pagination.setAttribute('aria-label', formatPage(currentPage, totalPages));
+ }
+ };
+
+ buttons.forEach((button) =>
+ button.addEventListener('click', () => {
+ selected = button.dataset.rating ?? 'all';
+ currentPage = 1;
+ applyView();
+ }),
+ );
+
+ prevBtn?.addEventListener('click', () => {
+ if (currentPage > 1) {
+ currentPage -= 1;
+ applyView();
+ root.querySelector<HTMLElement>('.reviews-grid')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+ }
+ });
+
+ nextBtn?.addEventListener('click', () => {
+ const totalPages = Math.max(1, Math.ceil(matchingCards().length / perPage));
+ if (currentPage < totalPages) {
+ currentPage += 1;
+ applyView();
+ root.querySelector<HTMLElement>('.reviews-grid')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+ }
+ });
+
+ applyView();
+ });
+ }
+
+ initReviews();
+ document.addEventListener('astro:page-load', initReviews);
+ document.addEventListener('astro:after-swap', initReviews);
+</script>

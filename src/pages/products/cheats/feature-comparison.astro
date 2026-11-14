@@ -1,0 +1,106 @@
+---
+import '../../../styles/product-cheat-page.css';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { productHub, productPages } from '../../../data/products';
+import { game } from '../../../game';
+import { resolvePageSeo } from '../../../config/seo';
+import { ensureEnH1 } from '../../../config/target-keyword';
+import { breadcrumbSchema, itemListSchema, webPageSchema } from '../../../utils/schema';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { productPath } from '../../../utils/path';
+import { Button } from '@/components/starwind/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/starwind/card';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/starwind/table';
+
+const utilities = productPages;
+const comparePath = `${productHub.path}feature-comparison/`;
+const seo = resolvePageSeo(comparePath);
+const breadcrumbs = [
+  { name: '[[BREADCRUMB_HOME]]', path: '/' },
+  { name: '[[BREADCRUMB_PRODUCTS]]', path: productHub.path },
+  { name: '[[BREADCRUMB_COMPARE]]', path: comparePath },
+];
+
+const utilityUseCases: Record<string, string> = {
+  [game.site.defaultProductSlug]: '[[FEATURE_COMPARE_USE_CASE]]',
+};
+const pageH1 = ensureEnH1('[[FEATURE_COMPARE_H1]]');
+---
+
+<BaseLayout
+  title={seo.title}
+  description={seo.description}
+  noindex={true}
+  jsonLd={[
+    webPageSchema({
+      name: pageH1,
+      description: seo.description,
+      url: comparePath,
+    }),
+    breadcrumbSchema(breadcrumbs),
+    itemListSchema(
+      utilities.map((item) => ({
+        name: item.title,
+        url: productPath(item.slug),
+      })),
+    ),
+  ]}
+>
+  <section class="py-8 md:py-12">
+    <div class="mx-auto max-w-6xl px-5">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <header class="mx-auto mt-8 max-w-3xl text-center">
+        <h1 class="text-3xl font-bold md:text-4xl">{pageH1}</h1>
+        <p class="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+          [[FEATURE_COMPARE_INTRO]]
+        </p>
+      </header>
+
+      <div class="mt-12 overflow-x-auto rounded-xl border border-border">
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead>[[TABLE_HEAD_PRODUCT]]</TableHead>
+              <TableHead>[[TABLE_HEAD_USE_CASE]]</TableHead>
+              <TableHead>[[TABLE_HEAD_ACTION]]</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {utilities.map((item) => (
+              <TableRow>
+                <TableCell class="font-medium">{item.title}</TableCell>
+                <TableCell>{utilityUseCases[item.slug] ?? '[[TABLE_USE_CASE_DEFAULT]]'}</TableCell>
+                <TableCell>
+                  <Button as="a" href={productPath(item.slug)} variant="outline" size="sm">
+                    [[CTA_VIEW_DETAILS]]
+                  </Button>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-2">
+        {utilities.map((item) => (
+          <Card>
+            <CardHeader>
+              <CardTitle>{item.title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-sm text-muted-foreground">{item.desc}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

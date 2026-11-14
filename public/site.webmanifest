@@ -1,0 +1,22 @@
+{
+  "name": "[[SITE_BRAND]]",
+  "short_name": "[[GAME_NAME]]",
+  "description": "[[PWA_DESCRIPTION]]",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "id": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#111215",
+  "theme_color": "#7c3aed",
+  "lang": "en-US",
+  "categories": ["games", "utilities"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

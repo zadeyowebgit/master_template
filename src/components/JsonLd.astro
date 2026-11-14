@@ -1,0 +1,14 @@
+---
+/**
+ * @deprecated Prefer Schema.astro — kept as a thin alias for existing imports.
+ */
+import Schema from './Schema.astro';
+
+interface Props {
+  data: Record<string, unknown> | Record<string, unknown>[];
+}
+
+const { data } = Astro.props;
+---
+
+<Schema data={data} />

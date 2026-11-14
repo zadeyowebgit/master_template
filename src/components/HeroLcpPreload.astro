@@ -1,0 +1,25 @@
+---
+import { heroSlides } from '../data/products';
+import { HERO_POSTER_SIZES } from '../data/heroLcpImages';
+import { HERO_IMAGE_WIDTHS, galleryWebpSrcSet, defaultGalleryWebpSrc } from '../utils/responsiveImage';
+
+const heroSrc = heroSlides[0]?.src ?? '/images/placeholders/hero.svg';
+const heroPreload = defaultGalleryWebpSrc(heroSrc, HERO_IMAGE_WIDTHS);
+const heroPreloadSrcset = galleryWebpSrcSet(heroSrc, HERO_IMAGE_WIDTHS)
+  .split(', ')
+  .map((candidate) => {
+    const match = candidate.match(/^(.*)\s+(\d+w)$/);
+    return match ? `${encodeURI(match[1])} ${match[2]}` : encodeURI(candidate);
+  })
+  .join(', ');
+---
+
+<link
+  rel="preload"
+  as="image"
+  type="image/webp"
+  href={encodeURI(heroPreload)}
+  imagesrcset={heroPreloadSrcset}
+  imagesizes={HERO_POSTER_SIZES}
+  fetchpriority="high"
+/>

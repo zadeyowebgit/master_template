@@ -1,0 +1,45 @@
+{
+  "$comment": "Schema reference only — agent creates migration/game.input.json via scripts/write-game-input.mjs",
+  "gameName": "Your Game",
+  "gameNameDisplay": "Your Game",
+  "siteBrand": "Game Catalog",
+  "domain": "your-domain.example",
+  "checkoutUrl": "https://checkout.example/your-game",
+  "platformName": "PC",
+  "rightsHolder": "[[RIGHTS_HOLDER]]",
+  "discordUrl": "https://discord.gg/template-placeholder",
+  "productLinks": [
+    {
+      "slug": "featured-package",
+      "buyUrl": "https://checkout.example/your-game/featured",
+      "title": "[[PRODUCT_NAME]]"
+    }
+  ],
+  "reviews": {
+    "mode": "placeholders",
+    "verifiedOn": "[[REVIEWS_VERIFIED_DATE]]",
+    "items": []
+  },
+  "images": {
+    "mediaPathSegment": "game",
+    "hero": null,
+    "copyToPublic": []
+  },
+  "verifiedContent": {
+    "$comment": "AI agent fills after researching owner product links — see migration/AGENT_TASKS.md",
+    "product": {
+      "PRODUCT_HEADLINE": "[[PRODUCT_HEADLINE]]",
+      "PRODUCT_TAGLINE": "[[PRODUCT_TAGLINE]]",
+      "PRODUCT_DESCRIPTION": "[[PRODUCT_DESCRIPTION]]",
+      "PRODUCT_OVERVIEW": "[[PRODUCT_OVERVIEW]]"
+    },
+    "tokens": {
+      "[[FEATURE_1]]": "[[FEATURE_1]]",
+      "[[CARD_HIGHLIGHT_1]]": "[[CARD_HIGHLIGHT_1]]"
+    },
+    "productSources": {
+      "featured-package": "https://seller.example/listing-url"
+    },
+    "unverifiedNotes": "Plain-language list of facts not on the seller page (never invent missing product details)."
+  }
+}

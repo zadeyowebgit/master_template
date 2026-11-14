@@ -1,0 +1,124 @@
+---
+import ResponsiveImage from './ResponsiveImage.astro';
+import { HERO_IMAGE_SIZES, HERO_IMAGE_WIDTHS } from '../utils/responsiveImage';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/starwind/carousel';
+
+interface Slide {
+  src: string;
+  alt: string;
+  caption: string;
+  captionDesc: string;
+}
+
+interface Props {
+  images: Slide[];
+  id: string;
+  variant?: 'default' | 'hero';
+  desktopOnly?: boolean;
+}
+
+const { images, id, variant = 'default', desktopOnly = false } = Astro.props;
+const isHero = variant === 'hero';
+const imageSizes = isHero ? HERO_IMAGE_SIZES : '(min-width: 1024px) 640px, 100vw';
+const imageWidths = isHero ? HERO_IMAGE_WIDTHS : undefined;
+---
+
+<div
+  class:list={[
+    'relative w-full',
+    'rounded-xl border border-border bg-card p-2 shadow-sm',
+    isHero && 'hero-gallery-shell',
+    desktopOnly && 'hidden lg:block',
+  ]}
+  id={id}
+  data-hero-embla-wrap={isHero || undefined}
+>
+  <div class:list={[isHero && 'hero-gallery-viewport w-full']}>
+  <Carousel
+    autoInit={!isHero}
+    data-hero-embla={isHero || undefined}
+    opts={{ loop: images.length > 1, align: 'start' }}
+    class="w-full"
+  >
+    <CarouselContent>
+      {images.map((img, i) => (
+        <CarouselItem class="basis-full">
+          <figure
+            class:list={[
+              isHero ? 'relative aspect-video overflow-hidden rounded-lg bg-muted/30' : 'overflow-hidden rounded-lg',
+            ]}
+          >
+            <ResponsiveImage
+              src={img.src}
+              alt={img.alt}
+              width={960}
+              height={540}
+              widths={imageWidths}
+              loading={i === 0 ? 'eager' : 'lazy'}
+              fetchPriority={isHero && i === 0 ? 'high' : undefined}
+              sizes={imageSizes}
+              desktopOnly={desktopOnly}
+              pictureClass={isHero ? 'absolute inset-0 block h-full w-full' : undefined}
+              class={isHero ? 'block h-full w-full object-cover object-center' : undefined}
+            />
+            {!isHero && (img.caption || img.captionDesc) && (
+              <figcaption class="mt-2 px-1 text-sm text-muted-foreground">
+                <strong class="text-foreground">{img.caption}</strong>
+                {img.captionDesc && ` — ${img.captionDesc}`}
+              </figcaption>
+            )}
+          </figure>
+        </CarouselItem>
+      ))}
+    </CarouselContent>
+    {!isHero && images.length > 1 && (
+      <>
+        <CarouselPrevious class="left-2" />
+        <CarouselNext class="right-2" />
+      </>
+    )}
+  </Carousel>
+  </div>
+  {isHero && images.length > 1 && (
+    <div
+      class="pointer-events-none absolute inset-x-2 bottom-3 flex justify-center"
+      data-hero-embla-dots
+      role="tablist"
+      aria-label="Hero slides"
+    >
+      <div class="pointer-events-auto flex items-center gap-1.5 rounded-full border border-white/10 bg-black/45 px-2.5 py-1.5 backdrop-blur-sm">
+        {images.map((_, i) => (
+          <button
+            type="button"
+            role="tab"
+            class="hero-embla-dot group relative flex size-6 shrink-0 items-center justify-center rounded-full transition-colors duration-300"
+            data-hero-embla-dot={i}
+            aria-label={`Slide ${i + 1}`}
+            aria-selected={i === 0 ? 'true' : 'false'}
+            data-active={i === 0 ? 'true' : 'false'}
+          >
+            <span class="hero-embla-dot-indicator relative block h-2 w-2 overflow-hidden rounded-full bg-white/30 transition-transform duration-300 group-data-[active=true]:scale-x-[4.5]" aria-hidden="true">
+              <span
+                class="hero-embla-progress pointer-events-none absolute inset-y-0 left-0 w-0 rounded-full bg-primary"
+                data-hero-embla-progress
+              />
+            </span>
+          </button>
+        ))}
+      </div>
+    </div>
+  )}
+</div>
+
+{isHero && (
+  <script>
+    import { setupHeroEmbla } from '../scripts/hero-embla.ts';
+    setupHeroEmbla();
+  </script>
+)}

@@ -1,0 +1,142 @@
+---
+import { auditSeo } from '../config/auditSeo';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Icon from './icons/Icon.astro';
+import { Button } from '@/components/starwind/button';
+import { Prose } from '@/components/starwind/prose';
+import { ROUTES } from '../utils/path';
+import {
+ DEFAULT_LOCALE,
+ getLocaleFromPathname,
+ localizeHref,
+ useTranslations,
+ withLocalePrefix,
+} from '../i18n';
+import { ensureEnH1 } from '../config/target-keyword';
+
+interface ResourceLink {
+ href: string;
+ label: string;
+ description: string;
+}
+
+interface Props {
+ title: string;
+ description: string;
+ breadcrumbLabel: string;
+ sections: { heading: string; paragraphs: string[] }[];
+ resourceLinks?: { heading: string; items: ResourceLink[] };
+ faqsHeading?: string;
+ faqs?: { q: string; a: string }[];
+ /** EN legal pages — links to localized privacy/terms mirrors */
+ localeLegalLinks?: { href: string; label: string }[];
+}
+
+const {
+ title,
+ description,
+ breadcrumbLabel,
+ sections,
+ resourceLinks,
+ faqsHeading = 'Common questions',
+ faqs = [],
+ localeLegalLinks = [],
+} = Astro.props;
+const locale = Astro.locals.locale ?? getLocaleFromPathname(Astro.url.pathname) ?? DEFAULT_LOCALE;
+const t = useTranslations(locale);
+const homePath = withLocalePrefix(ROUTES.home, locale);
+const supportPath = localizeHref(ROUTES.support, locale);
+const seoAudit = auditSeo(Astro.url.pathname);
+const pageH1 = seoAudit?.h1 ?? (locale === 'en' ? ensureEnH1(title) : title);
+---
+
+<article class="py-8 md:py-12">
+ <div class="mx-auto max-w-3xl px-5">
+ <div class="text-left">
+ <Breadcrumbs
+ items={[
+ { name: 'Home', path: homePath },
+ { name: breadcrumbLabel, path: Astro.url.pathname },
+ ]}
+ />
+ </div>
+ <header class="mt-4 space-y-4 text-center">
+ <h1 class="text-3xl font-bold normal-case md:text-4xl">{pageH1}</h1>
+ <p class="text-lg leading-relaxed text-muted-foreground">{seoAudit?.intro ?? description}</p>
+ </header>
+
+ <Prose class="mt-10 max-w-none text-left">
+ {sections.map((section, index) => (
+ <section class="mt-8">
+ <h2>{index === 0 && seoAudit?.h2 ? seoAudit.h2 : section.heading}</h2>
+ {section.paragraphs.map((paragraph) => (
+ <p>{paragraph}</p>
+ ))}
+ </section>
+ ))}
+
+ {
+ resourceLinks && resourceLinks.items.length > 0 && (
+ <section class="mt-10">
+ <h2>{resourceLinks.heading}</h2>
+ <ul>
+ {resourceLinks.items.map((item) => (
+ <li>
+ <a href={localizeHref(item.href, locale)}>{item.label}</a>
+ {' — '}
+ {item.description}
+ </li>
+ ))}
+ </ul>
+ </section>
+ )
+ }
+
+ {
+ faqs.length > 0 && (
+ <section class="mt-10">
+ <h2>{faqsHeading}</h2>
+ {faqs.map((item) => (
+ <div class="mt-6">
+ <h3>{item.q}</h3>
+ <p>{item.a}</p>
+ </div>
+ ))}
+ </section>
+ )
+ }
+ {Astro.url.pathname === '/de/privacy/' && <section class="mt-8">
+ <h2>[[LEGAL_PRIVACY_DE_HEADING]]</h2>
+ <p>Wenn Sie eine Frage zum Datenschutz haben, beschreiben Sie bitte, auf welchen Vorgang sich Ihre Anfrage bezieht. Nennen Sie beispielsweise die betroffene Kontaktaufnahme, eine Bestellung oder die Nutzung der Website. Übermitteln Sie nur die Informationen, die zur Zuordnung Ihrer Anfrage erforderlich sind. Passwörter und vollständige Zahlungsdaten gehören nicht in eine Nachricht an uns.</p>
+ <p>[[LEGAL_PRIVACY_DE_BODY]]</p>
+ <p>Prüfen Sie beim Besuch externer Links auch die Datenschutzhinweise des jeweiligen Anbieters. Dessen Informationen zu Cookies, Kontaktformularen und Datenverarbeitung können von den Hinweisen auf dieser Website abweichen.</p>
+ <p>Bewahren Sie Ihre eigene Nachricht auf, damit Sie bei einer späteren Rückfrage auf denselben Vorgang verweisen können. Ergänzen Sie fehlende Angaben im bestehenden Gespräch, anstatt sensible Informationen mehrfach zu versenden.</p>
+ </section>}
+ </Prose>
+
+ {
+ localeLegalLinks.length > 0 && (
+ <nav class="mt-10 border-t border-border pt-8" aria-label="Legal pages in other languages">
+ <h2 class="text-lg font-semibold">Other languages</h2>
+ <ul class="mt-3 space-y-2">
+ {localeLegalLinks.map((link) => (
+ <li>
+ <a href={link.href} class="text-sm text-muted-foreground hover:text-primary">
+ {link.label}
+ </a>
+ </li>
+ ))}
+ </ul>
+ </nav>
+ )
+ }
+
+ <div class="mt-12 flex flex-wrap justify-center gap-3 border-t border-border pt-8">
+ <Button as="a" href={supportPath} variant="primary" size="sm">
+ {t.footer.support}
+ <Icon name="mail" size={16} />
+ </Button>
+ <Button as="a" href={homePath} variant="outline" size="sm">Home</Button>
+ </div>
+ </div>
+</article>

@@ -1,0 +1,117 @@
+---
+import {
+ DEFAULT_LOCALE,
+ getLocaleFromPathname,
+ localizeHref,
+ useTranslations,
+ withLocalePrefix,
+} from '../i18n';
+import { reviewsCopy } from '../i18n/reviews';
+import { Separator } from '@/components/starwind/separator';
+import BrandLogo from './BrandLogo.astro';
+import SocialShareLinks from './SocialShareLinks.astro';
+import type { NavLink } from '../i18n/types';
+import { SITE_URL } from '../config/site';
+
+interface Props {
+ logoAlt?: string;
+}
+
+const { logoAlt: logoAltProp } = Astro.props;
+const locale = Astro.locals.locale ?? getLocaleFromPathname(Astro.url.pathname) ?? DEFAULT_LOCALE;
+const t = useTranslations(locale);
+const displaySiteName = t.site.name;
+const homeHref = withLocalePrefix('/', locale);
+const logoAlt = logoAltProp ?? t.ui.logoAlt;
+
+const reviewLabels = reviewsCopy(locale);
+
+function exploreHref(link: NavLink): string {
+ const base = localizeHref(link.href, locale);
+ return link.scrollTarget ? `${base}#${link.scrollTarget}` : base;
+}
+
+const exploreLinks: NavLink[] = [
+ ...t.footer.exploreLinks.map((link) => ({
+ ...link,
+ href: exploreHref(link),
+ })),
+ { href: withLocalePrefix('/forum/', locale), label: 'Community forum', ariaLabel: 'Forum discussions' },
+ {
+ href: withLocalePrefix('/reviews/', locale),
+ label: locale === 'en' ? 'Customer reviews' : reviewLabels.title,
+ ariaLabel: reviewLabels.title,
+ },
+];
+
+const resourceLinks = [
+ { href: localizeHref('/support/', locale), label: locale === 'en' ? 'Contact product support' : t.footer.support },
+ { href: t.site.discord, label: `Discord · ${reviewLabels.community}` },
+];
+
+const legalLinks = [
+ { href: localizeHref('/about/', locale), label: t.footer.about },
+ { href: localizeHref('/privacy/', locale), label: t.footer.privacy },
+ { href: localizeHref('/terms/', locale), label: t.footer.terms },
+];
+---
+
+<footer class="border-t border-border bg-muted/30 py-16">
+ <div class="mx-auto max-w-6xl px-5">
+ <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+ <div class="space-y-4">
+ <BrandLogo href={homeHref} label={locale === 'en' ? `${displaySiteName} homepage` : logoAlt} footer />
+ <p class="text-sm text-muted-foreground">{t.footer.tagline}</p>
+ </div>
+
+ <nav aria-label={t.footer.explore}>
+ <p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t.footer.explore}</p>
+ <ul class="mt-3 space-y-2">
+ {exploreLinks.map((link) => (
+ <li>
+ <a
+ href={link.href}
+ class="text-sm text-muted-foreground hover:text-primary"
+ aria-label={link.label}
+ >
+ {link.label}
+ </a>
+ </li>
+ ))}
+ </ul>
+ </nav>
+
+ <nav aria-label={t.footer.support}>
+ <p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t.footer.support}</p>
+ <ul class="mt-3 space-y-2">
+ {resourceLinks.map((link) => (
+ <li>
+ <a href={link.href} class="text-sm text-muted-foreground hover:text-primary" aria-label={link.label}>
+ {link.label}
+ </a>
+ </li>
+ ))}
+ </ul>
+ </nav>
+
+ <nav aria-label={t.footer.legal}>
+ <p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t.footer.legal}</p>
+ <ul class="mt-3 space-y-2">
+ {legalLinks.map((link) => (
+ <li>
+ <a href={link.href} class="text-sm text-muted-foreground hover:text-primary">
+ {link.label}
+ </a>
+ </li>
+ ))}
+ </ul>
+ </nav>
+ </div>
+
+ <SocialShareLinks url={new URL(Astro.url.pathname, SITE_URL).href} title={displaySiteName} class="mt-8" />
+ <Separator class="my-8" />
+ <p class="text-center text-xs text-muted-foreground">
+ © {new Date().getFullYear()} {displaySiteName} · {t.site.domain}
+ </p>
+ </div>
+</footer>

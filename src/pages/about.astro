@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { t } from '../i18n';
+import { resolvePageSeo } from '../config/seo';
+
+const seo = resolvePageSeo('/about/');
+import LegalPage from '../components/LegalPage.astro';
+import {
+ breadcrumbSchema,
+ itemListSchema,
+ organizationSchema,
+ webPageSchema,
+ websiteSchema,
+} from '../utils/schema';
+const content = t.legalPages.about;
+const aboutFaqs = content.faqs ?? [];
+const resourceLinks = content.resourceLinks;
+---
+
+<BaseLayout
+ title={seo.title}
+ description={seo.description}
+ logoAlt="[[ABOUT_LOGO_ALT]]"
+ ogImageAlt="[[ABOUT_OG_ALT]]"
+ jsonLd={[
+ websiteSchema(),
+ organizationSchema(),
+ webPageSchema({
+ name: content.title,
+ description: seo.description,
+ url: '/about/',
+ }),
+ ...(resourceLinks?.items.length
+ ? [
+ itemListSchema(
+ resourceLinks.items.map((item) => ({ name: item.label, url: item.href })),
+ ),
+ ]
+ : []),
+ breadcrumbSchema([
+ { name: 'Home', path: '/' },
+ { name: 'About', path: '/about/' },
+ ]),
+ ]}
+>
+ <LegalPage
+ title={content.title}
+ description={content.description}
+ breadcrumbLabel="About"
+ sections={content.sections}
+ resourceLinks={resourceLinks}
+ faqsHeading={content.faqsHeading}
+ faqs={aboutFaqs}
+ />
+</BaseLayout>

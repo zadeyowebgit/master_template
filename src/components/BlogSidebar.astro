@@ -1,0 +1,105 @@
+---
+import '../styles/blog-sidebar.css';
+import Icon from './icons/Icon.astro';
+import TableOfContents from './TableOfContents.astro';
+import { blogPostPath, ROUTES } from '../utils/path';
+import { checkoutPath } from '../config/checkout';
+import {
+ DEFAULT_LOCALE,
+ getLocaleFromPathname,
+ localizeHref,
+ useTranslations,
+} from '../i18n';
+import { slugifyHeading, type BlogPostFull } from '../data/blog';
+import type { IconName } from './icons/types';
+import { Button } from '@/components/starwind/button';
+
+interface Props {
+ post: BlogPostFull;
+ related: BlogPostFull[];
+ class?: string;
+}
+
+const locale = Astro.locals.locale ?? getLocaleFromPathname(Astro.url.pathname) ?? DEFAULT_LOCALE;
+const t = useTranslations(locale);
+const { post, related, class: className } = Astro.props;
+
+const toc = post.body
+ .filter((block) => block.type === 'h2' || block.type === 'h3')
+ .map((block) => ({
+ level: block.type as 'h2' | 'h3',
+ text: 'text' in block ? block.text : '',
+ id: slugifyHeading('text' in block ? block.text : ''),
+ }));
+
+const productLinks: { label: string; href: string; icon: IconName }[] = [
+ { label: t.nav[0]?.label ?? 'Products', href: localizeHref(ROUTES.products, locale), icon: 'sidebarHub' },
+ { label: '[[SIDEBAR_PRODUCT_DETAIL_LABEL]]', href: localizeHref(ROUTES.productsElite, locale), icon: 'sidebarElite' },
+ { label: '[[SIDEBAR_ESP_GUIDE_LABEL]]', href: localizeHref(blogPostPath('esp'), locale), icon: 'sidebarSkin' },
+ { label: '[[SIDEBAR_AIMBOT_GUIDE_LABEL]]', href: localizeHref(blogPostPath('aimbot'), locale), icon: 'sidebarHwid' },
+ { label: '[[SIDEBAR_REQUIREMENTS_GUIDE_LABEL]]', href: localizeHref(blogPostPath('windows'), locale), icon: 'sidebarUgc' },
+];
+---
+
+<aside
+ class:list={[
+ 'blog-sidebar min-w-0 lg:sticky lg:top-[calc(var(--floating-nav-clearance)+0.5rem)] lg:max-h-[calc(100vh-var(--floating-nav-clearance)-1rem)] lg:self-start lg:overflow-y-auto lg:overflow-x-hidden lg:pr-0.5',
+ className,
+ ]}
+ aria-label="Article sidebar"
+>
+ <TableOfContents headings={toc} title={t.blog.inThisArticle} titleId="blog-sidebar-toc-title" />
+
+ {
+ related.length > 0 && (
+ <section class="blog-sidebar__block" aria-labelledby="blog-sidebar-related-title">
+ <h2 id="blog-sidebar-related-title" class="blog-sidebar__heading">
+ <Icon name="navBlog" size={14} class="text-primary" aria-hidden="true" />
+ <span class="break-words">{t.blog.relatedGuides}</span>
+ </h2>
+ <ul class="blog-sidebar__list">
+ {related.map((item) => (
+ <li>
+ <a
+ href={localizeHref(blogPostPath(item.slug), locale)}
+ class="blog-sidebar__link"
+ title={item.title}
+ >
+ <Icon name="arrowUpRight" size={13} class="shrink-0 opacity-70" aria-hidden="true" />
+ <span class="blog-sidebar__truncate break-words whitespace-normal">{item.title}</span>
+ </a>
+ </li>
+ ))}
+ </ul>
+ </section>
+ )
+ }
+
+ <section class="blog-sidebar__block blog-sidebar__block--shop" aria-labelledby="blog-sidebar-products-title">
+ <h2 id="blog-sidebar-products-title" class="blog-sidebar__heading">
+ <Icon name="navProducts" size={14} class="text-primary" aria-hidden="true" />
+ <span class="break-words">{t.blog.ourProducts}</span>
+ </h2>
+ <ul class="blog-sidebar__list">
+ {productLinks.map((link) => (
+ <li>
+ <a href={link.href} class="blog-sidebar__link" title={link.label}>
+ <Icon name={link.icon} size={13} class="shrink-0 text-primary" aria-hidden="true" />
+ <span class="blog-sidebar__truncate">{link.label}</span>
+ </a>
+ </li>
+ ))}
+ </ul>
+ <Button
+ as="a"
+ href={checkoutPath('primary')}
+ variant="primary"
+ size="sm"
+ class="blog-sidebar__cta mt-2.5 w-full min-w-0 justify-start"
+ aria-label={t.ui.checkoutAria}
+ >
+ <span class="truncate">{t.ui.buyGameCheats}</span>
+ <Icon name="arrowRight" size={16} class="shrink-0" />
+ </Button>
+ </section>
+</aside>

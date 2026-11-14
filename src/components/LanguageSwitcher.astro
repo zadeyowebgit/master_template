@@ -1,0 +1,117 @@
+---
+import {
+  DEFAULT_LOCALE,
+  LOCALES,
+  LOCALE_BY_CODE,
+  getLocaleFromPathname,
+  switchLocalePath,
+  type LocaleCode,
+} from '../i18n';
+
+interface Props {
+  class?: string;
+  /** Unique suffix so desktop + mobile instances don't share the same id */
+  idSuffix?: string;
+}
+
+const { class: className, idSuffix = 'nav' } = Astro.props;
+const currentLocale = (Astro.locals.locale ??
+  getLocaleFromPathname(Astro.url.pathname) ??
+  DEFAULT_LOCALE) as LocaleCode;
+const currentPath = Astro.url.pathname;
+const current = LOCALE_BY_CODE[currentLocale] ?? LOCALE_BY_CODE[DEFAULT_LOCALE];
+const detailsId = `language-switcher-${idSuffix}`;
+
+const mobileSuffix = idSuffix === 'mobile';
+const showSwitcher = LOCALES.length > 1;
+const options = LOCALES.map((locale) => ({
+  code: locale.code,
+  label: mobileSuffix ? `${locale.nativeName} (${locale.code.toUpperCase()})` : locale.nativeName,
+  href: switchLocalePath(currentPath, locale.code),
+  hreflang: locale.hreflang,
+  selected: locale.code === currentLocale,
+}));
+---
+
+{showSwitcher && (
+<>
+{/* Native links — no JS required to change language. Fixed width keeps header layout stable. */}
+<details
+  id={detailsId}
+  class:list={['language-switcher relative w-9 shrink-0', className]}
+  data-language-switcher
+>
+  <summary
+    class="flex h-8 w-full cursor-pointer list-none items-center justify-center rounded-md p-1 text-foreground outline-none transition-none hover:text-primary focus-visible:ring-2 focus-visible:ring-primary/40 [&::-webkit-details-marker]:hidden"
+    aria-label={`${current.nativeName} — ${current.country}`}
+  >
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a17 17 0 0 1 0 18 17 17 0 0 1 0-18Z" /></svg>
+  </summary>
+  <ul
+    class="absolute end-0 top-full z-[200] mt-1 w-44 overflow-hidden rounded-lg border border-border bg-background py-1 shadow-lg"
+    role="listbox"
+    aria-label="Language"
+  >
+    {
+      options.map((opt) => (
+        <li role="option" aria-selected={opt.selected}>
+          <a
+            href={opt.href}
+            hreflang={opt.hreflang}
+            lang={opt.hreflang}
+            data-locale={opt.code}
+            data-language-option
+            class:list={[
+              'block px-3 py-2 text-xs font-medium transition-none hover:bg-muted hover:text-primary',
+              opt.selected ? 'bg-muted text-primary' : 'text-foreground',
+            ]}
+            aria-current={opt.selected ? 'page' : undefined}
+          >
+            {opt.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</details>
+
+<script is:inline>
+  (function () {
+
+    function closeOther(except) {
+      document.querySelectorAll('[data-language-switcher]').forEach(function (el) {
+        if (el !== except && el.open) el.open = false;
+      });
+    }
+
+    function bind() {
+      document.querySelectorAll('[data-language-switcher]').forEach(function (details) {
+        if (details.getAttribute('data-bound') === '1') return;
+        details.setAttribute('data-bound', '1');
+        details.addEventListener('toggle', function () {
+          if (details.open) closeOther(details);
+        });
+      });
+
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', bind);
+    } else {
+      bind();
+    }
+    document.addEventListener('astro:after-swap', bind);
+    document.addEventListener('astro:page-load', bind);
+  })();
+</script>
+
+<style>
+  .language-switcher:not([open]) > ul {
+    display: none;
+  }
+  .language-switcher[open] > ul {
+    display: block;
+  }
+</style>
+</>
+)}

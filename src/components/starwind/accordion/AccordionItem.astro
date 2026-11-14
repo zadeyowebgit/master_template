@@ -1,0 +1,23 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+import { accordionItem } from './variants';
+
+type Props = HTMLAttributes<'div'> & {
+  value: string;
+  disabled?: boolean;
+};
+
+const { value, disabled = false, class: className, ...rest } = Astro.props;
+---
+
+<div
+  class={accordionItem({ class: className })}
+  data-sw-accordion-item
+  data-value={value}
+  data-disabled={disabled ? '' : undefined}
+  data-state="closed"
+  data-slot="accordion-item"
+  {...rest}
+>
+  <slot />
+</div>

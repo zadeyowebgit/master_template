@@ -1,0 +1,22 @@
+---
+const items = [
+  ['Combat and awareness, together', 'Find aimbot, ESP, and world ESP information in one catalog.'],
+  ['Profiles for your loadouts', 'Keep weapon settings separate and easy to review.'],
+  ['Readable overlays', 'Compare range filters, colors, and layout controls.'],
+  ['Current build questions', 'Confirm your launcher, input device, and game version with support.'],
+  ['[[BENEFIT_GUIDES_TITLE]]', '[[BENEFIT_GUIDES_DESC]]'],
+  ['Access details up front', 'Ask for current pricing, delivery, and terms before purchase.'],
+];
+---
+<section id="why-us" class="border-t border-border bg-muted/10 py-16 md:py-20" aria-label="Catalog benefits">
+  <div class="mx-auto max-w-6xl px-5">
+    <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {items.map(([title, description]) => (
+        <article class="rounded-xl border border-border bg-card p-6">
+          <h2 class="text-lg font-semibold text-foreground">{title}</h2>
+          <p class="mt-2 text-sm leading-relaxed text-muted-foreground">{description}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

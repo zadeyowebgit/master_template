@@ -1,0 +1,37 @@
+# build output
+dist/
+scripts/_tmp/
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# jetbrains setting folder
+.idea/
+
+# owner migration input (use game.input.example.json as template)
+migration/game.input.json
+migration/_agent-payload.json
+migration/_agent-payload.*.json
+migration/applied.json
+
+# local import scratch
+_import/
+.seo-baseline/
+.seo-tools/
+
