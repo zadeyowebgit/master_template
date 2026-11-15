@@ -30,7 +30,7 @@ export const editorialFaqs: Record<string, { q: string; a: string }[]> = {
       "a": "[[EDITORIAL_FAQ_A2 — grounded answer with placeholders for verified product facts.]]"
     }
   ],
-  "anticheat": [
+  "config": [
     {
       "q": "[[EDITORIAL_FAQ_Q1 — replace with game-specific question]]",
       "a": "[[EDITORIAL_FAQ_A1 — grounded answer with placeholders for verified product facts.]]"
@@ -40,7 +40,7 @@ export const editorialFaqs: Record<string, { q: string; a: string }[]> = {
       "a": "[[EDITORIAL_FAQ_A2 — grounded answer with placeholders for verified product facts.]]"
     }
   ],
-  "bans": [
+  "performance": [
     {
       "q": "[[EDITORIAL_FAQ_Q1 — replace with game-specific question]]",
       "a": "[[EDITORIAL_FAQ_A1 — grounded answer with placeholders for verified product facts.]]"

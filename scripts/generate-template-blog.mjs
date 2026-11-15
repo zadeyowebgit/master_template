@@ -21,20 +21,20 @@ function ul(items) {
   return { type: 'ul', items };
 }
 
-/** ~150-word neutral paragraphs (non-duplicative across the corpus). */
+/** ~150-word product-site paragraphs (direct voice; traceability via productSources in migration JSON). */
 const para = {
   scope:
-    `This section describes how to read seller language for ${G} without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. ${B} publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites ${P}, it refers to the owner-supplied listing you will attach during migration—not to invented functionality.`,
+    `This section explains how ${P} is presented on the product pages for ${G}. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped.`,
   checklist:
-    `Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads.`,
+    `Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster.`,
   policy:
-    `Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement.`,
+    `Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for ${G} in direct product language.`,
   support:
-    `Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely.`,
+    `When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order.`,
   compare:
-    `Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for ${G}. Migration agents should replace retired names with the current ${P} manifest.`,
+    `Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for ${P}—do not assume labels from another title apply to ${G}.`,
   update:
-    `Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.”`,
+    `Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives.`,
 };
 
 function sectionsFor(topic, extra) {
@@ -64,7 +64,7 @@ const articles = [
     tag: 'Guides',
     title: `[[BLOG_BEST_TITLE — Best ${G} tools: compare listed features and requirements]]`,
     seoTitle: `[[BLOG_BEST_SEO — Best ${G}: Features, costs and buyer checklist]]`,
-    desc: `[[BLOG_BEST_DESC — Compare seller-listed ${G} features, access terms, and requirements using an evidence-based checklist.]]`,
+    desc: `[[BLOG_BEST_DESC — Compare ${G} package features, access terms, and requirements using a practical checklist.]]`,
     focus: 'catalog comparison',
     intro: `Pillar guide for comparing ${P} against your requirements.`,
     tailPrefix: 'Buyer discipline',
@@ -110,37 +110,37 @@ const articles = [
     ],
   },
   {
-    slug: 'anticheat',
+    slug: 'config',
     type: 'cluster',
     parentPillar: 'best-cheats',
-    tag: 'Safety',
-    title: `[[BLOG_AC_TITLE — Anti-cheat and policy language for ${G}]]`,
-    seoTitle: `[[BLOG_AC_SEO — ${G} anti-cheat: policy vs architecture]]`,
-    desc: `[[BLOG_AC_DESC — Keep platform enforcement, software architecture, and seller claims separate for ${G}.]]`,
-    focus: 'anti-cheat clarity',
-    intro: `Cluster article for policy and architecture questions.`,
-    tailPrefix: 'Policy reading',
+    tag: 'Setup',
+    title: `[[BLOG_CONFIG_TITLE — ${G} overlay and configuration guide]]`,
+    seoTitle: `[[BLOG_CONFIG_SEO — ${G} overlays: layout, scale, and module toggles]]`,
+    desc: `[[BLOG_CONFIG_DESC — Configure ${P} overlays and controls for ${G} using the documented module list.]]`,
+    focus: 'configuration workflow',
+    intro: `Cluster article for overlay setup and module toggles.`,
+    tailPrefix: 'Configuration',
     sections: [
-      { h: 'Three categories of anti-cheat questions', t: [para.policy, para.scope] },
-      { h: 'No independent detection table here', t: [para.compare] },
-      { h: 'Evidence to keep', t: [para.checklist] },
+      { h: 'Start from the module list', t: [para.scope, para.compare] },
+      { h: 'Display scale and clutter', t: [para.checklist] },
+      { h: 'Save notes after each change', t: [para.support] },
     ],
   },
   {
-    slug: 'bans',
+    slug: 'performance',
     type: 'cluster',
     parentPillar: 'best-cheats',
-    tag: 'Safety',
-    title: `[[BLOG_BANS_TITLE — Account restrictions and recovery questions]]`,
-    seoTitle: `[[BLOG_BANS_SEO — ${G} account limits and support routes]]`,
-    desc: `[[BLOG_BANS_DESC — Separate account sanctions from product setup issues for ${G}.]]`,
-    focus: 'account restrictions',
-    intro: `Cluster article for restriction vocabulary.`,
-    tailPrefix: 'Account notes',
+    tag: 'Setup',
+    title: `[[BLOG_PERF_TITLE — ${G} performance and display tuning]]`,
+    seoTitle: `[[BLOG_PERF_SEO — ${G} FPS, resolution, and overlay performance]]`,
+    desc: `[[BLOG_PERF_DESC — Tune PC and in-game settings so ${P} overlays stay readable on ${G}.]]`,
+    focus: 'performance tuning',
+    intro: `Cluster article for display and frame-rate tuning.`,
+    tailPrefix: 'Performance',
     sections: [
-      { h: 'Restriction types use different support paths', t: [para.policy] },
-      { h: 'Hardware identifiers vs product keys', t: [para.checklist] },
-      { h: 'When to stop public troubleshooting', t: [para.support] },
+      { h: 'Baseline before enabling modules', t: [para.checklist, para.scope] },
+      { h: 'Resolution and refresh targets', t: [para.compare] },
+      { h: 'After game patches', t: [para.update, para.support] },
     ],
   },
   {
@@ -165,16 +165,16 @@ const articles = [
     type: 'cluster',
     parentPillar: 'best-cheats',
     tag: 'Safety',
-    title: `[[BLOG_SAFE_TITLE — Risk framing without marketing promises]]`,
-    seoTitle: `[[BLOG_SAFE_SEO — ${G} safety language: bounded claims]]`,
-    desc: `[[BLOG_SAFE_DESC — Explain how to read risk-related adjectives for ${G} without guarantees.]]`,
-    focus: 'risk language',
-    intro: `Cluster article for cautious buyers.`,
-    tailPrefix: 'Risk framing',
+    title: `[[BLOG_SAFE_TITLE — Setup hygiene and realistic expectations]]`,
+    seoTitle: `[[BLOG_SAFE_SEO — ${G} setup habits and requirement checks]]`,
+    desc: `[[BLOG_SAFE_DESC — Practical setup habits for ${G} without overstated marketing language.]]`,
+    focus: 'setup hygiene',
+    intro: `Cluster article for practical setup discipline.`,
+    tailPrefix: 'Setup hygiene',
     sections: [
-      { h: 'Safe, private, undetected are not metrics', t: [para.compare] },
-      { h: 'Operational security for buyers', t: [para.checklist, para.support] },
-      { h: 'Official platform stance', t: [para.policy] },
+      { h: 'Marketing adjectives are not specifications', t: [para.compare] },
+      { h: 'Environment checklist', t: [para.checklist, para.support] },
+      { h: 'Platform documentation', t: [para.policy] },
     ],
   },
   {
@@ -184,7 +184,7 @@ const articles = [
     tag: 'Guides',
     title: `[[BLOG_FEAT_TITLE — Feature glossary for ${G} listings]]`,
     seoTitle: `[[BLOG_FEAT_SEO — ${G} features: categories and boundaries]]`,
-    desc: `[[BLOG_FEAT_DESC — Map seller feature groups for ${G} to buyer questions.]]`,
+    desc: `[[BLOG_FEAT_DESC — Map ${P} feature groups for ${G} to practical setup questions.]]`,
     focus: 'feature glossary',
     intro: `Cluster article for manifest alignment.`,
     tailPrefix: 'Glossary use',
@@ -201,7 +201,7 @@ const articles = [
     tag: 'Plans',
     title: `[[BLOG_ACCESS_TITLE — Access duration and entitlement terms]]`,
     seoTitle: `[[BLOG_ACCESS_SEO — ${G} Monthly vs Lifetime meaning]]`,
-    desc: `[[BLOG_ACCESS_DESC — Define access vocabulary for ${G} using seller terms, not guesses.]]`,
+    desc: `[[BLOG_ACCESS_DESC — Define access vocabulary for ${G} using product terms from ${P}.]]`,
     focus: 'entitlements',
     intro: `Cluster article for subscription language.`,
     tailPrefix: 'Entitlement notes',
@@ -303,7 +303,7 @@ const articles = [
     tag: 'Setup',
     title: `[[BLOG_WIN_TITLE — Windows and security requirements]]`,
     seoTitle: `[[BLOG_WIN_SEO — ${G} PC requirements worksheet]]`,
-    desc: `[[BLOG_WIN_DESC — Fill [[REQUIREMENT_*]] placeholders with seller facts for ${G}.]]`,
+    desc: `[[BLOG_WIN_DESC — Fill [[REQUIREMENT_*]] placeholders with verified ${G} PC requirements.]]`,
     focus: 'PC requirements',
     intro: `Cluster article for PC environment checks.`,
     tailPrefix: 'PC worksheet',
@@ -334,11 +334,11 @@ const articles = [
 
 const padTopics = [
   { h: '[[PAD_TOPIC_EVIDENCE — evidence quality]]', t: 'Prefer timestamped screen recordings over single frames when demonstrating behavior. Note queue type, map or mode, and input device so support can reproduce conditions. A clip from another title is not transferable evidence for ${G}.' },
-  { h: '[[PAD_TOPIC_NETWORK — connectivity]]', t: 'Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. ${B} does not host network diagnostics; capture traceroute or latency widgets only if support requests them.' },
-  { h: '[[PAD_TOPIC_REFUNDS — commercial terms]]', t: 'Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country.' },
+  { h: '[[PAD_TOPIC_NETWORK — connectivity]]', t: 'Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them.' },
+  { h: '[[PAD_TOPIC_REFUNDS — commercial terms]]', t: 'Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country.' },
   { h: '[[PAD_TOPIC_HARDWARE — device limits]]', t: 'Laptop power profiles, docked GPUs, and external displays change performance baselines. Document firmware versions when virtualization is involved. [[REQUIREMENT_EXTRA]] placeholders should list any hosted service dependency.' },
   { h: '[[PAD_TOPIC_ACCESSIBILITY — UI scale]]', t: 'Text scaling and color filters alter overlay readability. Include accessibility settings in configuration notes when opening tickets about clutter or overlap.' },
-  { h: '[[PAD_TOPIC_COMMUNITY — forum etiquette]]', t: 'Public threads on ${B} host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact.' },
+  { h: '[[PAD_TOPIC_COMMUNITY — forum etiquette]]', t: 'Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements.' },
   { h: '[[PAD_TOPIC_MIGRATION — template tokens]]', t: 'Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish.' },
   { h: '[[PAD_TOPIC_LEGAL — jurisdiction]]', t: 'Local laws may affect software use independently of game policy. This guide is informational and not legal advice.' },
 ];
@@ -375,7 +375,7 @@ const posts = articles.map((article) => {
     date: 'Jan 1, 2026',
     readTime: `${minutes} min read`,
     relatedKeywords: [`[[KW_PRIMARY_${article.slug}]]`, `[[KW_SECONDARY_${article.slug}]]`],
-    author: `[[BLOG_AUTHOR — ${B} Editorial]]`,
+    author: '[[BLOG_AUTHOR — Editorial]]',
     modifiedDate: '2026-01-01',
     editorialRevision: 'template-master',
     body,

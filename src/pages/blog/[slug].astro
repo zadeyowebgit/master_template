@@ -12,6 +12,7 @@ import {
 import { getBlogFooterCtas } from '../../data/blog/footer-ctas';
 import { cheatMetaDescription, pageTitle } from '../../config/seo';
 import { ensureEnH1, ensureEnImageAlt } from '../../config/target-keyword';
+import { getPageKeywords } from '../../config/keywords';
 import {
   articleSchema,
   breadcrumbSchema,
@@ -74,7 +75,10 @@ function slugify(text: string): string {
 const published = parseBlogDate(post.date);
 const modified = parseBlogDate(post.modifiedDate ?? post.date);
 const footerCtas = getBlogFooterCtas(post.slug);
-const articleH1 = post.title;
+const articleH1 =
+  locale === 'en'
+    ? ensureEnH1(getPageKeywords(postPath)?.h1 ?? post.title)
+    : post.title;
 const articleHeroAlt =
   locale === 'en'
     ? ensureEnImageAlt(`${post.title} — ${t.blog.heroImageAlt ?? 'guide screenshot'}`)

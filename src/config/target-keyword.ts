@@ -15,8 +15,9 @@ export function ensureEnMetaDescription(desc: string): string {
  return desc.trim();
 }
 
+/** Use page-specific H1 from keywords.ts / auditSeo.ts — never auto-append the game name here. */
 export function ensureEnH1(text: string): string {
- return text.trim();
+  return text.trim();
 }
 
 export function ensureEnImageAlt(alt: string): string {

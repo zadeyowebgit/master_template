@@ -8,6 +8,7 @@ import { translateText } from '../i18n/content';
 import { forumPosts, getForumPost } from '../data/forum';
 import { cheatMetaDescription, pageTitle } from '../config/seo';
 import { ensureEnH1 } from '../config/target-keyword';
+import { getPageKeywords } from '../config/keywords';
 import { breadcrumbSchema, webPageSchema } from '../utils/schema';
 import { inlineLinks } from '../utils/inlineLinks';
 import { SITE_BRAND } from '../config/site';
@@ -24,7 +25,8 @@ const relatedPosts = [
  ...forumPosts.filter((item) => item.slug !== post.slug && item.category === post.category),
  ...forumPosts.filter((item) => item.slug !== post.slug && item.category !== post.category),
 ].slice(0, 3);
-const pageH1 = locale === 'en' ? ensureEnH1(post.title) : post.title;
+const pageH1 =
+  locale === 'en' ? ensureEnH1(getPageKeywords(path)?.h1 ?? post.title) : post.title;
 ---
 
 <BaseLayout title={post.title} description={cheatMetaDescription(post.excerpt, locale)} jsonLd={[

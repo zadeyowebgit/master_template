@@ -1,9 +1,7 @@
 import fs from 'node:fs';
+import { TEMPLATE_BLOG_SLUGS } from './lib/template-blog-slugs.mjs';
 
-const blogSlugs = [
-  'best-cheats', 'aimbot', 'esp', 'anticheat', 'bans', 'buying', 'safety', 'features',
-  'access', 'skins', 'external', 'automation', 'dma', 'recoil', 'windows', 'radar',
-];
+const blogSlugs = TEMPLATE_BLOG_SLUGS;
 
 const base = {
   '/': {

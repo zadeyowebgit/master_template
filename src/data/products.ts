@@ -69,7 +69,7 @@ const defaultSlug = game.site.defaultProductSlug;
 const product: ProductPage = {
   slug: defaultSlug,
   kind: 'tier',
-  badge: '[[PRODUCT_BADGE — seller listing]]',
+  badge: '[[PRODUCT_BADGE — featured package]]',
   category: '[[PRODUCT_CATEGORY]]',
   tier: '[[PRODUCT_TIER_LABEL]]',
   gameLabel: game.site.gameName,

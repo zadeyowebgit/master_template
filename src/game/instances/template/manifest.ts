@@ -36,5 +36,4 @@ export const templateHeadline = '[[PRODUCT_HEADLINE]]';
 export const templateTagline = '[[PRODUCT_TAGLINE]]';
 export const templateDescription = '[[PRODUCT_DESCRIPTION]]';
 export const templateOverview = '[[PRODUCT_OVERVIEW]]';
-export const templateCloudNote =
-  '[[CLOUD_OR_DMA_NOTE — confirm prerequisites and inclusion with the seller before purchase.]]';
+export const templateCloudNote = '[[CLOUD_OR_DMA_NOTE — prerequisites and billing for hosted options.]]';

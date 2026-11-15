@@ -1,4 +1,4 @@
-// AUTO-GENERATED — agent fills owner review text via game.input.json (120 placeholders until migration).
+// AUTO-GENERATED — replace [[REVIEW_n_BODY]] during migration (120 reviews).
 export interface CustomerReview { id:number; username:string; rating:number; body:string }
 type T=[string,number,string];
 const reviews:T[]=[

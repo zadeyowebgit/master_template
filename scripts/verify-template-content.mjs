@@ -5,6 +5,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import { FORBIDDEN_BLOG_TOPIC_REGEX, TEMPLATE_BLOG_SLUGS } from './lib/template-blog-slugs.mjs';
 
 const ROOT = process.cwd();
 let failed = false;
@@ -38,6 +39,18 @@ async function verifyBlogs() {
   }
   if (low.length) fail(`blog posts below 1500 words: ${low.join(', ')}`);
   else console.log(`blogs: 16 posts, all ≥1500 words`);
+  const badSlugs = posts
+    .map((p) => p.slug)
+    .filter((slug) => !TEMPLATE_BLOG_SLUGS.includes(slug));
+  if (badSlugs.length) fail(`unexpected blog slugs: ${badSlugs.join(', ')}`);
+  const forbidden = [];
+  for (const p of posts) {
+    const blob = `${p.slug} ${p.title} ${p.seoTitle ?? ''} ${p.desc} ${p.focus ?? ''}`;
+    if (FORBIDDEN_BLOG_TOPIC_REGEX.test(blob)) forbidden.push(p.slug);
+  }
+  if (forbidden.length) {
+    fail(`forbidden blog topics in slugs/titles: ${forbidden.join(', ')}`);
+  }
 }
 
 function verifyForum() {

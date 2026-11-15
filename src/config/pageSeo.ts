@@ -63,13 +63,13 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
     "title": "[[SEO_BLOG_ESP_TITLE]]",
     "description": "[[SEO_BLOG_ESP_DESCRIPTION]]"
   },
-  "/blog/anticheat/": {
-    "title": "[[SEO_BLOG_ANTICHEAT_TITLE]]",
-    "description": "[[SEO_BLOG_ANTICHEAT_DESCRIPTION]]"
+  "/blog/config/": {
+    "title": "[[SEO_BLOG_CONFIG_TITLE]]",
+    "description": "[[SEO_BLOG_CONFIG_DESCRIPTION]]"
   },
-  "/blog/bans/": {
-    "title": "[[SEO_BLOG_BANS_TITLE]]",
-    "description": "[[SEO_BLOG_BANS_DESCRIPTION]]"
+  "/blog/performance/": {
+    "title": "[[SEO_BLOG_PERFORMANCE_TITLE]]",
+    "description": "[[SEO_BLOG_PERFORMANCE_DESCRIPTION]]"
   },
   "/blog/buying/": {
     "title": "[[SEO_BLOG_BUYING_TITLE]]",

@@ -104,17 +104,17 @@ export const PAGE_KEYWORDS: Record<string, PageKeywordPlan> = {
     "intent": "informational",
     "h1": "[[KW_BLOG_ESP_H1]]"
   },
-  "/blog/anticheat/": {
-    "primary": "[[KW_BLOG_ANTICHEAT_PRIMARY]]",
+  "/blog/config/": {
+    "primary": "[[KW_BLOG_CONFIG_PRIMARY]]",
     "secondary": [],
     "intent": "informational",
-    "h1": "[[KW_BLOG_ANTICHEAT_H1]]"
+    "h1": "[[KW_BLOG_CONFIG_H1]]"
   },
-  "/blog/bans/": {
-    "primary": "[[KW_BLOG_BANS_PRIMARY]]",
+  "/blog/performance/": {
+    "primary": "[[KW_BLOG_PERFORMANCE_PRIMARY]]",
     "secondary": [],
     "intent": "informational",
-    "h1": "[[KW_BLOG_BANS_H1]]"
+    "h1": "[[KW_BLOG_PERFORMANCE_H1]]"
   },
   "/blog/buying/": {
     "primary": "[[KW_BLOG_BUYING_PRIMARY]]",
@@ -232,10 +232,16 @@ export function getPageKeywords(pathname: string): PageKeywordPlan | undefined {
   if (path !== '/' && !path.endsWith('/')) path = `${path}/`;
   const exact = PAGE_KEYWORDS[path];
   if (exact) return exact;
-  if (path.startsWith('/blog/') && path !== '/blog/') return PAGE_KEYWORDS['/blog/'];
+  if (path.startsWith('/blog/') && path !== '/blog/') {
+    return PAGE_KEYWORDS[path] ?? PAGE_KEYWORDS['/blog/'];
+  }
   if (path.startsWith('/forum/') && path !== '/forum/') return PAGE_KEYWORDS['/forum/'];
   if (path.startsWith('/products/cheats/') && path !== '/products/cheats/') {
-    return PAGE_KEYWORDS['/products/cheats/'];
+    return (
+      PAGE_KEYWORDS[path] ??
+      PAGE_KEYWORDS['/products/cheats/featured-package/'] ??
+      PAGE_KEYWORDS['/products/cheats/']
+    );
   }
   return undefined;
 }

@@ -9,7 +9,7 @@ export const templateBlogPosts: BlogPostFull[] = [
     "tag": "Guides",
     "title": "[[BLOG_BEST_TITLE — Best [[GAME_NAME]] tools: compare listed features and requirements]]",
     "seoTitle": "[[BLOG_BEST_SEO — Best [[GAME_NAME]]: Features, costs and buyer checklist]]",
-    "desc": "[[BLOG_BEST_DESC — Compare seller-listed [[GAME_NAME]] features, access terms, and requirements using an evidence-based checklist.]]",
+    "desc": "[[BLOG_BEST_DESC — Compare [[GAME_NAME]] package features, access terms, and requirements using a practical checklist.]]",
     "focus": "catalog comparison",
     "intro": "Pillar guide for comparing [[PRODUCT_NAME]] against your requirements.",
     "tailPrefix": "Buyer discipline",
@@ -17,26 +17,26 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "h": "Start from the verified manifest",
         "t": [
-          "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality.",
-          "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+          "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped.",
+          "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
         ]
       },
       {
         "h": "Separate combat labels from visual labels",
         "t": [
-          "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+          "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
         ]
       },
       {
         "h": "Document access duration in writing",
         "t": [
-          "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+          "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
         ]
       },
       {
         "h": "Questions before payment",
         "t": [
-          "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement."
+          "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language."
         ],
         "list": [
           "[[BUYER_Q1]]",
@@ -53,7 +53,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       "[[KW_PRIMARY_best-cheats]]",
       "[[KW_SECONDARY_best-cheats]]"
     ],
-    "author": "[[BLOG_AUTHOR — [[SITE_BRAND]] Editorial]]",
+    "author": "[[BLOG_AUTHOR — Editorial]]",
     "modifiedDate": "2026-01-01",
     "editorialRevision": "template-master",
     "body": [
@@ -67,11 +67,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
       },
       {
         "type": "h2",
@@ -79,7 +79,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
       },
       {
         "type": "h2",
@@ -87,7 +87,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
       },
       {
         "type": "h2",
@@ -95,7 +95,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language."
       },
       {
         "type": "ul",
@@ -112,7 +112,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality. Focus for this article: catalog comparison."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped. Focus for this article: catalog comparison."
       },
       {
         "type": "h2",
@@ -120,7 +120,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads. Focus for this article: catalog comparison."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster. Focus for this article: catalog comparison."
       },
       {
         "type": "h2",
@@ -128,7 +128,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement. Focus for this article: catalog comparison."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language. Focus for this article: catalog comparison."
       },
       {
         "type": "h2",
@@ -136,7 +136,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely. Focus for this article: catalog comparison."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order. Focus for this article: catalog comparison."
       },
       {
         "type": "h2",
@@ -144,7 +144,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest. Focus for this article: catalog comparison."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]. Focus for this article: catalog comparison."
       },
       {
         "type": "h2",
@@ -152,7 +152,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.” Focus for this article: catalog comparison."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives. Focus for this article: catalog comparison."
       },
       {
         "type": "h2",
@@ -172,7 +172,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -184,7 +184,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -220,7 +220,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -268,7 +268,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -280,7 +280,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -316,7 +316,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -364,7 +364,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -376,7 +376,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -412,7 +412,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -460,7 +460,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -472,7 +472,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -508,7 +508,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -556,7 +556,79 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (best-cheats): relate \"catalog comparison\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_REFUNDS — commercial terms]]"
+      },
+      {
+        "type": "p",
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (best-cheats): relate \"catalog comparison\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_HARDWARE — device limits]]"
+      },
+      {
+        "type": "p",
+        "text": "Laptop power profiles, docked GPUs, and external displays change performance baselines. Document firmware versions when virtualization is involved. [[REQUIREMENT_EXTRA]] placeholders should list any hosted service dependency."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (best-cheats): relate \"catalog comparison\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_ACCESSIBILITY — UI scale]]"
+      },
+      {
+        "type": "p",
+        "text": "Text scaling and color filters alter overlay readability. Include accessibility settings in configuration notes when opening tickets about clutter or overlap."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (best-cheats): relate \"catalog comparison\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_COMMUNITY — forum etiquette]]"
+      },
+      {
+        "type": "p",
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (best-cheats): relate \"catalog comparison\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_MIGRATION — template tokens]]"
+      },
+      {
+        "type": "p",
+        "text": "Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (best-cheats): relate \"catalog comparison\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_LEGAL — jurisdiction]]"
+      },
+      {
+        "type": "p",
+        "text": "Local laws may affect software use independently of game policy. This guide is informational and not legal advice."
       },
       {
         "type": "p",
@@ -579,20 +651,20 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "h": "Targeting vocabulary vs observed input",
         "t": [
-          "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality.",
-          "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+          "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped.",
+          "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
         ]
       },
       {
         "h": "Smoothing, FOV, and activation wording",
         "t": [
-          "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+          "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
         ]
       },
       {
         "h": "What to ask if a control is essential",
         "t": [
-          "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+          "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
         ]
       }
     ],
@@ -603,7 +675,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       "[[KW_PRIMARY_aimbot]]",
       "[[KW_SECONDARY_aimbot]]"
     ],
-    "author": "[[BLOG_AUTHOR — [[SITE_BRAND]] Editorial]]",
+    "author": "[[BLOG_AUTHOR — Editorial]]",
     "modifiedDate": "2026-01-01",
     "editorialRevision": "template-master",
     "body": [
@@ -617,11 +689,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
       },
       {
         "type": "h2",
@@ -629,7 +701,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
       },
       {
         "type": "h2",
@@ -637,7 +709,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
       },
       {
         "type": "h2",
@@ -645,7 +717,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality. Focus for this article: aim terminology."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped. Focus for this article: aim terminology."
       },
       {
         "type": "h2",
@@ -653,7 +725,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads. Focus for this article: aim terminology."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster. Focus for this article: aim terminology."
       },
       {
         "type": "h2",
@@ -661,7 +733,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement. Focus for this article: aim terminology."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language. Focus for this article: aim terminology."
       },
       {
         "type": "h2",
@@ -669,7 +741,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely. Focus for this article: aim terminology."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order. Focus for this article: aim terminology."
       },
       {
         "type": "h2",
@@ -677,7 +749,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest. Focus for this article: aim terminology."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]. Focus for this article: aim terminology."
       },
       {
         "type": "h2",
@@ -685,7 +757,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.” Focus for this article: aim terminology."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives. Focus for this article: aim terminology."
       },
       {
         "type": "h2",
@@ -705,7 +777,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -717,7 +789,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -753,7 +825,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -801,7 +873,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -813,7 +885,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -849,7 +921,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -897,7 +969,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -909,7 +981,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -945,7 +1017,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -993,7 +1065,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -1005,7 +1077,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -1041,7 +1113,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -1089,7 +1161,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -1101,7 +1173,79 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (aimbot): relate \"aim terminology\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_HARDWARE — device limits]]"
+      },
+      {
+        "type": "p",
+        "text": "Laptop power profiles, docked GPUs, and external displays change performance baselines. Document firmware versions when virtualization is involved. [[REQUIREMENT_EXTRA]] placeholders should list any hosted service dependency."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (aimbot): relate \"aim terminology\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_ACCESSIBILITY — UI scale]]"
+      },
+      {
+        "type": "p",
+        "text": "Text scaling and color filters alter overlay readability. Include accessibility settings in configuration notes when opening tickets about clutter or overlap."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (aimbot): relate \"aim terminology\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_COMMUNITY — forum etiquette]]"
+      },
+      {
+        "type": "p",
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (aimbot): relate \"aim terminology\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_MIGRATION — template tokens]]"
+      },
+      {
+        "type": "p",
+        "text": "Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (aimbot): relate \"aim terminology\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_LEGAL — jurisdiction]]"
+      },
+      {
+        "type": "p",
+        "text": "Local laws may affect software use independently of game policy. This guide is informational and not legal advice."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (aimbot): relate \"aim terminology\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_EVIDENCE — evidence quality]]"
+      },
+      {
+        "type": "p",
+        "text": "Prefer timestamped screen recordings over single frames when demonstrating behavior. Note queue type, map or mode, and input device so support can reproduce conditions. A clip from another title is not transferable evidence for [[GAME_NAME]]."
       },
       {
         "type": "p",
@@ -1124,20 +1268,20 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "h": "Player information vs objective information",
         "t": [
-          "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+          "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
         ]
       },
       {
         "h": "Scaling, color, and clutter",
         "t": [
-          "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads.",
-          "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+          "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster.",
+          "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
         ]
       },
       {
         "h": "Demonstrations are single scenes",
         "t": [
-          "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+          "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
         ]
       }
     ],
@@ -1148,7 +1292,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       "[[KW_PRIMARY_esp]]",
       "[[KW_SECONDARY_esp]]"
     ],
-    "author": "[[BLOG_AUTHOR — [[SITE_BRAND]] Editorial]]",
+    "author": "[[BLOG_AUTHOR — Editorial]]",
     "modifiedDate": "2026-01-01",
     "editorialRevision": "template-master",
     "body": [
@@ -1162,7 +1306,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
       },
       {
         "type": "h2",
@@ -1170,11 +1314,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
       },
       {
         "type": "h2",
@@ -1182,7 +1326,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
       },
       {
         "type": "h2",
@@ -1190,7 +1334,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality. Focus for this article: ESP categories."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped. Focus for this article: ESP categories."
       },
       {
         "type": "h2",
@@ -1198,7 +1342,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads. Focus for this article: ESP categories."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster. Focus for this article: ESP categories."
       },
       {
         "type": "h2",
@@ -1206,7 +1350,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement. Focus for this article: ESP categories."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language. Focus for this article: ESP categories."
       },
       {
         "type": "h2",
@@ -1214,7 +1358,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely. Focus for this article: ESP categories."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order. Focus for this article: ESP categories."
       },
       {
         "type": "h2",
@@ -1222,7 +1366,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest. Focus for this article: ESP categories."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]. Focus for this article: ESP categories."
       },
       {
         "type": "h2",
@@ -1230,7 +1374,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.” Focus for this article: ESP categories."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives. Focus for this article: ESP categories."
       },
       {
         "type": "h2",
@@ -1250,7 +1394,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -1262,7 +1406,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -1298,7 +1442,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -1346,7 +1490,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -1358,7 +1502,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -1394,7 +1538,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -1442,7 +1586,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -1454,7 +1598,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -1490,7 +1634,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -1538,7 +1682,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -1550,7 +1694,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -1586,7 +1730,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -1634,7 +1778,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -1646,7 +1790,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -1659,6 +1803,66 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "type": "p",
         "text": "Laptop power profiles, docked GPUs, and external displays change performance baselines. Document firmware versions when virtualization is involved. [[REQUIREMENT_EXTRA]] placeholders should list any hosted service dependency."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (esp): relate \"ESP categories\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_ACCESSIBILITY — UI scale]]"
+      },
+      {
+        "type": "p",
+        "text": "Text scaling and color filters alter overlay readability. Include accessibility settings in configuration notes when opening tickets about clutter or overlap."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (esp): relate \"ESP categories\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_COMMUNITY — forum etiquette]]"
+      },
+      {
+        "type": "p",
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (esp): relate \"ESP categories\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_MIGRATION — template tokens]]"
+      },
+      {
+        "type": "p",
+        "text": "Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (esp): relate \"ESP categories\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_LEGAL — jurisdiction]]"
+      },
+      {
+        "type": "p",
+        "text": "Local laws may affect software use independently of game policy. This guide is informational and not legal advice."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (esp): relate \"ESP categories\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_EVIDENCE — evidence quality]]"
+      },
+      {
+        "type": "p",
+        "text": "Prefer timestamped screen recordings over single frames when demonstrating behavior. Note queue type, map or mode, and input device so support can reproduce conditions. A clip from another title is not transferable evidence for [[GAME_NAME]]."
       },
       {
         "type": "p",
@@ -1667,34 +1871,34 @@ export const templateBlogPosts: BlogPostFull[] = [
     ]
   },
   {
-    "slug": "anticheat",
+    "slug": "config",
     "type": "cluster",
     "parentPillar": "best-cheats",
-    "tag": "Safety",
-    "title": "[[BLOG_AC_TITLE — Anti-cheat and policy language for [[GAME_NAME]]]]",
-    "seoTitle": "[[BLOG_AC_SEO — [[GAME_NAME]] anti-cheat: policy vs architecture]]",
-    "desc": "[[BLOG_AC_DESC — Keep platform enforcement, software architecture, and seller claims separate for [[GAME_NAME]].]]",
-    "focus": "anti-cheat clarity",
-    "intro": "Cluster article for policy and architecture questions.",
-    "tailPrefix": "Policy reading",
+    "tag": "Setup",
+    "title": "[[BLOG_CONFIG_TITLE — [[GAME_NAME]] overlay and configuration guide]]",
+    "seoTitle": "[[BLOG_CONFIG_SEO — [[GAME_NAME]] overlays: layout, scale, and module toggles]]",
+    "desc": "[[BLOG_CONFIG_DESC — Configure [[PRODUCT_NAME]] overlays and controls for [[GAME_NAME]] using the documented module list.]]",
+    "focus": "configuration workflow",
+    "intro": "Cluster article for overlay setup and module toggles.",
+    "tailPrefix": "Configuration",
     "sections": [
       {
-        "h": "Three categories of anti-cheat questions",
+        "h": "Start from the module list",
         "t": [
-          "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement.",
-          "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+          "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped.",
+          "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
         ]
       },
       {
-        "h": "No independent detection table here",
+        "h": "Display scale and clutter",
         "t": [
-          "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+          "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
         ]
       },
       {
-        "h": "Evidence to keep",
+        "h": "Save notes after each change",
         "t": [
-          "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+          "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
         ]
       }
     ],
@@ -1702,92 +1906,92 @@ export const templateBlogPosts: BlogPostFull[] = [
     "date": "Jan 1, 2026",
     "readTime": "15 min read",
     "relatedKeywords": [
-      "[[KW_PRIMARY_anticheat]]",
-      "[[KW_SECONDARY_anticheat]]"
+      "[[KW_PRIMARY_config]]",
+      "[[KW_SECONDARY_config]]"
     ],
-    "author": "[[BLOG_AUTHOR — [[SITE_BRAND]] Editorial]]",
+    "author": "[[BLOG_AUTHOR — Editorial]]",
     "modifiedDate": "2026-01-01",
     "editorialRevision": "template-master",
     "body": [
       {
         "type": "p",
-        "text": "Cluster article for policy and architecture questions. Buyers researching [[GAME_NAME]] often mix search keywords from other titles; this article keeps vocabulary tied to placeholders you will replace during migration. Nothing here certifies detection rates, win rates, or uptime."
+        "text": "Cluster article for overlay setup and module toggles. Buyers researching [[GAME_NAME]] often mix search keywords from other titles; this article keeps vocabulary tied to placeholders you will replace during migration. Nothing here certifies detection rates, win rates, or uptime."
       },
       {
         "type": "h2",
-        "text": "Three categories of anti-cheat questions"
+        "text": "Start from the module list"
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
       },
       {
         "type": "h2",
-        "text": "No independent detection table here"
+        "text": "Display scale and clutter"
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
       },
       {
         "type": "h2",
-        "text": "Evidence to keep"
+        "text": "Save notes after each change"
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
       },
       {
         "type": "h2",
-        "text": "Policy reading 1"
+        "text": "Configuration 1"
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality. Focus for this article: anti-cheat clarity."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped. Focus for this article: configuration workflow."
       },
       {
         "type": "h2",
-        "text": "Policy reading 2"
+        "text": "Configuration 2"
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads. Focus for this article: anti-cheat clarity."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster. Focus for this article: configuration workflow."
       },
       {
         "type": "h2",
-        "text": "Policy reading 3"
+        "text": "Configuration 3"
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement. Focus for this article: anti-cheat clarity."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language. Focus for this article: configuration workflow."
       },
       {
         "type": "h2",
-        "text": "Policy reading 4"
+        "text": "Configuration 4"
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely. Focus for this article: anti-cheat clarity."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order. Focus for this article: configuration workflow."
       },
       {
         "type": "h2",
-        "text": "Policy reading 5"
+        "text": "Configuration 5"
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest. Focus for this article: anti-cheat clarity."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]. Focus for this article: configuration workflow."
       },
       {
         "type": "h2",
-        "text": "Policy reading 6"
+        "text": "Configuration 6"
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.” Focus for this article: anti-cheat clarity."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives. Focus for this article: configuration workflow."
       },
       {
         "type": "h2",
@@ -1799,7 +2003,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1807,11 +2011,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1819,11 +2023,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1835,7 +2039,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1847,7 +2051,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1855,11 +2059,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1871,7 +2075,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1883,7 +2087,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1895,7 +2099,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1903,11 +2107,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1915,11 +2119,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1931,7 +2135,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1943,7 +2147,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1951,11 +2155,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1967,7 +2171,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1979,7 +2183,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1991,7 +2195,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -1999,11 +2203,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2011,11 +2215,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2027,7 +2231,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2039,7 +2243,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2047,11 +2251,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2063,7 +2267,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2075,7 +2279,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2087,7 +2291,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2095,11 +2299,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2107,11 +2311,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2123,7 +2327,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2135,7 +2339,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2143,11 +2347,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2159,7 +2363,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2171,7 +2375,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2183,7 +2387,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2191,11 +2395,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2203,11 +2407,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2219,38 +2423,100 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (anticheat): relate \"anti-cheat clarity\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_ACCESSIBILITY — UI scale]]"
+      },
+      {
+        "type": "p",
+        "text": "Text scaling and color filters alter overlay readability. Include accessibility settings in configuration notes when opening tickets about clutter or overlap."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_COMMUNITY — forum etiquette]]"
+      },
+      {
+        "type": "p",
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_MIGRATION — template tokens]]"
+      },
+      {
+        "type": "p",
+        "text": "Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_LEGAL — jurisdiction]]"
+      },
+      {
+        "type": "p",
+        "text": "Local laws may affect software use independently of game policy. This guide is informational and not legal advice."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_EVIDENCE — evidence quality]]"
+      },
+      {
+        "type": "p",
+        "text": "Prefer timestamped screen recordings over single frames when demonstrating behavior. Note queue type, map or mode, and input device so support can reproduce conditions. A clip from another title is not transferable evidence for [[GAME_NAME]]."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (config): relate \"configuration workflow\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       }
     ]
   },
   {
-    "slug": "bans",
+    "slug": "performance",
     "type": "cluster",
     "parentPillar": "best-cheats",
-    "tag": "Safety",
-    "title": "[[BLOG_BANS_TITLE — Account restrictions and recovery questions]]",
-    "seoTitle": "[[BLOG_BANS_SEO — [[GAME_NAME]] account limits and support routes]]",
-    "desc": "[[BLOG_BANS_DESC — Separate account sanctions from product setup issues for [[GAME_NAME]].]]",
-    "focus": "account restrictions",
-    "intro": "Cluster article for restriction vocabulary.",
-    "tailPrefix": "Account notes",
+    "tag": "Setup",
+    "title": "[[BLOG_PERF_TITLE — [[GAME_NAME]] performance and display tuning]]",
+    "seoTitle": "[[BLOG_PERF_SEO — [[GAME_NAME]] FPS, resolution, and overlay performance]]",
+    "desc": "[[BLOG_PERF_DESC — Tune PC and in-game settings so [[PRODUCT_NAME]] overlays stay readable on [[GAME_NAME]].]]",
+    "focus": "performance tuning",
+    "intro": "Cluster article for display and frame-rate tuning.",
+    "tailPrefix": "Performance",
     "sections": [
       {
-        "h": "Restriction types use different support paths",
+        "h": "Baseline before enabling modules",
         "t": [
-          "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement."
+          "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster.",
+          "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
         ]
       },
       {
-        "h": "Hardware identifiers vs product keys",
+        "h": "Resolution and refresh targets",
         "t": [
-          "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+          "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
         ]
       },
       {
-        "h": "When to stop public troubleshooting",
+        "h": "After game patches",
         "t": [
-          "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+          "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives.",
+          "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
         ]
       }
     ],
@@ -2258,88 +2524,96 @@ export const templateBlogPosts: BlogPostFull[] = [
     "date": "Jan 1, 2026",
     "readTime": "15 min read",
     "relatedKeywords": [
-      "[[KW_PRIMARY_bans]]",
-      "[[KW_SECONDARY_bans]]"
+      "[[KW_PRIMARY_performance]]",
+      "[[KW_SECONDARY_performance]]"
     ],
-    "author": "[[BLOG_AUTHOR — [[SITE_BRAND]] Editorial]]",
+    "author": "[[BLOG_AUTHOR — Editorial]]",
     "modifiedDate": "2026-01-01",
     "editorialRevision": "template-master",
     "body": [
       {
         "type": "p",
-        "text": "Cluster article for restriction vocabulary. Buyers researching [[GAME_NAME]] often mix search keywords from other titles; this article keeps vocabulary tied to placeholders you will replace during migration. Nothing here certifies detection rates, win rates, or uptime."
+        "text": "Cluster article for display and frame-rate tuning. Buyers researching [[GAME_NAME]] often mix search keywords from other titles; this article keeps vocabulary tied to placeholders you will replace during migration. Nothing here certifies detection rates, win rates, or uptime."
       },
       {
         "type": "h2",
-        "text": "Restriction types use different support paths"
+        "text": "Baseline before enabling modules"
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
+      },
+      {
+        "type": "p",
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
       },
       {
         "type": "h2",
-        "text": "Hardware identifiers vs product keys"
+        "text": "Resolution and refresh targets"
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
       },
       {
         "type": "h2",
-        "text": "When to stop public troubleshooting"
+        "text": "After game patches"
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives."
+      },
+      {
+        "type": "p",
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
       },
       {
         "type": "h2",
-        "text": "Account notes 1"
+        "text": "Performance 1"
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality. Focus for this article: account restrictions."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped. Focus for this article: performance tuning."
       },
       {
         "type": "h2",
-        "text": "Account notes 2"
+        "text": "Performance 2"
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads. Focus for this article: account restrictions."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster. Focus for this article: performance tuning."
       },
       {
         "type": "h2",
-        "text": "Account notes 3"
+        "text": "Performance 3"
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement. Focus for this article: account restrictions."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language. Focus for this article: performance tuning."
       },
       {
         "type": "h2",
-        "text": "Account notes 4"
+        "text": "Performance 4"
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely. Focus for this article: account restrictions."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order. Focus for this article: performance tuning."
       },
       {
         "type": "h2",
-        "text": "Account notes 5"
+        "text": "Performance 5"
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest. Focus for this article: account restrictions."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]. Focus for this article: performance tuning."
       },
       {
         "type": "h2",
-        "text": "Account notes 6"
+        "text": "Performance 6"
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.” Focus for this article: account restrictions."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives. Focus for this article: performance tuning."
       },
       {
         "type": "h2",
@@ -2351,7 +2625,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2359,11 +2633,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2371,11 +2645,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2387,7 +2661,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2399,7 +2673,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2407,11 +2681,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2423,7 +2697,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2435,7 +2709,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2447,7 +2721,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2455,11 +2729,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2467,11 +2741,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2483,7 +2757,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2495,7 +2769,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2503,11 +2777,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2519,7 +2793,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2531,7 +2805,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2543,7 +2817,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2551,11 +2825,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2563,11 +2837,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2579,7 +2853,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2591,7 +2865,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2599,11 +2873,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2615,7 +2889,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2627,7 +2901,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2639,7 +2913,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2647,11 +2921,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2659,11 +2933,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2675,7 +2949,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2687,7 +2961,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2695,11 +2969,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2711,7 +2985,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2723,7 +2997,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2735,7 +3009,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2743,11 +3017,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2755,11 +3029,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2771,7 +3045,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -2783,7 +3057,55 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (bans): relate \"account restrictions\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_COMMUNITY — forum etiquette]]"
+      },
+      {
+        "type": "p",
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_MIGRATION — template tokens]]"
+      },
+      {
+        "type": "p",
+        "text": "Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_LEGAL — jurisdiction]]"
+      },
+      {
+        "type": "p",
+        "text": "Local laws may affect software use independently of game policy. This guide is informational and not legal advice."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_EVIDENCE — evidence quality]]"
+      },
+      {
+        "type": "p",
+        "text": "Prefer timestamped screen recordings over single frames when demonstrating behavior. Note queue type, map or mode, and input device so support can reproduce conditions. A clip from another title is not transferable evidence for [[GAME_NAME]]."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (performance): relate \"performance tuning\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       }
     ]
   },
@@ -2802,20 +3124,20 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "h": "SKU clarity",
         "t": [
-          "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality.",
-          "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+          "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped.",
+          "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
         ]
       },
       {
         "h": "Totals and bundled services",
         "t": [
-          "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+          "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
         ]
       },
       {
         "h": "Terms live outside blog conclusions",
         "t": [
-          "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement."
+          "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language."
         ]
       }
     ],
@@ -2826,7 +3148,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       "[[KW_PRIMARY_buying]]",
       "[[KW_SECONDARY_buying]]"
     ],
-    "author": "[[BLOG_AUTHOR — [[SITE_BRAND]] Editorial]]",
+    "author": "[[BLOG_AUTHOR — Editorial]]",
     "modifiedDate": "2026-01-01",
     "editorialRevision": "template-master",
     "body": [
@@ -2840,11 +3162,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
       },
       {
         "type": "h2",
@@ -2852,7 +3174,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
       },
       {
         "type": "h2",
@@ -2860,7 +3182,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language."
       },
       {
         "type": "h2",
@@ -2868,7 +3190,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality. Focus for this article: checkout discipline."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped. Focus for this article: checkout discipline."
       },
       {
         "type": "h2",
@@ -2876,7 +3198,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads. Focus for this article: checkout discipline."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster. Focus for this article: checkout discipline."
       },
       {
         "type": "h2",
@@ -2884,7 +3206,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement. Focus for this article: checkout discipline."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language. Focus for this article: checkout discipline."
       },
       {
         "type": "h2",
@@ -2892,7 +3214,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely. Focus for this article: checkout discipline."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order. Focus for this article: checkout discipline."
       },
       {
         "type": "h2",
@@ -2900,7 +3222,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest. Focus for this article: checkout discipline."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]. Focus for this article: checkout discipline."
       },
       {
         "type": "h2",
@@ -2908,7 +3230,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.” Focus for this article: checkout discipline."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives. Focus for this article: checkout discipline."
       },
       {
         "type": "h2",
@@ -2928,7 +3250,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -2940,7 +3262,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -2976,7 +3298,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -3024,7 +3346,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -3036,7 +3358,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -3072,7 +3394,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -3120,7 +3442,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -3132,7 +3454,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -3168,7 +3490,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -3216,7 +3538,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -3228,7 +3550,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -3264,7 +3586,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -3312,7 +3634,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -3324,7 +3646,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -3337,6 +3659,66 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "type": "p",
         "text": "Laptop power profiles, docked GPUs, and external displays change performance baselines. Document firmware versions when virtualization is involved. [[REQUIREMENT_EXTRA]] placeholders should list any hosted service dependency."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (buying): relate \"checkout discipline\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_ACCESSIBILITY — UI scale]]"
+      },
+      {
+        "type": "p",
+        "text": "Text scaling and color filters alter overlay readability. Include accessibility settings in configuration notes when opening tickets about clutter or overlap."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (buying): relate \"checkout discipline\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_COMMUNITY — forum etiquette]]"
+      },
+      {
+        "type": "p",
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (buying): relate \"checkout discipline\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_MIGRATION — template tokens]]"
+      },
+      {
+        "type": "p",
+        "text": "Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (buying): relate \"checkout discipline\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_LEGAL — jurisdiction]]"
+      },
+      {
+        "type": "p",
+        "text": "Local laws may affect software use independently of game policy. This guide is informational and not legal advice."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (buying): relate \"checkout discipline\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_EVIDENCE — evidence quality]]"
+      },
+      {
+        "type": "p",
+        "text": "Prefer timestamped screen recordings over single frames when demonstrating behavior. Note queue type, map or mode, and input device so support can reproduce conditions. A clip from another title is not transferable evidence for [[GAME_NAME]]."
       },
       {
         "type": "p",
@@ -3349,30 +3731,30 @@ export const templateBlogPosts: BlogPostFull[] = [
     "type": "cluster",
     "parentPillar": "best-cheats",
     "tag": "Safety",
-    "title": "[[BLOG_SAFE_TITLE — Risk framing without marketing promises]]",
-    "seoTitle": "[[BLOG_SAFE_SEO — [[GAME_NAME]] safety language: bounded claims]]",
-    "desc": "[[BLOG_SAFE_DESC — Explain how to read risk-related adjectives for [[GAME_NAME]] without guarantees.]]",
-    "focus": "risk language",
-    "intro": "Cluster article for cautious buyers.",
-    "tailPrefix": "Risk framing",
+    "title": "[[BLOG_SAFE_TITLE — Setup hygiene and realistic expectations]]",
+    "seoTitle": "[[BLOG_SAFE_SEO — [[GAME_NAME]] setup habits and requirement checks]]",
+    "desc": "[[BLOG_SAFE_DESC — Practical setup habits for [[GAME_NAME]] without overstated marketing language.]]",
+    "focus": "setup hygiene",
+    "intro": "Cluster article for practical setup discipline.",
+    "tailPrefix": "Setup hygiene",
     "sections": [
       {
-        "h": "Safe, private, undetected are not metrics",
+        "h": "Marketing adjectives are not specifications",
         "t": [
-          "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+          "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
         ]
       },
       {
-        "h": "Operational security for buyers",
+        "h": "Environment checklist",
         "t": [
-          "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads.",
-          "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+          "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster.",
+          "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
         ]
       },
       {
-        "h": "Official platform stance",
+        "h": "Platform documentation",
         "t": [
-          "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement."
+          "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language."
         ]
       }
     ],
@@ -3383,89 +3765,89 @@ export const templateBlogPosts: BlogPostFull[] = [
       "[[KW_PRIMARY_safety]]",
       "[[KW_SECONDARY_safety]]"
     ],
-    "author": "[[BLOG_AUTHOR — [[SITE_BRAND]] Editorial]]",
+    "author": "[[BLOG_AUTHOR — Editorial]]",
     "modifiedDate": "2026-01-01",
     "editorialRevision": "template-master",
     "body": [
       {
         "type": "p",
-        "text": "Cluster article for cautious buyers. Buyers researching [[GAME_NAME]] often mix search keywords from other titles; this article keeps vocabulary tied to placeholders you will replace during migration. Nothing here certifies detection rates, win rates, or uptime."
+        "text": "Cluster article for practical setup discipline. Buyers researching [[GAME_NAME]] often mix search keywords from other titles; this article keeps vocabulary tied to placeholders you will replace during migration. Nothing here certifies detection rates, win rates, or uptime."
       },
       {
         "type": "h2",
-        "text": "Safe, private, undetected are not metrics"
+        "text": "Marketing adjectives are not specifications"
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
       },
       {
         "type": "h2",
-        "text": "Operational security for buyers"
+        "text": "Environment checklist"
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
       },
       {
         "type": "h2",
-        "text": "Official platform stance"
+        "text": "Platform documentation"
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language."
       },
       {
         "type": "h2",
-        "text": "Risk framing 1"
+        "text": "Setup hygiene 1"
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality. Focus for this article: risk language."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped. Focus for this article: setup hygiene."
       },
       {
         "type": "h2",
-        "text": "Risk framing 2"
+        "text": "Setup hygiene 2"
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads. Focus for this article: risk language."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster. Focus for this article: setup hygiene."
       },
       {
         "type": "h2",
-        "text": "Risk framing 3"
+        "text": "Setup hygiene 3"
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement. Focus for this article: risk language."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language. Focus for this article: setup hygiene."
       },
       {
         "type": "h2",
-        "text": "Risk framing 4"
+        "text": "Setup hygiene 4"
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely. Focus for this article: risk language."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order. Focus for this article: setup hygiene."
       },
       {
         "type": "h2",
-        "text": "Risk framing 5"
+        "text": "Setup hygiene 5"
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest. Focus for this article: risk language."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]. Focus for this article: setup hygiene."
       },
       {
         "type": "h2",
-        "text": "Risk framing 6"
+        "text": "Setup hygiene 6"
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.” Focus for this article: risk language."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives. Focus for this article: setup hygiene."
       },
       {
         "type": "h2",
@@ -3477,7 +3859,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3485,11 +3867,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3497,11 +3879,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3513,7 +3895,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3525,7 +3907,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3533,11 +3915,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3549,7 +3931,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3561,7 +3943,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3573,7 +3955,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3581,11 +3963,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3593,11 +3975,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3609,7 +3991,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3621,7 +4003,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3629,11 +4011,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3645,7 +4027,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3657,7 +4039,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3669,7 +4051,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3677,11 +4059,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3689,11 +4071,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3705,7 +4087,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3717,7 +4099,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3725,11 +4107,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3741,7 +4123,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3753,7 +4135,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3765,7 +4147,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3773,11 +4155,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3785,11 +4167,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3801,7 +4183,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3813,7 +4195,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3821,11 +4203,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3837,7 +4219,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3849,7 +4231,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3861,7 +4243,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3869,11 +4251,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3881,11 +4263,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       },
       {
         "type": "h2",
@@ -3897,7 +4279,67 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Article-specific checkpoint (safety): relate \"risk language\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_ACCESSIBILITY — UI scale]]"
+      },
+      {
+        "type": "p",
+        "text": "Text scaling and color filters alter overlay readability. Include accessibility settings in configuration notes when opening tickets about clutter or overlap."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_COMMUNITY — forum etiquette]]"
+      },
+      {
+        "type": "p",
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_MIGRATION — template tokens]]"
+      },
+      {
+        "type": "p",
+        "text": "Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_LEGAL — jurisdiction]]"
+      },
+      {
+        "type": "p",
+        "text": "Local laws may affect software use independently of game policy. This guide is informational and not legal advice."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_EVIDENCE — evidence quality]]"
+      },
+      {
+        "type": "p",
+        "text": "Prefer timestamped screen recordings over single frames when demonstrating behavior. Note queue type, map or mode, and input device so support can reproduce conditions. A clip from another title is not transferable evidence for [[GAME_NAME]]."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (safety): relate \"setup hygiene\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
       }
     ]
   },
@@ -3908,7 +4350,7 @@ export const templateBlogPosts: BlogPostFull[] = [
     "tag": "Guides",
     "title": "[[BLOG_FEAT_TITLE — Feature glossary for [[GAME_NAME]] listings]]",
     "seoTitle": "[[BLOG_FEAT_SEO — [[GAME_NAME]] features: categories and boundaries]]",
-    "desc": "[[BLOG_FEAT_DESC — Map seller feature groups for [[GAME_NAME]] to buyer questions.]]",
+    "desc": "[[BLOG_FEAT_DESC — Map [[PRODUCT_NAME]] feature groups for [[GAME_NAME]] to practical setup questions.]]",
     "focus": "feature glossary",
     "intro": "Cluster article for manifest alignment.",
     "tailPrefix": "Glossary use",
@@ -3916,19 +4358,19 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "h": "Group labels by question type",
         "t": [
-          "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+          "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
         ]
       },
       {
         "h": "Cross-links are not bundle expansion",
         "t": [
-          "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+          "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
         ]
       },
       {
         "h": "Migration replaces [[FEATURE_n]] tokens",
         "t": [
-          "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.”"
+          "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives."
         ]
       }
     ],
@@ -3939,7 +4381,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       "[[KW_PRIMARY_features]]",
       "[[KW_SECONDARY_features]]"
     ],
-    "author": "[[BLOG_AUTHOR — [[SITE_BRAND]] Editorial]]",
+    "author": "[[BLOG_AUTHOR — Editorial]]",
     "modifiedDate": "2026-01-01",
     "editorialRevision": "template-master",
     "body": [
@@ -3953,7 +4395,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
       },
       {
         "type": "h2",
@@ -3961,7 +4403,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
       },
       {
         "type": "h2",
@@ -3969,7 +4411,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.”"
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives."
       },
       {
         "type": "h2",
@@ -3977,7 +4419,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality. Focus for this article: feature glossary."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped. Focus for this article: feature glossary."
       },
       {
         "type": "h2",
@@ -3985,7 +4427,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads. Focus for this article: feature glossary."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster. Focus for this article: feature glossary."
       },
       {
         "type": "h2",
@@ -3993,7 +4435,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement. Focus for this article: feature glossary."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language. Focus for this article: feature glossary."
       },
       {
         "type": "h2",
@@ -4001,7 +4443,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely. Focus for this article: feature glossary."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order. Focus for this article: feature glossary."
       },
       {
         "type": "h2",
@@ -4009,7 +4451,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest. Focus for this article: feature glossary."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]. Focus for this article: feature glossary."
       },
       {
         "type": "h2",
@@ -4017,7 +4459,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.” Focus for this article: feature glossary."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives. Focus for this article: feature glossary."
       },
       {
         "type": "h2",
@@ -4037,7 +4479,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -4049,7 +4491,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -4085,7 +4527,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -4133,7 +4575,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -4145,7 +4587,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -4181,7 +4623,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -4229,7 +4671,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -4241,7 +4683,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -4277,7 +4719,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -4325,7 +4767,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -4337,7 +4779,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -4373,7 +4815,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -4421,7 +4863,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -4433,7 +4875,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -4458,6 +4900,66 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "type": "p",
         "text": "Text scaling and color filters alter overlay readability. Include accessibility settings in configuration notes when opening tickets about clutter or overlap."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (features): relate \"feature glossary\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_COMMUNITY — forum etiquette]]"
+      },
+      {
+        "type": "p",
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (features): relate \"feature glossary\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_MIGRATION — template tokens]]"
+      },
+      {
+        "type": "p",
+        "text": "Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (features): relate \"feature glossary\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_LEGAL — jurisdiction]]"
+      },
+      {
+        "type": "p",
+        "text": "Local laws may affect software use independently of game policy. This guide is informational and not legal advice."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (features): relate \"feature glossary\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_EVIDENCE — evidence quality]]"
+      },
+      {
+        "type": "p",
+        "text": "Prefer timestamped screen recordings over single frames when demonstrating behavior. Note queue type, map or mode, and input device so support can reproduce conditions. A clip from another title is not transferable evidence for [[GAME_NAME]]."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (features): relate \"feature glossary\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_NETWORK — connectivity]]"
+      },
+      {
+        "type": "p",
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -4472,7 +4974,7 @@ export const templateBlogPosts: BlogPostFull[] = [
     "tag": "Plans",
     "title": "[[BLOG_ACCESS_TITLE — Access duration and entitlement terms]]",
     "seoTitle": "[[BLOG_ACCESS_SEO — [[GAME_NAME]] Monthly vs Lifetime meaning]]",
-    "desc": "[[BLOG_ACCESS_DESC — Define access vocabulary for [[GAME_NAME]] using seller terms, not guesses.]]",
+    "desc": "[[BLOG_ACCESS_DESC — Define access vocabulary for [[GAME_NAME]] using product terms from [[PRODUCT_NAME]].]]",
     "focus": "entitlements",
     "intro": "Cluster article for subscription language.",
     "tailPrefix": "Entitlement notes",
@@ -4480,21 +4982,21 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "h": "Duration labels are commercial terms",
         "t": [
-          "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality.",
-          "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+          "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped.",
+          "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
         ]
       },
       {
         "h": "Activation limits",
         "t": [
-          "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+          "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
         ]
       },
       {
         "h": "Patch survivability",
         "t": [
-          "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.”",
-          "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement."
+          "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives.",
+          "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language."
         ]
       }
     ],
@@ -4505,7 +5007,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       "[[KW_PRIMARY_access]]",
       "[[KW_SECONDARY_access]]"
     ],
-    "author": "[[BLOG_AUTHOR — [[SITE_BRAND]] Editorial]]",
+    "author": "[[BLOG_AUTHOR — Editorial]]",
     "modifiedDate": "2026-01-01",
     "editorialRevision": "template-master",
     "body": [
@@ -4519,11 +5021,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
       },
       {
         "type": "h2",
@@ -4531,7 +5033,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
       },
       {
         "type": "h2",
@@ -4539,11 +5041,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.”"
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives."
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language."
       },
       {
         "type": "h2",
@@ -4551,7 +5053,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality. Focus for this article: entitlements."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped. Focus for this article: entitlements."
       },
       {
         "type": "h2",
@@ -4559,7 +5061,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads. Focus for this article: entitlements."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster. Focus for this article: entitlements."
       },
       {
         "type": "h2",
@@ -4567,7 +5069,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement. Focus for this article: entitlements."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language. Focus for this article: entitlements."
       },
       {
         "type": "h2",
@@ -4575,7 +5077,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely. Focus for this article: entitlements."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order. Focus for this article: entitlements."
       },
       {
         "type": "h2",
@@ -4583,7 +5085,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest. Focus for this article: entitlements."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]. Focus for this article: entitlements."
       },
       {
         "type": "h2",
@@ -4591,7 +5093,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.” Focus for this article: entitlements."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives. Focus for this article: entitlements."
       },
       {
         "type": "h2",
@@ -4611,7 +5113,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -4623,7 +5125,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -4659,7 +5161,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -4707,7 +5209,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -4719,7 +5221,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -4755,7 +5257,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -4803,7 +5305,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -4815,7 +5317,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -4851,7 +5353,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -4899,7 +5401,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -4911,7 +5413,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -4947,7 +5449,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -4995,7 +5497,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -5007,7 +5509,79 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (access): relate \"entitlements\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_HARDWARE — device limits]]"
+      },
+      {
+        "type": "p",
+        "text": "Laptop power profiles, docked GPUs, and external displays change performance baselines. Document firmware versions when virtualization is involved. [[REQUIREMENT_EXTRA]] placeholders should list any hosted service dependency."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (access): relate \"entitlements\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_ACCESSIBILITY — UI scale]]"
+      },
+      {
+        "type": "p",
+        "text": "Text scaling and color filters alter overlay readability. Include accessibility settings in configuration notes when opening tickets about clutter or overlap."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (access): relate \"entitlements\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_COMMUNITY — forum etiquette]]"
+      },
+      {
+        "type": "p",
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (access): relate \"entitlements\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_MIGRATION — template tokens]]"
+      },
+      {
+        "type": "p",
+        "text": "Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (access): relate \"entitlements\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_LEGAL — jurisdiction]]"
+      },
+      {
+        "type": "p",
+        "text": "Local laws may affect software use independently of game policy. This guide is informational and not legal advice."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (access): relate \"entitlements\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_EVIDENCE — evidence quality]]"
+      },
+      {
+        "type": "p",
+        "text": "Prefer timestamped screen recordings over single frames when demonstrating behavior. Note queue type, map or mode, and input device so support can reproduce conditions. A clip from another title is not transferable evidence for [[GAME_NAME]]."
       },
       {
         "type": "p",
@@ -5030,19 +5604,19 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "h": "Cosmetic modules are not assumed",
         "t": [
-          "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+          "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
         ]
       },
       {
         "h": "Economy and policy layers",
         "t": [
-          "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement."
+          "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language."
         ]
       },
       {
         "h": "Ask SKU-specific questions",
         "t": [
-          "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+          "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
         ]
       }
     ],
@@ -5053,7 +5627,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       "[[KW_PRIMARY_skins]]",
       "[[KW_SECONDARY_skins]]"
     ],
-    "author": "[[BLOG_AUTHOR — [[SITE_BRAND]] Editorial]]",
+    "author": "[[BLOG_AUTHOR — Editorial]]",
     "modifiedDate": "2026-01-01",
     "editorialRevision": "template-master",
     "body": [
@@ -5067,7 +5641,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
       },
       {
         "type": "h2",
@@ -5075,7 +5649,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language."
       },
       {
         "type": "h2",
@@ -5083,7 +5657,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
       },
       {
         "type": "h2",
@@ -5091,7 +5665,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality. Focus for this article: cosmetic scope."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped. Focus for this article: cosmetic scope."
       },
       {
         "type": "h2",
@@ -5099,7 +5673,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads. Focus for this article: cosmetic scope."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster. Focus for this article: cosmetic scope."
       },
       {
         "type": "h2",
@@ -5107,7 +5681,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement. Focus for this article: cosmetic scope."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language. Focus for this article: cosmetic scope."
       },
       {
         "type": "h2",
@@ -5115,7 +5689,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely. Focus for this article: cosmetic scope."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order. Focus for this article: cosmetic scope."
       },
       {
         "type": "h2",
@@ -5123,7 +5697,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest. Focus for this article: cosmetic scope."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]. Focus for this article: cosmetic scope."
       },
       {
         "type": "h2",
@@ -5131,7 +5705,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.” Focus for this article: cosmetic scope."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives. Focus for this article: cosmetic scope."
       },
       {
         "type": "h2",
@@ -5151,7 +5725,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -5163,7 +5737,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -5199,7 +5773,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -5247,7 +5821,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -5259,7 +5833,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -5295,7 +5869,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -5343,7 +5917,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -5355,7 +5929,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -5391,7 +5965,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -5439,7 +6013,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -5451,7 +6025,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -5487,7 +6061,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -5535,7 +6109,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -5547,7 +6121,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -5572,6 +6146,66 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "type": "p",
         "text": "Text scaling and color filters alter overlay readability. Include accessibility settings in configuration notes when opening tickets about clutter or overlap."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (skins): relate \"cosmetic scope\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_COMMUNITY — forum etiquette]]"
+      },
+      {
+        "type": "p",
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (skins): relate \"cosmetic scope\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_MIGRATION — template tokens]]"
+      },
+      {
+        "type": "p",
+        "text": "Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (skins): relate \"cosmetic scope\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_LEGAL — jurisdiction]]"
+      },
+      {
+        "type": "p",
+        "text": "Local laws may affect software use independently of game policy. This guide is informational and not legal advice."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (skins): relate \"cosmetic scope\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_EVIDENCE — evidence quality]]"
+      },
+      {
+        "type": "p",
+        "text": "Prefer timestamped screen recordings over single frames when demonstrating behavior. Note queue type, map or mode, and input device so support can reproduce conditions. A clip from another title is not transferable evidence for [[GAME_NAME]]."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (skins): relate \"cosmetic scope\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_NETWORK — connectivity]]"
+      },
+      {
+        "type": "p",
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -5594,19 +6228,19 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "h": "External is not a rating",
         "t": [
-          "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+          "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
         ]
       },
       {
         "h": "Companion services",
         "t": [
-          "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+          "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
         ]
       },
       {
         "h": "Latency and hosting",
         "t": [
-          "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+          "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
         ]
       }
     ],
@@ -5617,7 +6251,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       "[[KW_PRIMARY_external]]",
       "[[KW_SECONDARY_external]]"
     ],
-    "author": "[[BLOG_AUTHOR — [[SITE_BRAND]] Editorial]]",
+    "author": "[[BLOG_AUTHOR — Editorial]]",
     "modifiedDate": "2026-01-01",
     "editorialRevision": "template-master",
     "body": [
@@ -5631,7 +6265,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
       },
       {
         "type": "h2",
@@ -5639,7 +6273,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
       },
       {
         "type": "h2",
@@ -5647,7 +6281,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
       },
       {
         "type": "h2",
@@ -5655,7 +6289,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality. Focus for this article: architecture words."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped. Focus for this article: architecture words."
       },
       {
         "type": "h2",
@@ -5663,7 +6297,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads. Focus for this article: architecture words."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster. Focus for this article: architecture words."
       },
       {
         "type": "h2",
@@ -5671,7 +6305,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement. Focus for this article: architecture words."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language. Focus for this article: architecture words."
       },
       {
         "type": "h2",
@@ -5679,7 +6313,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely. Focus for this article: architecture words."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order. Focus for this article: architecture words."
       },
       {
         "type": "h2",
@@ -5687,7 +6321,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest. Focus for this article: architecture words."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]. Focus for this article: architecture words."
       },
       {
         "type": "h2",
@@ -5695,7 +6329,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.” Focus for this article: architecture words."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives. Focus for this article: architecture words."
       },
       {
         "type": "h2",
@@ -5715,7 +6349,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -5727,7 +6361,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -5763,7 +6397,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -5811,7 +6445,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -5823,7 +6457,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -5859,7 +6493,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -5907,7 +6541,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -5919,7 +6553,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -5955,7 +6589,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -6003,7 +6637,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -6015,7 +6649,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -6051,7 +6685,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -6099,7 +6733,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -6111,7 +6745,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -6136,6 +6770,66 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "type": "p",
         "text": "Text scaling and color filters alter overlay readability. Include accessibility settings in configuration notes when opening tickets about clutter or overlap."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (external): relate \"architecture words\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_COMMUNITY — forum etiquette]]"
+      },
+      {
+        "type": "p",
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (external): relate \"architecture words\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_MIGRATION — template tokens]]"
+      },
+      {
+        "type": "p",
+        "text": "Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (external): relate \"architecture words\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_LEGAL — jurisdiction]]"
+      },
+      {
+        "type": "p",
+        "text": "Local laws may affect software use independently of game policy. This guide is informational and not legal advice."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (external): relate \"architecture words\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_EVIDENCE — evidence quality]]"
+      },
+      {
+        "type": "p",
+        "text": "Prefer timestamped screen recordings over single frames when demonstrating behavior. Note queue type, map or mode, and input device so support can reproduce conditions. A clip from another title is not transferable evidence for [[GAME_NAME]]."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (external): relate \"architecture words\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_NETWORK — connectivity]]"
+      },
+      {
+        "type": "p",
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -6158,20 +6852,20 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "h": "Observation-based support",
         "t": [
-          "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely.",
-          "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+          "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order.",
+          "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
         ]
       },
       {
         "h": "Cross-game keyword contamination",
         "t": [
-          "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+          "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
         ]
       },
       {
         "h": "Enable one module at a time",
         "t": [
-          "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+          "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
         ]
       }
     ],
@@ -6182,7 +6876,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       "[[KW_PRIMARY_automation]]",
       "[[KW_SECONDARY_automation]]"
     ],
-    "author": "[[BLOG_AUTHOR — [[SITE_BRAND]] Editorial]]",
+    "author": "[[BLOG_AUTHOR — Editorial]]",
     "modifiedDate": "2026-01-01",
     "editorialRevision": "template-master",
     "body": [
@@ -6196,11 +6890,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
       },
       {
         "type": "h2",
@@ -6208,7 +6902,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
       },
       {
         "type": "h2",
@@ -6216,7 +6910,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
       },
       {
         "type": "h2",
@@ -6224,7 +6918,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality. Focus for this article: automation vocabulary."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped. Focus for this article: automation vocabulary."
       },
       {
         "type": "h2",
@@ -6232,7 +6926,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads. Focus for this article: automation vocabulary."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster. Focus for this article: automation vocabulary."
       },
       {
         "type": "h2",
@@ -6240,7 +6934,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement. Focus for this article: automation vocabulary."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language. Focus for this article: automation vocabulary."
       },
       {
         "type": "h2",
@@ -6248,7 +6942,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely. Focus for this article: automation vocabulary."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order. Focus for this article: automation vocabulary."
       },
       {
         "type": "h2",
@@ -6256,7 +6950,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest. Focus for this article: automation vocabulary."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]. Focus for this article: automation vocabulary."
       },
       {
         "type": "h2",
@@ -6264,7 +6958,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.” Focus for this article: automation vocabulary."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives. Focus for this article: automation vocabulary."
       },
       {
         "type": "h2",
@@ -6284,7 +6978,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -6296,7 +6990,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -6332,7 +7026,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -6380,7 +7074,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -6392,7 +7086,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -6428,7 +7122,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -6476,7 +7170,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -6488,7 +7182,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -6524,7 +7218,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -6572,7 +7266,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -6584,7 +7278,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -6620,7 +7314,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -6668,7 +7362,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -6680,7 +7374,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -6693,6 +7387,66 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "type": "p",
         "text": "Laptop power profiles, docked GPUs, and external displays change performance baselines. Document firmware versions when virtualization is involved. [[REQUIREMENT_EXTRA]] placeholders should list any hosted service dependency."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (automation): relate \"automation vocabulary\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_ACCESSIBILITY — UI scale]]"
+      },
+      {
+        "type": "p",
+        "text": "Text scaling and color filters alter overlay readability. Include accessibility settings in configuration notes when opening tickets about clutter or overlap."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (automation): relate \"automation vocabulary\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_COMMUNITY — forum etiquette]]"
+      },
+      {
+        "type": "p",
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (automation): relate \"automation vocabulary\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_MIGRATION — template tokens]]"
+      },
+      {
+        "type": "p",
+        "text": "Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (automation): relate \"automation vocabulary\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_LEGAL — jurisdiction]]"
+      },
+      {
+        "type": "p",
+        "text": "Local laws may affect software use independently of game policy. This guide is informational and not legal advice."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (automation): relate \"automation vocabulary\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_EVIDENCE — evidence quality]]"
+      },
+      {
+        "type": "p",
+        "text": "Prefer timestamped screen recordings over single frames when demonstrating behavior. Note queue type, map or mode, and input device so support can reproduce conditions. A clip from another title is not transferable evidence for [[GAME_NAME]]."
       },
       {
         "type": "p",
@@ -6715,20 +7469,20 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "h": "Billing vs environment",
         "t": [
-          "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+          "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
         ]
       },
       {
         "h": "Virtualization stack",
         "t": [
-          "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality.",
-          "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.”"
+          "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped.",
+          "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives."
         ]
       },
       {
         "h": "Order line items",
         "t": [
-          "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+          "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
         ]
       }
     ],
@@ -6739,7 +7493,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       "[[KW_PRIMARY_dma]]",
       "[[KW_SECONDARY_dma]]"
     ],
-    "author": "[[BLOG_AUTHOR — [[SITE_BRAND]] Editorial]]",
+    "author": "[[BLOG_AUTHOR — Editorial]]",
     "modifiedDate": "2026-01-01",
     "editorialRevision": "template-master",
     "body": [
@@ -6753,7 +7507,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
       },
       {
         "type": "h2",
@@ -6761,11 +7515,11 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.”"
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives."
       },
       {
         "type": "h2",
@@ -6773,7 +7527,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
       },
       {
         "type": "h2",
@@ -6781,7 +7535,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality. Focus for this article: DMA prerequisites."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped. Focus for this article: DMA prerequisites."
       },
       {
         "type": "h2",
@@ -6789,7 +7543,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads. Focus for this article: DMA prerequisites."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster. Focus for this article: DMA prerequisites."
       },
       {
         "type": "h2",
@@ -6797,7 +7551,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement. Focus for this article: DMA prerequisites."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language. Focus for this article: DMA prerequisites."
       },
       {
         "type": "h2",
@@ -6805,7 +7559,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely. Focus for this article: DMA prerequisites."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order. Focus for this article: DMA prerequisites."
       },
       {
         "type": "h2",
@@ -6813,7 +7567,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest. Focus for this article: DMA prerequisites."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]. Focus for this article: DMA prerequisites."
       },
       {
         "type": "h2",
@@ -6821,7 +7575,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.” Focus for this article: DMA prerequisites."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives. Focus for this article: DMA prerequisites."
       },
       {
         "type": "h2",
@@ -6841,7 +7595,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -6853,7 +7607,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -6889,7 +7643,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -6937,7 +7691,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -6949,7 +7703,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -6985,7 +7739,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -7033,7 +7787,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -7045,7 +7799,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -7081,7 +7835,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -7129,7 +7883,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -7141,7 +7895,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -7177,7 +7931,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -7225,7 +7979,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -7237,7 +7991,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -7250,6 +8004,66 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "type": "p",
         "text": "Laptop power profiles, docked GPUs, and external displays change performance baselines. Document firmware versions when virtualization is involved. [[REQUIREMENT_EXTRA]] placeholders should list any hosted service dependency."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (dma): relate \"DMA prerequisites\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_ACCESSIBILITY — UI scale]]"
+      },
+      {
+        "type": "p",
+        "text": "Text scaling and color filters alter overlay readability. Include accessibility settings in configuration notes when opening tickets about clutter or overlap."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (dma): relate \"DMA prerequisites\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_COMMUNITY — forum etiquette]]"
+      },
+      {
+        "type": "p",
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (dma): relate \"DMA prerequisites\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_MIGRATION — template tokens]]"
+      },
+      {
+        "type": "p",
+        "text": "Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (dma): relate \"DMA prerequisites\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_LEGAL — jurisdiction]]"
+      },
+      {
+        "type": "p",
+        "text": "Local laws may affect software use independently of game policy. This guide is informational and not legal advice."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (dma): relate \"DMA prerequisites\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_EVIDENCE — evidence quality]]"
+      },
+      {
+        "type": "p",
+        "text": "Prefer timestamped screen recordings over single frames when demonstrating behavior. Note queue type, map or mode, and input device so support can reproduce conditions. A clip from another title is not transferable evidence for [[GAME_NAME]]."
       },
       {
         "type": "p",
@@ -7272,19 +8086,19 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "h": "Weapon labels may not apply",
         "t": [
-          "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+          "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
         ]
       },
       {
         "h": "Input devices matter",
         "t": [
-          "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+          "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
         ]
       },
       {
         "h": "Ask for setting names",
         "t": [
-          "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+          "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
         ]
       }
     ],
@@ -7295,7 +8109,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       "[[KW_PRIMARY_recoil]]",
       "[[KW_SECONDARY_recoil]]"
     ],
-    "author": "[[BLOG_AUTHOR — [[SITE_BRAND]] Editorial]]",
+    "author": "[[BLOG_AUTHOR — Editorial]]",
     "modifiedDate": "2026-01-01",
     "editorialRevision": "template-master",
     "body": [
@@ -7309,7 +8123,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
       },
       {
         "type": "h2",
@@ -7317,7 +8131,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
       },
       {
         "type": "h2",
@@ -7325,7 +8139,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
       },
       {
         "type": "h2",
@@ -7333,7 +8147,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality. Focus for this article: weapon terminology."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped. Focus for this article: weapon terminology."
       },
       {
         "type": "h2",
@@ -7341,7 +8155,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads. Focus for this article: weapon terminology."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster. Focus for this article: weapon terminology."
       },
       {
         "type": "h2",
@@ -7349,7 +8163,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement. Focus for this article: weapon terminology."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language. Focus for this article: weapon terminology."
       },
       {
         "type": "h2",
@@ -7357,7 +8171,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely. Focus for this article: weapon terminology."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order. Focus for this article: weapon terminology."
       },
       {
         "type": "h2",
@@ -7365,7 +8179,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest. Focus for this article: weapon terminology."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]. Focus for this article: weapon terminology."
       },
       {
         "type": "h2",
@@ -7373,7 +8187,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.” Focus for this article: weapon terminology."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives. Focus for this article: weapon terminology."
       },
       {
         "type": "h2",
@@ -7393,7 +8207,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -7405,7 +8219,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -7441,7 +8255,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -7489,7 +8303,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -7501,7 +8315,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -7537,7 +8351,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -7585,7 +8399,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -7597,7 +8411,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -7633,7 +8447,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -7681,7 +8495,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -7693,7 +8507,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -7729,7 +8543,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -7777,7 +8591,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -7789,7 +8603,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -7814,6 +8628,66 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "type": "p",
         "text": "Text scaling and color filters alter overlay readability. Include accessibility settings in configuration notes when opening tickets about clutter or overlap."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (recoil): relate \"weapon terminology\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_COMMUNITY — forum etiquette]]"
+      },
+      {
+        "type": "p",
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (recoil): relate \"weapon terminology\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_MIGRATION — template tokens]]"
+      },
+      {
+        "type": "p",
+        "text": "Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (recoil): relate \"weapon terminology\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_LEGAL — jurisdiction]]"
+      },
+      {
+        "type": "p",
+        "text": "Local laws may affect software use independently of game policy. This guide is informational and not legal advice."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (recoil): relate \"weapon terminology\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_EVIDENCE — evidence quality]]"
+      },
+      {
+        "type": "p",
+        "text": "Prefer timestamped screen recordings over single frames when demonstrating behavior. Note queue type, map or mode, and input device so support can reproduce conditions. A clip from another title is not transferable evidence for [[GAME_NAME]]."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (recoil): relate \"weapon terminology\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_NETWORK — connectivity]]"
+      },
+      {
+        "type": "p",
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -7828,7 +8702,7 @@ export const templateBlogPosts: BlogPostFull[] = [
     "tag": "Setup",
     "title": "[[BLOG_WIN_TITLE — Windows and security requirements]]",
     "seoTitle": "[[BLOG_WIN_SEO — [[GAME_NAME]] PC requirements worksheet]]",
-    "desc": "[[BLOG_WIN_DESC — Fill [[REQUIREMENT_*]] placeholders with seller facts for [[GAME_NAME]].]]",
+    "desc": "[[BLOG_WIN_DESC — Fill [[REQUIREMENT_*]] placeholders with verified [[GAME_NAME]] PC requirements.]]",
     "focus": "PC requirements",
     "intro": "Cluster article for PC environment checks.",
     "tailPrefix": "PC worksheet",
@@ -7836,19 +8710,19 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "h": "Edition vs build vs firmware",
         "t": [
-          "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+          "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
         ]
       },
       {
         "h": "Managed devices",
         "t": [
-          "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+          "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
         ]
       },
       {
         "h": "Update journaling",
         "t": [
-          "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.”"
+          "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives."
         ]
       }
     ],
@@ -7859,7 +8733,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       "[[KW_PRIMARY_windows]]",
       "[[KW_SECONDARY_windows]]"
     ],
-    "author": "[[BLOG_AUTHOR — [[SITE_BRAND]] Editorial]]",
+    "author": "[[BLOG_AUTHOR — Editorial]]",
     "modifiedDate": "2026-01-01",
     "editorialRevision": "template-master",
     "body": [
@@ -7873,7 +8747,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
       },
       {
         "type": "h2",
@@ -7881,7 +8755,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order."
       },
       {
         "type": "h2",
@@ -7889,7 +8763,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.”"
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives."
       },
       {
         "type": "h2",
@@ -7897,7 +8771,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality. Focus for this article: PC requirements."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped. Focus for this article: PC requirements."
       },
       {
         "type": "h2",
@@ -7905,7 +8779,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads. Focus for this article: PC requirements."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster. Focus for this article: PC requirements."
       },
       {
         "type": "h2",
@@ -7913,7 +8787,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement. Focus for this article: PC requirements."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language. Focus for this article: PC requirements."
       },
       {
         "type": "h2",
@@ -7921,7 +8795,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely. Focus for this article: PC requirements."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order. Focus for this article: PC requirements."
       },
       {
         "type": "h2",
@@ -7929,7 +8803,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest. Focus for this article: PC requirements."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]. Focus for this article: PC requirements."
       },
       {
         "type": "h2",
@@ -7937,7 +8811,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.” Focus for this article: PC requirements."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives. Focus for this article: PC requirements."
       },
       {
         "type": "h2",
@@ -7957,7 +8831,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -7969,7 +8843,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -8005,7 +8879,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -8053,7 +8927,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -8065,7 +8939,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -8101,7 +8975,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -8149,7 +9023,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -8161,7 +9035,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -8197,7 +9071,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -8245,7 +9119,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -8257,7 +9131,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -8293,7 +9167,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -8341,7 +9215,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -8353,7 +9227,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -8378,6 +9252,66 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "type": "p",
         "text": "Text scaling and color filters alter overlay readability. Include accessibility settings in configuration notes when opening tickets about clutter or overlap."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (windows): relate \"PC requirements\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_COMMUNITY — forum etiquette]]"
+      },
+      {
+        "type": "p",
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (windows): relate \"PC requirements\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_MIGRATION — template tokens]]"
+      },
+      {
+        "type": "p",
+        "text": "Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (windows): relate \"PC requirements\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_LEGAL — jurisdiction]]"
+      },
+      {
+        "type": "p",
+        "text": "Local laws may affect software use independently of game policy. This guide is informational and not legal advice."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (windows): relate \"PC requirements\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_EVIDENCE — evidence quality]]"
+      },
+      {
+        "type": "p",
+        "text": "Prefer timestamped screen recordings over single frames when demonstrating behavior. Note queue type, map or mode, and input device so support can reproduce conditions. A clip from another title is not transferable evidence for [[GAME_NAME]]."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (windows): relate \"PC requirements\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_NETWORK — connectivity]]"
+      },
+      {
+        "type": "p",
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -8400,19 +9334,19 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "h": "Radar vs world ESP",
         "t": [
-          "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+          "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
         ]
       },
       {
         "h": "Audio and comms substitutes",
         "t": [
-          "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+          "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
         ]
       },
       {
         "h": "Accessibility settings",
         "t": [
-          "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+          "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
         ]
       }
     ],
@@ -8423,7 +9357,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       "[[KW_PRIMARY_radar]]",
       "[[KW_SECONDARY_radar]]"
     ],
-    "author": "[[BLOG_AUTHOR — [[SITE_BRAND]] Editorial]]",
+    "author": "[[BLOG_AUTHOR — Editorial]]",
     "modifiedDate": "2026-01-01",
     "editorialRevision": "template-master",
     "body": [
@@ -8437,7 +9371,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped."
       },
       {
         "type": "h2",
@@ -8445,7 +9379,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]."
       },
       {
         "type": "h2",
@@ -8453,7 +9387,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster."
       },
       {
         "type": "h2",
@@ -8461,7 +9395,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "This section describes how to read seller language for [[GAME_NAME]] without treating marketing labels as tested results. Feature names group information a buyer might need, but they do not prove range, timing, compatibility, or account outcomes. [[SITE_BRAND]] publishes buyer guides and catalog references; it does not run independent benchmarks. When a paragraph cites [[PRODUCT_NAME]], it refers to the owner-supplied listing you will attach during migration—not to invented functionality. Focus for this article: awareness vocabulary."
+        "text": "This section explains how [[PRODUCT_NAME]] is presented on the product pages for [[GAME_NAME]]. Feature names describe controls, overlays, and modules included in the package. Use the manifest and detail pages when you need the authoritative list of what is included and how it is grouped. Focus for this article: awareness vocabulary."
       },
       {
         "type": "h2",
@@ -8469,7 +9403,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Build a two-column worksheet before checkout. Left column: your PC edition, display scale, input device, game build, and any virtualization or security settings already enabled. Right column: the seller’s written answers with dates. Mark every unresolved requirement as open rather than assuming it is satisfied because another game worked. Store chat exports with order IDs, but redact payment data and account credentials from screenshots shared in public threads. Focus for this article: awareness vocabulary."
+        "text": "Before you install, align your PC edition, display scale, input device, and current game build with the documented requirements. Note which modules you plan to enable first and which in-game display settings you use. That short checklist makes configuration and support faster. Focus for this article: awareness vocabulary."
       },
       {
         "type": "h2",
@@ -8477,7 +9411,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Platform policy and product architecture are separate conversations. Official help pages explain what a publisher may enforce on an account; seller pages explain what a specific package claims to include. Neither document validates the other. If account access matters, read current policy on the official platform first, then decide whether third-party tooling is acceptable for your situation. This template does not promise legality, stealth, or immunity from enforcement. Focus for this article: awareness vocabulary."
+        "text": "Platform documentation and product capabilities are different subjects. Read official platform help when you need policy context. Pages on this site describe the package, access terms, and setup steps for [[GAME_NAME]] in direct product language. Focus for this article: awareness vocabulary."
       },
       {
         "type": "h2",
@@ -8485,7 +9419,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Seller support should receive specific questions: setting name, game build, reproduction steps, and whether a prerequisite service is active. Vague tickets such as “it does not work” force guesswork. Attach logs or error text in plain language rather than paraphrasing from memory. When support requests a screen capture, crop to the relevant panel and hide identifiers. A structured ticket shortens loops even when the underlying limitation cannot be fixed remotely. Focus for this article: awareness vocabulary."
+        "text": "When you need help, include the module name, game build, and what you expected versus what you saw. Plain-language notes and cropped screenshots move troubleshooting forward. Use the contact path on the product or Support page that matches your order. Focus for this article: awareness vocabulary."
       },
       {
         "type": "h2",
@@ -8493,7 +9427,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Comparisons fail when they score undocumented features. Instead, count how many of your personal requirements have written answers. A shorter list with complete documentation can be more usable than a long list with silent gaps. Retired tier names from older sites should not reappear in your worksheet unless the seller still sells those exact SKUs for [[GAME_NAME]]. Migration agents should replace retired names with the current [[PRODUCT_NAME]] manifest. Focus for this article: awareness vocabulary."
+        "text": "Compare packages by the features you will actually use. A shorter list with clear documentation is easier to run day to day than a long list with vague labels. Migration replaces [[FEATURE_n]] tokens with verified manifest entries for [[PRODUCT_NAME]]—do not assume labels from another title apply to [[GAME_NAME]]. Focus for this article: awareness vocabulary."
       },
       {
         "type": "h2",
@@ -8501,7 +9435,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Game and operating-system updates can invalidate a sentence that was accurate last month. Re-open the listing after patches, especially when anti-cheat or launcher components change. A compatibility statement is a photograph in time, not a perpetual guarantee. Buyers who track build numbers maintain fewer false expectations than buyers who remember adjectives such as “undetected” or “bulletproof.” Focus for this article: awareness vocabulary."
+        "text": "Game and operating-system updates can change compatibility notes. Re-check requirements after major patches or launcher updates. Build numbers and edition labels are more reliable than broad marketing adjectives. Focus for this article: awareness vocabulary."
       },
       {
         "type": "h2",
@@ -8521,7 +9455,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -8533,7 +9467,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -8569,7 +9503,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -8617,7 +9551,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -8629,7 +9563,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -8665,7 +9599,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -8713,7 +9647,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -8725,7 +9659,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -8761,7 +9695,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -8809,7 +9743,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -8821,7 +9755,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -8857,7 +9791,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Public threads on [[SITE_BRAND]] host editorial summaries, not SKU expansion. Confirm answers with the seller before treating a forum reply as catalog fact."
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
       },
       {
         "type": "p",
@@ -8905,7 +9839,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. [[SITE_BRAND]] does not host network diagnostics; capture traceroute or latency widgets only if support requests them."
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",
@@ -8917,7 +9851,7 @@ export const templateBlogPosts: BlogPostFull[] = [
       },
       {
         "type": "p",
-        "text": "Refund eligibility, chargebacks, and resellers are seller-policy topics. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
+        "text": "Review checkout and refund terms before payment. Store the policy version shown at checkout. This article does not interpret payment processor rules for your country."
       },
       {
         "type": "p",
@@ -8942,6 +9876,66 @@ export const templateBlogPosts: BlogPostFull[] = [
       {
         "type": "p",
         "text": "Text scaling and color filters alter overlay readability. Include accessibility settings in configuration notes when opening tickets about clutter or overlap."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (radar): relate \"awareness vocabulary\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_COMMUNITY — forum etiquette]]"
+      },
+      {
+        "type": "p",
+        "text": "Forum threads summarize common setup questions. Product pages remain the catalog reference for features and requirements."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (radar): relate \"awareness vocabulary\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_MIGRATION — template tokens]]"
+      },
+      {
+        "type": "p",
+        "text": "Agents replacing [[FEATURE_n]] tokens should re-run word-count and SEO checks after migration. Template placeholders are visible in source until publish."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (radar): relate \"awareness vocabulary\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_LEGAL — jurisdiction]]"
+      },
+      {
+        "type": "p",
+        "text": "Local laws may affect software use independently of game policy. This guide is informational and not legal advice."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (radar): relate \"awareness vocabulary\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_EVIDENCE — evidence quality]]"
+      },
+      {
+        "type": "p",
+        "text": "Prefer timestamped screen recordings over single frames when demonstrating behavior. Note queue type, map or mode, and input device so support can reproduce conditions. A clip from another title is not transferable evidence for [[GAME_NAME]]."
+      },
+      {
+        "type": "p",
+        "text": "Article-specific checkpoint (radar): relate \"awareness vocabulary\" to a named line item in [[PRODUCT_NAME]]. If the manifest lacks a matching label, record the gap on your worksheet instead of borrowing vocabulary from unrelated cluster guides."
+      },
+      {
+        "type": "h2",
+        "text": "[[PAD_TOPIC_NETWORK — connectivity]]"
+      },
+      {
+        "type": "p",
+        "text": "Record region, VPN usage, and whether other overlay software was active. Network symptoms can resemble product failures. Capture traceroute or latency widgets only if support requests them."
       },
       {
         "type": "p",

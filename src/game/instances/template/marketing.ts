@@ -10,7 +10,7 @@ export function applyTemplateMarketingOverlay(t: Translations): Translations {
 
   t.site.title = `[[SITE_TITLE — ${g} guides and product information]]`;
   t.site.description =
-    `[[SITE_META_DESCRIPTION — factual product information, requirements, and buyer guides for ${g}.]]`;
+    `[[SITE_META_DESCRIPTION — product information, requirements, and setup guides for ${g}.]]`;
 
   t.setup.titleLead = '[[SETUP_TITLE_LEAD]]';
   t.setup.titleHighlight = '[[SETUP_TITLE_HIGHLIGHT]]';
@@ -38,7 +38,7 @@ export function applyTemplateMarketingOverlay(t: Translations): Translations {
   ];
   const about = t.legalPages.about;
   about.title = `[[ABOUT_TITLE — ${PH.SITE_BRAND}]]`;
-  about.description = `[[ABOUT_META — ${PH.SITE_BRAND} publishes ${g} product information and buyer guides.]]`;
+  about.description = `[[ABOUT_META — product information and setup guides for ${g}.]]`;
   about.sections = [
     {
       heading: '[[ABOUT_SECTION_1_HEADING]]',

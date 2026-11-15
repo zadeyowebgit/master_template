@@ -1,9 +1,7 @@
 import fs from 'node:fs';
+import { TEMPLATE_BLOG_SLUGS } from './lib/template-blog-slugs.mjs';
 
-const blogSlugs = [
-  'best-cheats', 'aimbot', 'esp', 'anticheat', 'bans', 'buying', 'safety', 'features',
-  'access', 'skins', 'external', 'automation', 'dma', 'recoil', 'windows', 'radar',
-];
+const blogSlugs = TEMPLATE_BLOG_SLUGS;
 
 const forumSlugs = [
   'overlay-questions', 'fov-questions', 'aimbot-delay', 'launch-errors',
@@ -65,10 +63,16 @@ export function getPageKeywords(pathname: string): PageKeywordPlan | undefined {
   if (path !== '/' && !path.endsWith('/')) path = \`\${path}/\`;
   const exact = PAGE_KEYWORDS[path];
   if (exact) return exact;
-  if (path.startsWith('/blog/') && path !== '/blog/') return PAGE_KEYWORDS['/blog/'];
+  if (path.startsWith('/blog/') && path !== '/blog/') {
+    return PAGE_KEYWORDS[path] ?? PAGE_KEYWORDS['/blog/'];
+  }
   if (path.startsWith('/forum/') && path !== '/forum/') return PAGE_KEYWORDS['/forum/'];
   if (path.startsWith('/products/cheats/') && path !== '/products/cheats/') {
-    return PAGE_KEYWORDS['/products/cheats/'];
+    return (
+      PAGE_KEYWORDS[path] ??
+      PAGE_KEYWORDS['/products/cheats/featured-package/'] ??
+      PAGE_KEYWORDS['/products/cheats/']
+    );
   }
   return undefined;
 }

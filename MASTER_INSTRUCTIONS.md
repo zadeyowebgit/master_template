@@ -191,7 +191,8 @@ Provide a short final report: each article’s primary keyword, search intent, w
 ### 5. Homepage and UI preservation
 
 - Do not redesign the website.
-- Do not change existing UI, styling, layout, components, spacing, or responsive behavior.
+- Preserve the master template **black + purple** surface on homepage sections **below the hero** (`.home-post-hero`); do not alter the hero’s existing look.
+- Do not change existing UI, styling, layout, components, spacing, or responsive behavior except the reusable post-hero theme above.
 - Do not reduce homepage content or section counts.
 - Rewrite game-specific wording while preserving the original content structure.
 - Preserve existing H1 structure and metadata descriptions unless the owner explicitly requests a change.
@@ -316,6 +317,41 @@ Whenever the owner supplies a new game’s information:
 
 ---
 
+### 12. Master template standards (every game)
+
+#### H1 and on-page SEO
+
+- Every page needs a **unique**, natural, SEO-friendly H1 configured in `src/config/keywords.ts` and `src/config/auditSeo.ts` (see `src/game/instances/template/page-h1.ts`).
+- **Do not** append the game name to every H1 automatically.
+- Blog articles use `KW_BLOG_*_H1` for the visible H1, not a repetitive title template.
+- Avoid keyword stuffing and duplicate headings across routes.
+
+#### Neutral branding
+
+- **No** Zadeyo (or other agency) branding, logos, author credits, or `preconnect` links unless the owner explicitly requests it.
+- Keep `[[SITE_BRAND]]` as a neutral owner-supplied label — do not invent a replacement agency brand.
+
+#### Product copy voice
+
+- Present the site as a **gaming product website**, not a third-party review storefront.
+- **Forbidden** public phrasing includes: “The seller states…”, “The provider says…”, “According to the seller…”, “The support team confirms…”, “This product claims…”.
+- Write features, requirements, and compatibility **directly** from verified product data.
+- Trace sources in `verifiedContent.productSources` and migration notes — not in awkward buyer-guide disclaimers on product pages.
+
+#### Excluded topics (blogs, FAQs, landing SEO)
+
+- **Do not** create or auto-generate content focused on anti-cheat systems, detection, bans, ban risk, HWID bans, or “avoiding bans”.
+- The 16-article slug list excludes legacy `anticheat` and `bans` routes; use `config` and `performance` instead.
+- `npm run template:verify` fails if forbidden topic patterns appear in generated blog metadata.
+
+#### Documentation cleanup (owner-triggered only)
+
+- When the owner asks, remove **only** obsolete docs, temp reports, and unused helpers.
+- **Keep** `MASTER_INSTRUCTIONS.md`, `migration/AGENT_TASKS.md`, `migration/README.md`, `game.input.example.json`, generators, and migration scripts.
+- Do not delete workflow dependencies without proving they are unused.
+
+---
+
 ## Part II — This master template repository
 
 ### Role of this repository
@@ -339,7 +375,7 @@ Whenever the owner supplies a new game’s information:
 
 | Asset | Count | Notes |
 |-------|-------|--------|
-| Blogs | **16** | Slugs: `best-cheats`, `aimbot`, `esp`, `anticheat`, `bans`, `buying`, `safety`, `features`, `access`, `skins`, `external`, `automation`, `dma`, `recoil`, `windows`, `radar` |
+| Blogs | **16** | Slugs: `best-cheats`, `aimbot`, `esp`, `config`, `performance`, `buying`, `safety`, `features`, `access`, `skins`, `external`, `automation`, `dma`, `recoil`, `windows`, `radar` — **never** `anticheat`, `bans`, ban-risk, or anti-cheat SEO articles |
 | Forum | **7** | Slugs: `overlay-questions`, `fov-questions`, `aimbot-delay`, `launch-errors`, `stream-proof`, `hardware-change`, `requirements-check` |
 | FAQs | **31** pool, **18** main (`MAIN_FAQ_IDS`), **6** home (`HOME_FAQ_IDS`) | `src/data/purchaseFaqs.ts` |
 | Reviews | **120** | Placeholders until owner reviews; `reviews.mode: "owner"` when supplied |

@@ -16,12 +16,12 @@ const BY_SLUG: Record<string, BlogFooterCtas> = {
     "products": "[[BLOG_FOOTER_PRODUCTS_CTA]]",
     "moreGuides": "[[BLOG_FOOTER_MORE_GUIDES_CTA]]"
   },
-  "anticheat": {
+  "config": {
     "checkout": "[[BLOG_FOOTER_CHECKOUT_CTA]]",
     "products": "[[BLOG_FOOTER_PRODUCTS_CTA]]",
     "moreGuides": "[[BLOG_FOOTER_MORE_GUIDES_CTA]]"
   },
-  "bans": {
+  "performance": {
     "checkout": "[[BLOG_FOOTER_CHECKOUT_CTA]]",
     "products": "[[BLOG_FOOTER_PRODUCTS_CTA]]",
     "moreGuides": "[[BLOG_FOOTER_MORE_GUIDES_CTA]]"

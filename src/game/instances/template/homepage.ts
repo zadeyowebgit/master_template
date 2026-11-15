@@ -10,7 +10,7 @@ export const templateHomepageConfig = {
     { strong: 'Package', label: 'Scope in listing' },
     { strong: 'Access', label: 'Monthly or lifetime' },
     { strong: 'Windows', label: '10 / 11 setup checks' },
-    { strong: 'Support', label: 'Seller contact path' },
+    { strong: 'Support', label: 'Help and contact' },
   ],
   heroModes: ['Listed feature groups', 'Access and checkout terms', 'Windows setup notes', 'Separate services'],
   compatibilityBadges: [
@@ -26,19 +26,19 @@ export const templateHomepageConfig = {
   faqUrl: '/faq/',
   whyMetrics: [
     {
-      value: '300+',
-      title: 'Active users',
-      desc: 'Players running R6 ESP, wallhack, and aimbot cheats with live product support.',
+      value: '[[WHY_METRIC_1_VALUE]]',
+      title: '[[WHY_METRIC_1_TITLE]]',
+      desc: '[[WHY_METRIC_1_DESC — product scope and documented modules.]]',
     },
     {
-      value: '24/7',
-      title: 'Support',
-      desc: 'Help with delivery and access after you buy.',
+      value: '[[WHY_METRIC_2_VALUE]]',
+      title: '[[WHY_METRIC_2_TITLE]]',
+      desc: '[[WHY_METRIC_2_DESC — access duration and checkout terms.]]',
     },
     {
-      value: 'Windows',
-      title: 'pc',
-      desc: 'Check the supported edition and required security settings.',
+      value: '[[WHY_METRIC_3_VALUE]]',
+      title: '[[WHY_METRIC_3_TITLE]]',
+      desc: '[[WHY_METRIC_3_DESC — Windows and security requirements.]]',
     },
   ],
 } as const;
@@ -90,7 +90,7 @@ export function applyTemplateHomepage(t: Translations, ctx: TemplateHomepageCont
     {
       title: 'Separate services',
       subtitle: 'Check the complete order',
-      desc: '[[FEATURE_CARD_4_DESC — Some services are invoiced separately from game access. Resolve the complete setup with the seller.]]',
+      desc: '[[FEATURE_CARD_4_DESC — Some hosted options are billed separately. Review the complete order before checkout.]]',
       bullets: [],
       tags: ['[[TAG_DMA]]', 'add-ons', 'complete checkout'],
       bento: 'sm:col-span-2 lg:col-span-6 lg:col-start-1 lg:row-start-3',
@@ -98,9 +98,9 @@ export function applyTemplateHomepage(t: Translations, ctx: TemplateHomepageCont
     {
       title: 'Product evidence',
       subtitle: 'Know what was verified',
-      desc: '[[FEATURE_CARD_5_DESC — Screenshots illustrate listed feature categories. They are not an independent accuracy, performance or detection test.]]',
+      desc: '[[FEATURE_CARD_5_DESC — Screenshots show listed feature categories on supported builds.]]',
       bullets: [],
-      tags: ['seller verified', 'screenshots', 'evidence disclaimer'],
+      tags: ['screenshots', 'feature categories', 'product gallery'],
       bento: 'sm:col-span-2 lg:col-span-6 lg:col-start-7 lg:row-start-3',
     },
     {
@@ -114,9 +114,9 @@ export function applyTemplateHomepage(t: Translations, ctx: TemplateHomepageCont
     {
       title: 'Purchase support',
       subtitle: 'Use the right contact',
-      desc: '[[FEATURE_CARD_7_DESC — Seller support handles orders and installation. Use the right contact channel for your order.]]',
+      desc: '[[FEATURE_CARD_7_DESC — Support covers orders, delivery, and setup. Use the contact channel shown on your order.]]',
       bullets: [],
-      tags: ['seller support', 'order email', 'Support page'],
+      tags: ['support', 'order help', 'Support page'],
       bento: 'sm:col-span-2 lg:col-span-4 lg:col-start-9 lg:row-start-4',
     },
   ];
@@ -129,14 +129,14 @@ export function applyTemplateHomepage(t: Translations, ctx: TemplateHomepageCont
   t.whyUs.otherLabel = '[[WHY_OTHER_LABEL — Guaranteed]]';
   t.whyUs.rows = [
     {
-      title: 'Combat and awareness, together',
-      desc: 'Find aimbot, ESP, and world ESP information in one catalog.',
-      descMobile: 'Find aimbot, ESP, and world ESP information in one catalog.',
+      title: '[[WHY_ROW_1_TITLE — modules in one catalog]]',
+      desc: '[[WHY_ROW_1_DESC — combat and awareness features listed together.]]',
+      descMobile: '[[WHY_ROW_1_DESC — combat and awareness features listed together.]]',
     },
     {
-      title: 'Feature categories to compare',
-      desc: 'Distinguish hero information, lane information and ability tracking.',
-      descMobile: 'Distinguish hero information, lane information and ability tracking.',
+      title: '[[WHY_ROW_2_TITLE — compare categories]]',
+      desc: '[[WHY_ROW_2_DESC — group overlays by what they show in-game.]]',
+      descMobile: '[[WHY_ROW_2_DESC — group overlays by what they show in-game.]]',
     },
     {
       title: 'Readable overlays',
@@ -167,7 +167,7 @@ export function applyTemplateHomepage(t: Translations, ctx: TemplateHomepageCont
   t.workflow.titleHighlight = 'in-game cheats.';
   t.workflow.titleAfter = '';
   t.workflow.subtitle =
-    'Confirm requirements, select access, review the order and follow the seller installation guide.';
+    'Confirm requirements, select access, review the order, and follow the installation guide.';
   t.workflow.ctaLabel = 'Buy cheats';
   t.workflow.ctaHref = productBase;
   t.workflow.ctaSecondary = 'See FAQ';
@@ -177,25 +177,25 @@ export function applyTemplateHomepage(t: Translations, ctx: TemplateHomepageCont
       num: '01',
       phase: 'Before purchase',
       title: 'Confirm requirements',
-      desc: 'Resolve Windows, security-setting and separate-service requirements with the seller.',
+      desc: '[[WORKFLOW_STEP_1_DESC — match Windows, security settings, and any hosted options to the requirement list.]]',
     },
     {
       num: '02',
       phase: 'Access',
       title: 'Choose access duration',
-      desc: 'Monthly covers 31 days; Lifetime is unlimited access under seller terms. These are duration options, not Lite, Pro or Elite feature tiers.',
+      desc: '[[WORKFLOW_STEP_2_DESC — choose monthly or lifetime access using the terms on the product page.]]',
     },
     {
       num: '03',
       phase: 'Checkout',
       title: 'Review the order',
-      desc: 'Check the exact items, entitlements, activation timing and seller terms before payment.',
+      desc: '[[WORKFLOW_STEP_3_DESC — confirm line items, entitlements, and activation timing before payment.]]',
     },
     {
       num: '04',
       phase: 'Setup',
       title: 'Follow current instructions',
-      desc: 'Use the installation and activation documentation supplied for your actual order.',
+      desc: '[[WORKFLOW_STEP_4_DESC — follow the installation steps provided for your order.]]',
     },
   ];
 

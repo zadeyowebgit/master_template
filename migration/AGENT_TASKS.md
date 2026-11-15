@@ -47,22 +47,28 @@ Schema reference: [`game.input.example.json`](./game.input.example.json).
 
 ## Phase 1 — Product research
 
-See **MASTER_INSTRUCTIONS Part I §2**.
+See **MASTER_INSTRUCTIONS Part I §2** and **§12**.
 
 - Open every product/seller URL; list **all** SKUs.
 - Update `productLinks[]` and plan `products.ts` pages (one card + detail per product).
 - Pull verified features, requirements, setup/FAQ text **only** from listings.
-- **Never silently invent** missing product details — neutral copy or omit; log gaps in `unverifiedNotes`.
-- Set `verifiedContent.productSources` (`slug` → seller URL) for traceability.
+- Publish product pages in **direct natural language** — no “seller states” / “provider says” framing.
+- **Never silently invent** missing product details — omit unavailable specs; log gaps in `unverifiedNotes`.
+- Set `verifiedContent.productSources` (`slug` → seller URL) for traceability (not public disclaimers).
 - **Layout:** change text in `products.ts` / manifests only; do not alter Astro layout, section order, or card grid structure.
+- Remove **Zadeyo** or other agency branding unless the owner explicitly requests it.
 
 ---
 
 ## Phase 2 — Blog research and content
 
-See **Part I — Blog SEO research & content strategy**.
+See **Part I — Blog SEO research & content strategy** and **§12 Master template standards**.
 
-- Keyword/intent map for all 16 slugs.
+- Keyword/intent map for all 16 slugs (`scripts/lib/template-blog-slugs.mjs`).
+- **Exclude** anti-cheat, ban, ban-risk, and HWID-ban articles — never resurrect `anticheat` / `bans` slugs.
+- Set a **unique** `KW_BLOG_*_H1` per article; do not append `[[GAME_NAME]]` to every H1.
+- Product-facing copy: direct product voice; no seller/provider attribution phrases; use `productSources` internally.
+- Preserve homepage **black + purple** theme below the hero (do not redesign the hero).
 - Rewrite articles (≥1,500 words, ≥15 min read time).
 - Deliver the final keyword report.
 
@@ -141,3 +147,7 @@ Structural checks only: `npm run template:verify`
 
 Same phases: **read rules → write JSON from owner chat → research → verifiedContent → generate/verify → report.**  
 Never reuse game names, domains, or content from a previous migration.
+
+### Documentation cleanup
+
+Run **only when the owner requests it** (see MASTER_INSTRUCTIONS §12): prune obsolete docs/temp outputs; never remove migration tooling or required instruction files.

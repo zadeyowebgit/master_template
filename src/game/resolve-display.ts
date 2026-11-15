@@ -22,7 +22,7 @@ export function resolveDisplayText(text: string): string {
 
   return out.replace(BRACKET, (_match, _key, hint) => {
     const h = hint?.trim();
-    return h || 'Confirm with the seller before publishing';
+    return h ?? _match;
   });
 }
 
