@@ -96,7 +96,7 @@ for (const post of blogPosts) {
     return sum + text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').split(/\s+/).filter(Boolean).length;
   }, 0);
   const minutes = Math.ceil(words / 200);
-  if (minutes < 5 || minutes > 15) warnings.push(`${post.slug}: reading time outside 5–15 minutes`);
+  if (minutes < 5) warnings.push(`${post.slug}: reading time below 5 minutes`);
   check(post.readTime === `${minutes} min read`, `${post.slug}: reading time does not match article length`);
 }
 const titles = new Map(), descriptions = new Map();

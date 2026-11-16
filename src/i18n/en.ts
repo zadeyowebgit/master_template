@@ -28,6 +28,8 @@ export const en: Translations = {
  subtitle:
  'Buy [[GAME_NAME_DISPLAY]] cheats for PC — aimbot, ESP, wallhack, radar and loot ESP for [[GAME_NAME_DISPLAY]] matches and Ranked. Updated after every [[PLATFORM_NAME]] patch.',
  ctaPrimary: 'Buy Now',
+ ctaSecondary: 'View products',
+ ctaSecondaryHref: productBase,
  ctaDiscord: 'Join Discord',
  modesLabel: 'Maps',
  modes: ['[[MAP_PLACEHOLDER]]', '[[MAP_PLACEHOLDER]]', '[[MAP_PLACEHOLDER]]', '[[MAP_PLACEHOLDER]]'],

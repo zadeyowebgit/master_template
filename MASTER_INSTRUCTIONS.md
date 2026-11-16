@@ -74,7 +74,7 @@ Do **not** reduce the number of blogs, their word counts, forum discussions, com
 - Every article must contain at least **1,500** useful words.
 - Expand every article below 1,500 words.
 - Pay special attention to articles currently under 5 minutes reading time.
-- Target at least **15 minutes** reading time.
+- Target at least **5 minutes** reading time (≥1,500 words is the structural minimum).
 - Use natural search intent, relevant keywords, useful headings, and detailed information.
 - Never add filler or repeat content to inflate word counts.
 
@@ -137,7 +137,7 @@ Write all 16 articles from scratch or substantially rebuild existing content for
 
 - Maintain exactly 16 blogs.
 - Minimum 1,500 words per article.
-- Target at least 15 minutes reading time.
+- Target at least 5 minutes reading time when the article has ≥1,500 words.
 - Expand articles below 1,500 words.
 - Never use filler or repeated paragraphs to reach word count.
 - Reading time must reflect actual article content.

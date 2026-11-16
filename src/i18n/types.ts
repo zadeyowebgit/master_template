@@ -115,6 +115,8 @@ export interface Translations {
     titleLine2: string;
     subtitle: string;
     ctaPrimary: string;
+    ctaSecondary: string;
+    ctaSecondaryHref: string;
     ctaDiscord: string;
     modesLabel: string;
     modes: string[];

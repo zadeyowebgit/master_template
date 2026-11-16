@@ -18,6 +18,24 @@ export const heroGallery = [
     caption: '[[HERO_GALLERY_2_CAPTION]]',
     captionDesc: '[[HERO_GALLERY_2_DESC]]',
   },
+  {
+    src: '/images/placeholders/hero.svg',
+    alt: '[[HERO_GALLERY_3_ALT]]',
+    caption: '[[HERO_GALLERY_3_CAPTION]]',
+    captionDesc: '[[HERO_GALLERY_3_DESC]]',
+  },
+  {
+    src: '/images/placeholders/hero.svg',
+    alt: '[[HERO_GALLERY_4_ALT]]',
+    caption: '[[HERO_GALLERY_4_CAPTION]]',
+    captionDesc: '[[HERO_GALLERY_4_DESC]]',
+  },
+  {
+    src: '/images/placeholders/hero.svg',
+    alt: '[[HERO_GALLERY_5_ALT]]',
+    caption: '[[HERO_GALLERY_5_CAPTION]]',
+    captionDesc: '[[HERO_GALLERY_5_DESC]]',
+  },
 ] as const;
 
 export const productGalleryImage = {

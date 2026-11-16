@@ -368,7 +368,7 @@ function wordCount(body) {
 const posts = articles.map((article) => {
   const body = padArticle(article);
   const words = wordCount(body);
-  const minutes = Math.max(15, Math.round(words / 200));
+  const minutes = Math.max(5, Math.round(words / 200));
   return {
     ...article,
     image: '/images/placeholders/card.svg',

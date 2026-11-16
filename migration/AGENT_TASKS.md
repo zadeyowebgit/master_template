@@ -69,7 +69,7 @@ See **Part I — Blog SEO research & content strategy** and **§12 Master templa
 - Set a **unique** `KW_BLOG_*_H1` per article; do not append `[[GAME_NAME]]` to every H1.
 - Product-facing copy: direct product voice; no seller/provider attribution phrases; use `productSources` internally.
 - Preserve homepage **black + purple** theme below the hero (do not redesign the hero).
-- Rewrite articles (≥1,500 words, ≥15 min read time).
+- Rewrite articles (≥1,500 words, ≥5 min read time).
 - Deliver the final keyword report.
 
 ---

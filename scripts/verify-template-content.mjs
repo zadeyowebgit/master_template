@@ -32,13 +32,23 @@ async function verifyBlogs() {
     }
     return t.trim().split(/\s+/).filter(Boolean).length;
   }
+  function readMinutes(readTime) {
+    const m = String(readTime ?? '').match(/(\d+)/);
+    return m ? Number(m[1]) : 0;
+  }
   const low = [];
+  const shortRead = [];
   for (const p of posts) {
     const w = words(p.body);
-    if (w < 1500) low.push(`${p.slug} (${w})`);
+    const min = readMinutes(p.readTime);
+    if (w < 1500) low.push(`${p.slug} (${w}w)`);
+    if (min < 5) shortRead.push(`${p.slug} (${min} min)`);
   }
   if (low.length) fail(`blog posts below 1500 words: ${low.join(', ')}`);
-  else console.log(`blogs: 16 posts, all ≥1500 words`);
+  if (shortRead.length) fail(`blog posts below 5 min read time: ${shortRead.join(', ')}`);
+  if (!low.length && !shortRead.length) {
+    console.log('blogs: 16 posts, all ≥1500 words and ≥5 min read');
+  }
   const badSlugs = posts
     .map((p) => p.slug)
     .filter((slug) => !TEMPLATE_BLOG_SLUGS.includes(slug));

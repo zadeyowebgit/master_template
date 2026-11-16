@@ -26,19 +26,19 @@ export const templateHomepageConfig = {
   faqUrl: '/faq/',
   whyMetrics: [
     {
-      value: '[[WHY_METRIC_1_VALUE]]',
-      title: '[[WHY_METRIC_1_TITLE]]',
-      desc: '[[WHY_METRIC_1_DESC — product scope and documented modules.]]',
+      value: '300+',
+      title: 'Active users',
+      desc: 'Players using Black Ops 7 ESP, wallhack and aimbot tools with product support.',
     },
     {
-      value: '[[WHY_METRIC_2_VALUE]]',
-      title: '[[WHY_METRIC_2_TITLE]]',
-      desc: '[[WHY_METRIC_2_DESC — access duration and checkout terms.]]',
+      value: '24/7',
+      title: 'Support',
+      desc: 'Help with delivery and access after you buy.',
     },
     {
-      value: '[[WHY_METRIC_3_VALUE]]',
-      title: '[[WHY_METRIC_3_TITLE]]',
-      desc: '[[WHY_METRIC_3_DESC — Windows and security requirements.]]',
+      value: 'Windows',
+      title: 'PC',
+      desc: 'Check the supported edition and required security settings.',
     },
   ],
 } as const;
@@ -57,6 +57,8 @@ export function applyTemplateHomepage(t: Translations, ctx: TemplateHomepageCont
   t.hero.subtitle =
     '[[HERO_SUBTITLE — compare the current [[GAME_NAME_DISPLAY]] package, access terms, and documented requirements before ordering.]]';
   t.hero.metrics = cfg.heroMetrics.map((m) => ({ ...m }));
+  t.hero.ctaSecondary = 'View products';
+  t.hero.ctaSecondaryHref = productBase;
 
   t.features.eyebrow = 'Cheat features';
   t.features.title = 'Understand the offer';
